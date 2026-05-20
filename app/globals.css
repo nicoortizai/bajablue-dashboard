@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (we toggle html.dark from ThemeProvider) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Theme tokens ---------- */
+/*
+   Aurora palette: ocean teal (#36859A) + electric blue (#0A84FF)
+   on rich near-black for dark, soft neutral for light.
+   Both modes are first-class — light is not a stripped-down dark.
+*/
+
+:root {
+  --bg: #f4f5f7;
+  --bg-elevated: #ffffff;
+  --bg-soft: rgba(255, 255, 255, 0.6);
+  --border: rgba(15, 23, 42, 0.08);
+  --border-strong: rgba(15, 23, 42, 0.14);
+  --fg: #0b1220;
+  --fg-soft: #4b5563;
+  --fg-mute: #6b7280;
+  --fg-faint: #9ca3af;
+
+  --accent: #0a84ff;
+  --accent-2: #36859a;
+  --accent-warm: #ff9f0a;
+  --positive: #30d158;
+  --negative: #ff453a;
+
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --card-border: rgba(15, 23, 42, 0.08);
+  --card-shadow: 0 30px 60px -30px rgba(15, 23, 42, 0.12),
+    0 8px 24px -16px rgba(15, 23, 42, 0.08);
+
+  --grid-line: rgba(15, 23, 42, 0.06);
+
+  color-scheme: light;
+}
+
+html.dark {
+  --bg: #06090f;
+  --bg-elevated: #0c1118;
+  --bg-soft: rgba(20, 24, 33, 0.55);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --fg: #f5f7fa;
+  --fg-soft: #c7ccd4;
+  --fg-mute: #8a90a0;
+  --fg-faint: #5b6275;
+
+  --card-bg: rgba(20, 24, 33, 0.55);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.6),
+    0 10px 24px -18px rgba(0, 0, 0, 0.5);
+
+  --grid-line: rgba(255, 255, 255, 0.06);
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-fg-soft: var(--fg-soft);
+  --color-fg-mute: var(--fg-mute);
+  --color-fg-faint: var(--fg-faint);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --font-display: var(--font-display-stack);
+  --font-sans: var(--font-body-stack);
+}
+
+/* ---------- Base ---------- */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body, "Inter"), -apple-system, BlinkMacSystemFont,
+    "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: var(--font-display, "Inter"), -apple-system, BlinkMacSystemFont,
+    "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  font-feature-settings: "ss01", "ss03", "cv11";
+  letter-spacing: -0.02em;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* ---------- Atmosphere ---------- */
+
+.bg-atmosphere {
+  position: relative;
+  isolation: isolate;
+}
+.bg-atmosphere::before {
+  content: "";
+  position: fixed;
+  inset: -10%;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(50% 40% at 18% 12%, rgba(54, 133, 154, 0.22) 0%, transparent 60%),
+    radial-gradient(45% 38% at 82% 22%, rgba(10, 132, 255, 0.18) 0%, transparent 60%),
+    radial-gradient(55% 50% at 60% 90%, rgba(255, 159, 10, 0.08) 0%, transparent 60%);
+  filter: blur(20px);
+}
+
+html.dark .bg-atmosphere::before {
+  background:
+    radial-gradient(50% 40% at 18% 12%, rgba(54, 133, 154, 0.35) 0%, transparent 60%),
+    radial-gradient(45% 38% at 82% 22%, rgba(10, 132, 255, 0.28) 0%, transparent 60%),
+    radial-gradient(55% 50% at 60% 92%, rgba(48, 209, 88, 0.12) 0%, transparent 60%);
+}
+
+.bg-atmosphere::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.6;
+}
+html.dark .bg-atmosphere::after {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+/* ---------- Frosted card surface ---------- */
+
+.frosted {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  -webkit-backdrop-filter: saturate(140%) blur(28px);
+  backdrop-filter: saturate(140%) blur(28px);
+  border-radius: 28px;
+  box-shadow: var(--card-shadow);
+  position: relative;
+}
+
+.frosted::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0) 40%,
+    rgba(54, 133, 154, 0.18) 90%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.75;
+}
+html.dark .frosted::before {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.18),
+    rgba(255, 255, 255, 0) 40%,
+    rgba(10, 132, 255, 0.18) 90%
+  );
+}
+
+.frosted-soft {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  -webkit-backdrop-filter: saturate(140%) blur(16px);
+  backdrop-filter: saturate(140%) blur(16px);
+}
+
+/* ---------- Live status pulse ---------- */
+
+@keyframes pulse-soft {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(48, 209, 88, 0.55), 0 0 0 0 rgba(48, 209, 88, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(48, 209, 88, 0), 0 0 0 12px rgba(48, 209, 88, 0); }
+}
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--positive);
+  animation: pulse-soft 2.2s ease-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ---------- Recharts overrides ---------- */
+
+.recharts-cartesian-axis-tick text {
+  fill: var(--fg-mute);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.recharts-tooltip-cursor {
+  stroke: var(--border-strong) !important;
+  stroke-dasharray: 3 3;
+}
+
+/* ---------- Misc ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+::selection {
+  background: rgba(10, 132, 255, 0.35);
+  color: white;
+}
+
+.lift {
+  transition: transform 280ms cubic-bezier(0.2, 0.7, 0.2, 1),
+              box-shadow 280ms cubic-bezier(0.2, 0.7, 0.2, 1),
+              border-color 280ms ease;
+}
+.lift:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+}

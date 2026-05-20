@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "pulledAt": "2026-05-20T02:51:40.508Z",
+    "today": "2026-05-20",
+    "yesterday": "2026-05-19",
+    "accountId": "2252665731",
+    "accountName": "BajaBlue",
+    "note": "Campaign was paused until 2026-05-20T02:48Z. All zeroes are expected until traffic accrues. Dashboard should render zero-state with timer + project expected ramp."
+  },
+  "campaigns": [
+    {
+      "id": "23854123828",
+      "name": "BajaBlue Search — Multi-day Expeditions v1",
+      "status": "ENABLED",
+      "channel": "SEARCH",
+      "biddingStrategy": "MAXIMIZE_CONVERSIONS",
+      "targetCpa": 75,
+      "dailyBudget": 32.89,
+      "monthlyBudgetTarget": 1000,
+      "launchedAt": "2026-05-20T02:48:00Z",
+      "adGroups": [
+        { "id": "194313453337", "name": "AG1 - ORCA" },
+        { "id": "198065523042", "name": "AG2 - Sea of Cortez Whale Watching" },
+        { "id": "198065523122", "name": "AG3 - Mobula Manta Dolphin" },
+        { "id": "194313453497", "name": "AG4 - WS Arbitrage (no mention)" },
+        { "id": "194313453577", "name": "AG5 - Whale Watching Generic" }
+      ]
+    }
+  ],
+  "leads": {
+    "today": { "inquiries": 0, "bookings": 0, "asOfHour": 19 },
+    "yesterday": { "inquiries": 0, "bookings": 0, "spend": 0, "clicks": 0, "impressions": 0 },
+    "projectedTomorrow": {
+      "method": "post-launch ramp (campaign live <24h, no historical signal yet)",
+      "expectedRange": { "low": 0, "high": 2 },
+      "note": "First 7-14 days = learning phase; projections become reliable after that"
+    }
+  },
+  "thirtyDay": {
+    "totalSpend": 0,
+    "totalClicks": 0,
+    "totalImpressions": 0,
+    "totalConversions": 0,
+    "dailySeries": []
+  },
+  "byAdGroup7d": [
+    { "id": "194313453337", "name": "AG1 - ORCA", "clicks": 0, "impressions": 0, "conv": 0, "cost": 0 },
+    { "id": "198065523042", "name": "AG2 - Sea of Cortez Whale Watching", "clicks": 0, "impressions": 0, "conv": 0, "cost": 0 },
+    { "id": "198065523122", "name": "AG3 - Mobula Manta Dolphin", "clicks": 0, "impressions": 0, "conv": 0, "cost": 0 },
+    { "id": "194313453497", "name": "AG4 - WS Arbitrage (no mention)", "clicks": 0, "impressions": 0, "conv": 0, "cost": 0 },
+    { "id": "194313453577", "name": "AG5 - Whale Watching Generic", "clicks": 0, "impressions": 0, "conv": 0, "cost": 0 }
+  ],
+  "conversionActions": [
+    { "name": "Bokun Blue Expedition Booking (Offline)", "type": "PURCHASE", "primary": true },
+    { "name": "Bokun Master Seafari Booking (Offline)", "type": "PURCHASE", "primary": true },
+    { "name": "Bokun Ocean Safari Booking (Offline, Secondary)", "type": "PURCHASE", "primary": false },
+    { "name": "Contact Form Submit", "type": "SUBMIT_LEAD_FORM", "primary": false },
+    { "name": "WhatsApp Click — Multi-day Interest", "type": "CONTACT", "primary": false },
+    { "name": "Quiénes somos", "type": "PAGE_VIEW", "primary": true, "tag": "read-only" }
+  ],
+  "negKeywordList": { "name": "NEG-MULTIDAY-CORE", "count": 18, "linked": true }
+}
