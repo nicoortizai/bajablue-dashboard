@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-20T07:12:36.342Z",
+    "pulledAt": "2026-05-20T08:12:28.453Z",
     "today": "2026-05-20",
     "yesterday": "2026-05-19",
     "accountId": "2252665731",
@@ -28,7 +28,7 @@
     }
   ],
   "leads": {
-    "today": { "inquiries": 0, "bookings": 0, "asOfHour": 7, "spend": 0, "clicks": 0, "impressions": 0 },
+    "today": { "inquiries": 0, "bookings": 0, "asOfHour": 8, "spend": 0, "clicks": 0, "impressions": 1 },
     "yesterday": { "inquiries": 0, "bookings": 0, "spend": 0, "clicks": 0, "impressions": 1 },
     "projectedTomorrow": {
       "method": "trailing-7d-avg",
