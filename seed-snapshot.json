@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-20T20:12:30.000Z",
+    "pulledAt": "2026-05-20T21:12:30.000Z",
     "today": "2026-05-20",
     "yesterday": "2026-05-19",
     "accountId": "2252665731",
@@ -51,10 +51,10 @@
     "today": {
       "inquiries": 0,
       "bookings": 0,
-      "asOfHour": 20,
+      "asOfHour": 21,
       "spend": 596.465,
       "clicks": 8,
-      "impressions": 302
+      "impressions": 297
     },
     "yesterday": {
       "inquiries": 0,
@@ -72,7 +72,7 @@
   "thirtyDay": {
     "totalSpend": 596.465,
     "totalClicks": 8,
-    "totalImpressions": 303,
+    "totalImpressions": 298,
     "totalConversions": 0,
     "dailySeries": [
       {
@@ -88,7 +88,7 @@
         "cost": 596.465,
         "spend": 596.465,
         "clicks": 8,
-        "impressions": 302,
+        "impressions": 297,
         "conversions": 0
       }
     ]
@@ -98,7 +98,7 @@
       "id": "194313453577",
       "name": "AG5 - Whale Watching Generic",
       "clicks": 6,
-      "impressions": 198,
+      "impressions": 193,
       "conv": 0,
       "cost": 522.358891
     },
