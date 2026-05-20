@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-20T05:12:45.740Z",
+    "pulledAt": "2026-05-20T07:08:39.917Z",
     "today": "2026-05-20",
     "yesterday": "2026-05-19",
     "accountId": "2252665731",
@@ -28,21 +28,8 @@
     }
   ],
   "leads": {
-    "today": {
-      "inquiries": 0,
-      "bookings": 0,
-      "asOfHour": 5,
-      "spend": 0,
-      "clicks": 0,
-      "impressions": 0
-    },
-    "yesterday": {
-      "inquiries": 0,
-      "bookings": 0,
-      "spend": 0,
-      "clicks": 0,
-      "impressions": 1
-    },
+    "today": { "inquiries": 0, "bookings": 0, "asOfHour": 7, "spend": 0, "clicks": 0, "impressions": 0 },
+    "yesterday": { "inquiries": 0, "bookings": 0, "spend": 0, "clicks": 0, "impressions": 1 },
     "projectedTomorrow": {
       "method": "trailing-7d-avg",
       "insufficient": true,
@@ -52,12 +39,14 @@
   "thirtyDay": {
     "totalSpend": 0,
     "totalClicks": 0,
-    "totalImpressions": 0,
+    "totalImpressions": 1,
     "totalConversions": 0,
-    "dailySeries": []
+    "dailySeries": [
+      { "date": "2026-05-19", "cost": 0, "clicks": 0, "impressions": 1, "conversions": 0 }
+    ]
   },
   "byAdGroup7d": [
-    { "id": "198161209124", "name": "AG1 - ORCA", "clicks": 0, "impressions": 0, "conv": 0, "cost": 0 },
+    { "id": "198161209124", "name": "AG1 - ORCA", "clicks": 0, "impressions": 1, "conv": 0, "cost": 0 },
     { "id": "198065523042", "name": "AG2 - Sea of Cortez Whale Watching", "clicks": 0, "impressions": 0, "conv": 0, "cost": 0 },
     { "id": "198065523322", "name": "AG3 - Mobula Manta Dolphin", "clicks": 0, "impressions": 0, "conv": 0, "cost": 0 },
     { "id": "194313453497", "name": "AG4 - WS Arbitrage (no mention)", "clicks": 0, "impressions": 0, "conv": 0, "cost": 0 },
