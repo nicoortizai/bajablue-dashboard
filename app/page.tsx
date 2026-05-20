@@ -11,6 +11,14 @@ import { OrganicVsPaid } from "@/components/OrganicVsPaid";
 import { TopOrganicQueries } from "@/components/TopOrganicQueries";
 import { CompetitorSoV } from "@/components/CompetitorSoV";
 import { AISearchVisibility } from "@/components/AISearchVisibility";
+import { DeviceBreakdown } from "@/components/DeviceBreakdown";
+import { Demographics } from "@/components/Demographics";
+import { ScheduleHeatmap } from "@/components/ScheduleHeatmap";
+import { KeywordTable } from "@/components/KeywordTable";
+import { AdGallery } from "@/components/AdGallery";
+import { SearchTermsLog } from "@/components/SearchTermsLog";
+import { GeoMap } from "@/components/GeoMap";
+import { SectionHeader } from "@/components/SectionHeader";
 import { liveSinceLabel } from "@/lib/format";
 
 // Server-rendered. Each live data source is independent — if its env vars
@@ -24,6 +32,8 @@ export default async function DashboardPage() {
   const launchedAt = snapshot.campaigns[0]?.launchedAt;
   const liveLabel = launchedAt ? liveSinceLabel(launchedAt) : null;
   const pulledAt = snapshot.meta.pulledAt;
+  const meta = snapshot.meta;
+  const totalConv = snapshot.thirtyDay?.totalConversions ?? 0;
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 pt-3 sm:px-6 lg:px-10">
@@ -53,34 +63,104 @@ export default async function DashboardPage() {
         <SpendGauge snapshot={snapshot} />
       </div>
 
-      <h2 className="font-display mt-12 mb-5 text-xl font-semibold tracking-tight sm:text-2xl">
-        Campaigns
-      </h2>
+      {/* ──────────── 01 · Campaigns & ad groups ──────────── */}
+      <SectionHeader
+        ordinal="01"
+        eyebrow="The plumbing"
+        title="Campaigns & ad groups"
+        lede="One Search campaign, five ad groups. The auction is still picking its first horses."
+      />
       <CampaignGrid snapshot={snapshot} />
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-2">
-        <AdGroupBarChart rows={snapshot.byAdGroup7d} pulledAt={pulledAt} />
+        <AdGroupBarChart
+          rows={snapshot.byAdGroup7d}
+          pulledAt={pulledAt}
+          currencyMeta={meta}
+        />
         <ConversionDonut
           actions={snapshot.conversionActions}
           pulledAt={pulledAt}
         />
       </div>
 
-      <h2 className="font-display mt-12 mb-5 text-xl font-semibold tracking-tight sm:text-2xl">
-        30-day trend
-      </h2>
-      <TrendCharts data={snapshot.thirtyDay.dailySeries} pulledAt={pulledAt} />
-
-      <div className="mt-12 flex items-baseline justify-between">
-        <h2 className="font-display text-xl font-semibold tracking-tight sm:text-2xl">
-          Search & AI visibility
-        </h2>
-        <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-[color:var(--fg-faint)]">
-          Organic · Competitive · Generative
-        </p>
+      {/* ──────────── 02 · Device & audience ──────────── */}
+      <SectionHeader
+        ordinal="02"
+        eyebrow="Who & where"
+        title="Device, age, and gender"
+        lede="Almost everything is mobile. Age/gender takes ~50 conversions before Google will report it."
+      />
+      <div className="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-2">
+        <DeviceBreakdown
+          today={snapshot.byDeviceToday}
+          last7d={snapshot.byDevice7d}
+          meta={meta}
+        />
+        <Demographics
+          ages={snapshot.byAge7d}
+          genders={snapshot.byGender7d}
+          meta={meta}
+          conversions={totalConv}
+        />
       </div>
 
-      <div className="mt-5 grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-2">
+      {/* ──────────── 03 · Time ──────────── */}
+      <SectionHeader
+        ordinal="03"
+        eyebrow="Timing"
+        title="When the ads run"
+        lede="Day-of-week × hour-of-day. The peak windows tell you when to hold budget back versus push."
+      />
+      <ScheduleHeatmap hourly={snapshot.byHour7d} meta={meta} />
+
+      {/* ──────────── 04 · 30-day trend ──────────── */}
+      <SectionHeader
+        ordinal="04"
+        eyebrow="The arc"
+        title="30-day trend"
+        lede="Spend, clicks, impressions — what shape is the campaign drawing?"
+      />
+      <TrendCharts data={snapshot.thirtyDay.dailySeries} pulledAt={pulledAt} />
+
+      {/* ──────────── 05 · Keywords & ads ──────────── */}
+      <SectionHeader
+        ordinal="05"
+        eyebrow="The bait"
+        title="Every keyword. Every ad."
+        lede="What we're bidding on, and the headlines Google's mixing in real time."
+      />
+      <KeywordTable keywords={snapshot.byKeyword7d} meta={meta} />
+      <div className="mt-5">
+        <AdGallery ads={snapshot.byAd7d} meta={meta} />
+      </div>
+
+      {/* ──────────── 06 · The catch ──────────── */}
+      <SectionHeader
+        ordinal="06"
+        eyebrow="The catch"
+        title="Search terms & geography"
+        lede="What people actually typed, and where they typed it from."
+      />
+      <div className="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-2">
+        <SearchTermsLog terms={snapshot.searchTerms7d} meta={meta} />
+        <GeoMap geo={snapshot.geo7d} meta={meta} />
+      </div>
+
+      {/* ──────────── 07 · Search & AI visibility ──────────── */}
+      <SectionHeader
+        ordinal="07"
+        eyebrow="The neighborhood"
+        title="Search & AI visibility"
+        lede="Organic, competitive, and generative — paid ads are only one current in the channel."
+        trailing={
+          <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-[color:var(--fg-faint)]">
+            Organic · Competitive · Generative
+          </p>
+        }
+      />
+
+      <div className="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-2">
         <OrganicVsPaid
           organic={snapshot.organic}
           thirtyDay={snapshot.thirtyDay}

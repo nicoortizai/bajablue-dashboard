@@ -4,7 +4,8 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { FrostedCard } from "./FrostedCard";
 import { SourceBadge } from "./SourceBadge";
-import { formatCurrency, formatNumber } from "@/lib/format";
+import { formatNumber } from "@/lib/format";
+import { moneyInline, type CurrencyMeta } from "@/lib/currency";
 import type { AdGroupStats } from "@/types/dashboard";
 
 interface AdGroupBarChartProps {
@@ -13,6 +14,8 @@ interface AdGroupBarChartProps {
   metric?: "auto" | "cost" | "impressions";
   /** ISO timestamp of the snapshot pull — used in the source badge footer. */
   pulledAt: string;
+  /** Currency meta for formatting cost values. */
+  currencyMeta?: CurrencyMeta;
 }
 
 const TIER_COLORS = [
@@ -27,6 +30,7 @@ export function AdGroupBarChart({
   rows,
   metric = "auto",
   pulledAt,
+  currencyMeta,
 }: AdGroupBarChartProps) {
   const useCost =
     metric === "cost" ||
@@ -36,9 +40,11 @@ export function AdGroupBarChart({
     id: r.id,
     name: cleanName(r.name),
     value: useCost ? r.cost : r.impressions,
+    isCost: useCost,
+    cost: r.cost,
     secondary: useCost
       ? `${formatNumber(r.clicks)} clicks · ${formatNumber(r.conv)} conv`
-      : `${formatNumber(r.clicks)} clicks · ${formatCurrency(r.cost)}`,
+      : `${formatNumber(r.clicks)} clicks · ${moneyInline(r.cost, currencyMeta, { precise: true })}`,
   }));
 
   const max = Math.max(1, ...items.map((i) => i.value));
@@ -65,7 +71,9 @@ export function AdGroupBarChart({
                   {row.name}
                 </p>
                 <p className="shrink-0 text-sm tabular text-[color:var(--fg-soft)]">
-                  {useCost ? formatCurrency(row.value) : formatNumber(row.value)}
+                  {useCost
+                    ? moneyInline(row.cost, currencyMeta, { precise: true })
+                    : formatNumber(row.value)}
                 </p>
               </div>
               <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-[color:var(--border)]">

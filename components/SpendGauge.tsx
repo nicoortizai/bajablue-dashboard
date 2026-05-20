@@ -3,10 +3,9 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { FrostedCard } from "./FrostedCard";
-import { AnimatedNumber } from "./AnimatedNumber";
 import { SourceBadge } from "./SourceBadge";
 import { projectMtd } from "@/lib/projections";
-import { formatCurrency } from "@/lib/format";
+import { moneyParts } from "@/lib/currency";
 import type { Snapshot } from "@/types/dashboard";
 
 interface SpendGaugeProps {
@@ -18,35 +17,42 @@ export function SpendGauge({ snapshot }: SpendGaugeProps) {
   const progress = mtd.monthlyBudget > 0
     ? Math.min(1, mtd.mtdSpend / mtd.monthlyBudget)
     : 0;
+  const meta = snapshot.meta;
+  const spend = moneyParts(mtd.mtdSpend, meta);
+  const budget = moneyParts(mtd.monthlyBudget, meta);
+  const runRate = moneyParts(mtd.dailyRunRate, meta, { precise: true });
+  const eom = moneyParts(mtd.projectedEomSpend, meta);
 
   return (
     <FrostedCard className="px-6 py-7 sm:px-8 sm:py-8">
-      <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-[color:var(--fg-faint)]">
             Month-to-date spend
           </p>
-          <p className="mt-2 font-display text-4xl font-semibold sm:text-5xl">
-            <AnimatedNumber
-              value={mtd.mtdSpend}
-              immediate
-              format={(v) => formatCurrency(v)}
-            />
+          <p className="mt-2 font-display text-4xl font-semibold tabular sm:text-5xl">
+            {spend.primary}
             <span className="ml-2 text-base font-medium text-[color:var(--fg-mute)]">
-              of {formatCurrency(mtd.monthlyBudget)}
+              of {budget.primary}
             </span>
           </p>
+          {spend.shadow ? (
+            <p className="mt-1 text-xs tabular text-[color:var(--fg-faint)]">
+              {spend.shadow} of {budget.shadow.replace("≈ ", "")}
+            </p>
+          ) : null}
         </div>
-        <div className="text-right">
+        <div className="text-left sm:text-right">
           <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-[color:var(--fg-faint)]">
             Day {mtd.dayOfMonth} of {mtd.daysInMonth}
           </p>
           <p className="mt-2 text-sm text-[color:var(--fg-soft)] tabular">
-            Run rate {formatCurrency(mtd.dailyRunRate, { precise: true })}
+            Run rate {runRate.primary}
             <span className="text-[color:var(--fg-faint)]"> /day</span>
           </p>
           <p className="text-xs text-[color:var(--fg-faint)] tabular">
-            Projected EOM {formatCurrency(mtd.projectedEomSpend)}
+            Projected EOM {eom.primary}
+            {eom.shadow ? <span className="ml-1">· {eom.shadow}</span> : null}
           </p>
         </div>
       </div>

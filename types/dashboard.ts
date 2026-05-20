@@ -76,6 +76,76 @@ export interface NegKeywordList {
   linked: boolean;
 }
 
+// ---------- Phase 2: Device / Demographics / Scheduling / Keywords / Ads / Search Terms / Geo ----------
+
+export interface DeviceStats {
+  device: string; // "MOBILE" | "DESKTOP" | "TABLET" | "OTHER" | "UNKNOWN"
+  cost: number;
+  impressions: number;
+  clicks: number;
+}
+
+export interface AgeRangeStats {
+  ageRange: string; // e.g. "AGE_RANGE_25_34"
+  cost: number;
+  impressions: number;
+  clicks: number;
+  conversions: number;
+}
+
+export interface GenderStats {
+  gender: string; // "MALE" | "FEMALE" | "UNDETERMINED"
+  cost: number;
+  impressions: number;
+  clicks: number;
+  conversions: number;
+}
+
+export interface HourlyStats {
+  dayOfWeek: string; // "MONDAY"..."SUNDAY" | "UNKNOWN"
+  hour: number; // 0–23
+  cost: number;
+  impressions: number;
+  clicks: number;
+}
+
+export interface KeywordStats {
+  text: string;
+  matchType: string; // "EXACT" | "PHRASE" | "BROAD"
+  adGroup: string;
+  cost: number;
+  impressions: number;
+  clicks: number;
+  conversions: number;
+}
+
+export interface AdStats {
+  adId: string;
+  adGroup: string;
+  headlines: string[];
+  cost: number;
+  impressions: number;
+  clicks: number;
+}
+
+export interface SearchTermStats {
+  term: string;
+  cost: number;
+  impressions: number;
+  clicks: number;
+}
+
+export interface GeoStats {
+  cityId: string;
+  /** Optional human-readable label when resolved. */
+  label?: string;
+  /** ISO-2 country code when resolved. */
+  country?: string;
+  cost: number;
+  impressions: number;
+  clicks: number;
+}
+
 // ---------- Organic / SEO ----------
 
 export interface OrganicQuery {
@@ -157,6 +227,12 @@ export interface Snapshot {
     note?: string;
     /** True when at least one campaign value came from the live Ads API. */
     liveAds?: boolean;
+    /** Account currency — Google Ads reports all metrics in this. */
+    currency?: string;
+    /** FX rate from `currency` to USD (1 unit local = fxRate USD)? No — multiplier convention: USD = localAmount / fxRate. So MXN/USD ~ 17.3. */
+    fxRate?: number;
+    /** ISO timestamp the FX rate was fetched. */
+    fxRateAsOf?: string;
   };
   campaigns: Campaign[];
   leads: {
@@ -176,4 +252,15 @@ export interface Snapshot {
   aiVisibility?: AiVisibilityBlock;
   /** Per-source readiness — UI uses this to render "Activate" empty-states. */
   sources: SourcesBlock;
+
+  // ---------- Phase 2 additions ----------
+  byDeviceToday?: DeviceStats[];
+  byDevice7d?: DeviceStats[];
+  byAge7d?: AgeRangeStats[];
+  byGender7d?: GenderStats[];
+  byHour7d?: HourlyStats[];
+  byKeyword7d?: KeywordStats[];
+  byAd7d?: AdStats[];
+  searchTerms7d?: SearchTermStats[];
+  geo7d?: GeoStats[];
 }
