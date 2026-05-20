@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-20T17:35:12.1435Z",
+    "pulledAt": "2026-05-20T18:13:00.000Z",
     "today": "2026-05-20",
     "yesterday": "2026-05-19",
     "accountId": "2252665731",
@@ -51,10 +51,10 @@
     "today": {
       "inquiries": 0,
       "bookings": 0,
-      "asOfHour": 17,
-      "spend": 303.515,
-      "clicks": 6,
-      "impressions": 171
+      "asOfHour": 18,
+      "spend": 514.255,
+      "clicks": 7,
+      "impressions": 246
     },
     "yesterday": {
       "inquiries": 0,
@@ -70,9 +70,9 @@
     }
   },
   "thirtyDay": {
-    "totalSpend": 303.515,
-    "totalClicks": 6,
-    "totalImpressions": 172,
+    "totalSpend": 514.255,
+    "totalClicks": 7,
+    "totalImpressions": 247,
     "totalConversions": 0,
     "dailySeries": [
       {
@@ -84,9 +84,9 @@
       },
       {
         "date": "2026-05-20",
-        "cost": 303.515,
-        "clicks": 6,
-        "impressions": 171,
+        "cost": 514.255,
+        "clicks": 7,
+        "impressions": 246,
         "conversions": 0
       }
     ]
@@ -95,16 +95,16 @@
     {
       "id": "194313453577",
       "name": "AG5 - Whale Watching Generic",
-      "clicks": 4,
-      "impressions": 90,
+      "clicks": 5,
+      "impressions": 150,
       "conv": 0,
-      "cost": 229.408891
+      "cost": 440.148891
     },
     {
       "id": "198161209124",
       "name": "AG1 - ORCA",
       "clicks": 1,
-      "impressions": 5,
+      "impressions": 9,
       "conv": 0,
       "cost": 64.17
     },
@@ -112,7 +112,7 @@
       "id": "194313453497",
       "name": "AG4 - WS Arbitrage (no mention)",
       "clicks": 1,
-      "impressions": 44,
+      "impressions": 54,
       "conv": 0,
       "cost": 9.936109
     },
@@ -120,7 +120,7 @@
       "id": "198065523042",
       "name": "AG2 - Sea of Cortez Whale Watching",
       "clicks": 0,
-      "impressions": 32,
+      "impressions": 33,
       "conv": 0,
       "cost": 0
     },
@@ -174,40 +174,40 @@
   "byDeviceToday": [
     {
       "device": "MOBILE",
-      "cost": 303.515,
-      "impressions": 116,
-      "clicks": 6
+      "cost": 264.875,
+      "impressions": 176,
+      "clicks": 5
     },
     {
       "device": "DESKTOP",
-      "cost": 0,
-      "impressions": 52,
-      "clicks": 0
+      "cost": 249.38,
+      "impressions": 63,
+      "clicks": 2
     },
     {
       "device": "TABLET",
       "cost": 0,
-      "impressions": 3,
+      "impressions": 7,
       "clicks": 0
     }
   ],
   "byDevice7d": [
     {
       "device": "MOBILE",
-      "cost": 303.515,
-      "impressions": 116,
-      "clicks": 6
+      "cost": 264.875,
+      "impressions": 176,
+      "clicks": 5
     },
     {
       "device": "DESKTOP",
-      "cost": 0,
-      "impressions": 52,
-      "clicks": 0
+      "cost": 249.38,
+      "impressions": 63,
+      "clicks": 2
     },
     {
       "device": "TABLET",
       "cost": 0,
-      "impressions": 3,
+      "impressions": 7,
       "clicks": 0
     }
   ],
@@ -310,7 +310,7 @@
     {
       "dayOfWeek": "WEDNESDAY",
       "hour": 4,
-      "cost": 0,
+      "cost": 9.936109,
       "impressions": 17,
       "clicks": 1
     },
@@ -324,29 +324,29 @@
     {
       "dayOfWeek": "WEDNESDAY",
       "hour": 6,
-      "cost": 0,
+      "cost": 6.508891,
       "impressions": 1,
       "clicks": 1
     },
     {
       "dayOfWeek": "WEDNESDAY",
       "hour": 10,
-      "cost": 0,
-      "impressions": 30,
-      "clicks": 2
+      "cost": 38.64,
+      "impressions": 19,
+      "clicks": 1
     },
     {
       "dayOfWeek": "WEDNESDAY",
       "hour": 11,
-      "cost": 0,
-      "impressions": 38,
-      "clicks": 2
+      "cost": 459.17,
+      "impressions": 115,
+      "clicks": 4
     },
     {
-      "dayOfWeek": "TUESDAY",
-      "hour": 22,
+      "dayOfWeek": "WEDNESDAY",
+      "hour": 12,
       "cost": 0,
-      "impressions": 1,
+      "impressions": 11,
       "clicks": 0
     }
   ],
@@ -355,9 +355,9 @@
       "text": "whale watching tour",
       "matchType": "PHRASE",
       "adGroup": "AG5 - Whale Watching Generic",
-      "cost": 77.28,
-      "impressions": 49,
-      "clicks": 2,
+      "cost": 288.02,
+      "impressions": 97,
+      "clicks": 3,
       "conversions": 0
     },
     {
@@ -365,16 +365,7 @@
       "matchType": "PHRASE",
       "adGroup": "AG5 - Whale Watching Generic",
       "cost": 145.62,
-      "impressions": 5,
-      "clicks": 1,
-      "conversions": 0
-    },
-    {
-      "text": "swim with orcas",
-      "matchType": "PHRASE",
-      "adGroup": "AG1 - ORCA",
-      "cost": 64.17,
-      "impressions": 1,
+      "impressions": 15,
       "clicks": 1,
       "conversions": 0
     },
@@ -383,13 +374,67 @@
       "matchType": "PHRASE",
       "adGroup": "AG5 - Whale Watching Generic",
       "cost": 0,
+      "impressions": 9,
+      "clicks": 0,
+      "conversions": 0
+    },
+    {
+      "text": "swim with whale sharks",
+      "matchType": "EXACT",
+      "adGroup": "AG4 - WS Arbitrage (no mention)",
+      "cost": 0,
       "impressions": 7,
       "clicks": 0,
       "conversions": 0
     },
     {
+      "text": "snorkel with whale sharks",
+      "matchType": "EXACT",
+      "adGroup": "AG4 - WS Arbitrage (no mention)",
+      "cost": 0,
+      "impressions": 2,
+      "clicks": 0,
+      "conversions": 0
+    },
+    {
+      "text": "swim with whale sharks la paz",
+      "matchType": "EXACT",
+      "adGroup": "AG4 - WS Arbitrage (no mention)",
+      "cost": 0,
+      "impressions": 2,
+      "clicks": 0,
+      "conversions": 0
+    },
+    {
+      "text": "orca whale watching",
+      "matchType": "EXACT",
+      "adGroup": "AG1 - ORCA",
+      "cost": 0,
+      "impressions": 2,
+      "clicks": 0,
+      "conversions": 0
+    },
+    {
+      "text": "orca encounter",
+      "matchType": "EXACT",
+      "adGroup": "AG1 - ORCA",
+      "cost": 0,
+      "impressions": 2,
+      "clicks": 0,
+      "conversions": 0
+    },
+    {
+      "text": "swim with orcas",
+      "matchType": "EXACT",
+      "adGroup": "AG1 - ORCA",
+      "cost": 64.17,
+      "impressions": 2,
+      "clicks": 1,
+      "conversions": 0
+    },
+    {
       "text": "swim with whale sharks mexico",
-      "matchType": "PHRASE",
+      "matchType": "EXACT",
       "adGroup": "AG4 - WS Arbitrage (no mention)",
       "cost": 0,
       "impressions": 1,
@@ -406,17 +451,8 @@
       "conversions": 0
     },
     {
-      "text": "swim with whale sharks la paz",
-      "matchType": "PHRASE",
-      "adGroup": "AG4 - WS Arbitrage (no mention)",
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "whale watching mexico",
-      "matchType": "PHRASE",
+      "text": "whale watching baja",
+      "matchType": "EXACT",
       "adGroup": "AG2 - Sea of Cortez Whale Watching",
       "cost": 0,
       "impressions": 1,
@@ -424,16 +460,16 @@
       "conversions": 0
     },
     {
-      "text": "orca whale watching",
-      "matchType": "PHRASE",
-      "adGroup": "AG1 - ORCA",
+      "text": "whale watching mexico",
+      "matchType": "EXACT",
+      "adGroup": "AG2 - Sea of Cortez Whale Watching",
       "cost": 0,
       "impressions": 1,
       "clicks": 0,
       "conversions": 0
     },
     {
-      "text": "killer whales in mexico",
+      "text": "killer whale expedition",
       "matchType": "PHRASE",
       "adGroup": "AG1 - ORCA",
       "cost": 0,
@@ -444,28 +480,16 @@
   ],
   "byAd7d": [
     {
-      "adId": "808955051261",
-      "adGroup": "AG1 - ORCA",
+      "adId": "808955055308",
+      "adGroup": "AG5 - Whale Watching Generic",
       "headlines": [
-        "Orca Encounter in Baja Mexico",
-        "Wild Orcas, Not a Tank",
-        "Bajablue Multi-Day Expedition"
+        "Mexico Whale Watching Tour",
+        "Sea of Cortez Expedition",
+        "Multi-Day Wildlife Tour Baja"
       ],
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "adId": "808839790515",
-      "adGroup": "AG1 - ORCA",
-      "headlines": [
-        "5 Water Days \u00b7 7 Days Total",
-        "Master Seafari $54k MXN",
-        "Sea of Cortez Expedition"
-      ],
-      "cost": 0,
-      "impressions": 0,
-      "clicks": 0
+      "cost": 440.148891,
+      "impressions": 150,
+      "clicks": 5
     },
     {
       "adId": "808840763010",
@@ -475,21 +499,9 @@
         "Baja Mexico Wildlife Tour",
         "Bajablue Multi-Day Expedition"
       ],
-      "cost": 0,
-      "impressions": 0,
-      "clicks": 0
-    },
-    {
-      "adId": "808874670895",
-      "adGroup": "AG3 - Mobula Manta Dolphin",
-      "headlines": [
-        "Swim with Mobula Rays Mexico",
-        "Sea of Cortez Multi-Day",
-        "Mobula Aggregations + Dolphins"
-      ],
-      "cost": 0,
-      "impressions": 0,
-      "clicks": 0
+      "cost": 9.936109,
+      "impressions": 54,
+      "clicks": 1
     },
     {
       "adId": "808955046164",
@@ -500,16 +512,40 @@
         "3 Water Days \u00b7 5 Days Total"
       ],
       "cost": 0,
-      "impressions": 0,
+      "impressions": 33,
       "clicks": 0
     },
     {
-      "adId": "808955055308",
-      "adGroup": "AG5 - Whale Watching Generic",
+      "adId": "808955051261",
+      "adGroup": "AG1 - ORCA",
       "headlines": [
-        "Mexico Whale Watching Tour",
-        "Sea of Cortez Expedition",
-        "Multi-Day Wildlife Tour Baja"
+        "Orca Encounter in Baja Mexico",
+        "Wild Orcas, Not a Tank",
+        "Bajablue Multi-Day Expedition"
+      ],
+      "cost": 64.17,
+      "impressions": 7,
+      "clicks": 1
+    },
+    {
+      "adId": "808839790515",
+      "adGroup": "AG1 - ORCA",
+      "headlines": [
+        "5 Water Days \u00b7 7 Days Total",
+        "Master Seafari $54k MXN",
+        "Sea of Cortez Expedition"
+      ],
+      "cost": 0,
+      "impressions": 2,
+      "clicks": 0
+    },
+    {
+      "adId": "808874670895",
+      "adGroup": "AG3 - Mobula Manta Dolphin",
+      "headlines": [
+        "Swim with Mobula Rays Mexico",
+        "Sea of Cortez Multi-Day",
+        "Mobula Aggregations + Dolphins"
       ],
       "cost": 0,
       "impressions": 0,
