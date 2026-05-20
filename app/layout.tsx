@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "Daily Google Ads pulse across Nico's operator portfolio. Apple-style. Single page. No browser tabs needed.",
   applicationName: "BajaSwarm Dashboard",
   formatDetection: { telephone: false, email: false, address: false },
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+  },
   openGraph: {
     title: "BajaSwarm · Ad Dashboard",
     description: "Daily ad pulse, operator-style.",
