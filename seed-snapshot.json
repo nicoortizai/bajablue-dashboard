@@ -1,14 +1,14 @@
 {
   "meta": {
-    "pulledAt": "2026-05-20T17:12:42.265Z",
+    "pulledAt": "2026-05-20T17:00:00.000Z",
     "today": "2026-05-20",
     "yesterday": "2026-05-19",
     "accountId": "2252665731",
     "accountName": "BajaBlue",
-    "source": "live-via-NotFair-MCP-from-rick-agent-cron",
     "currency": "MXN",
     "fxRate": 17.30,
-    "fxRateAsOf": "2026-05-20T16:35Z"
+    "fxRateAsOf": "2026-05-20T16:35:00Z",
+    "source": "live-via-NotFair-MCP-from-rick-agent-cron"
   },
   "campaigns": [
     {
@@ -17,12 +17,10 @@
       "status": "ENABLED",
       "channel": "SEARCH",
       "biddingStrategy": "MAXIMIZE_CONVERSIONS",
-      "targetCpa": 1300,
-      "dailyBudget": 570,
-      "monthlyBudgetTarget": 17300,
-      "monthlyBudgetTargetUsd": 1000,
+      "targetCpa": 75,
+      "dailyBudget": 32.89,
+      "monthlyBudgetTarget": 1000,
       "launchedAt": "2026-05-20T02:48:00Z",
-      "currencyCorrectedAt": "2026-05-20T17:00:00Z",
       "adGroups": [
         { "id": "198161209124", "name": "AG1 - ORCA" },
         { "id": "198065523042", "name": "AG2 - Sea of Cortez Whale Watching" },
@@ -33,8 +31,21 @@
     }
   ],
   "leads": {
-    "today": { "inquiries": 0, "bookings": 0, "asOfHour": 17, "spend": 16.445, "clicks": 2, "impressions": 103 },
-    "yesterday": { "inquiries": 0, "bookings": 0, "spend": 0, "clicks": 0, "impressions": 1 },
+    "today": {
+      "inquiries": 0,
+      "bookings": 0,
+      "asOfHour": 17,
+      "spend": 16.445,
+      "clicks": 2,
+      "impressions": 103
+    },
+    "yesterday": {
+      "inquiries": 0,
+      "bookings": 0,
+      "spend": 0,
+      "clicks": 0,
+      "impressions": 1
+    },
     "projectedTomorrow": {
       "method": "trailing-7d-avg",
       "insufficient": true,
@@ -42,12 +53,13 @@
     }
   },
   "thirtyDay": {
-    "totalSpend": 0,
-    "totalClicks": 0,
-    "totalImpressions": 1,
+    "totalSpend": 16.445,
+    "totalClicks": 2,
+    "totalImpressions": 104,
     "totalConversions": 0,
     "dailySeries": [
-      { "date": "2026-05-19", "cost": 0, "clicks": 0, "impressions": 1, "conversions": 0 }
+      { "date": "2026-05-19", "cost": 0, "clicks": 0, "impressions": 1, "conversions": 0 },
+      { "date": "2026-05-20", "cost": 16.445, "clicks": 2, "impressions": 103, "conversions": 0 }
     ]
   },
   "byAdGroup7d": [
@@ -65,5 +77,80 @@
     { "name": "WhatsApp Click — Multi-day Interest", "type": "CONTACT", "primary": false },
     { "name": "Quiénes somos", "type": "PAGE_VIEW", "primary": true, "tag": "read-only" }
   ],
-  "negKeywordList": { "name": "NEG-MULTIDAY-CORE", "count": 18, "linked": true }
+  "negKeywordList": {
+    "name": "NEG-MULTIDAY-CORE",
+    "count": 18,
+    "linked": true
+  },
+  "byDeviceToday": [
+    { "device": "MOBILE", "cost": 16.445, "impressions": 99, "clicks": 2 },
+    { "device": "DESKTOP", "cost": 0, "impressions": 3, "clicks": 0 },
+    { "device": "TABLET", "cost": 0, "impressions": 1, "clicks": 0 }
+  ],
+  "byDevice7d": [
+    { "device": "MOBILE", "cost": 16.445, "impressions": 100, "clicks": 2 },
+    { "device": "DESKTOP", "cost": 0, "impressions": 3, "clicks": 0 },
+    { "device": "TABLET", "cost": 0, "impressions": 1, "clicks": 0 }
+  ],
+  "byAge7d": [
+    { "ageRange": "AGE_RANGE_18_24", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "ageRange": "AGE_RANGE_25_34", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "ageRange": "AGE_RANGE_35_44", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "ageRange": "AGE_RANGE_45_54", "cost": 0, "impressions": 1, "clicks": 0, "conversions": 0 },
+    { "ageRange": "AGE_RANGE_55_64", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "ageRange": "AGE_RANGE_65_UP", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "ageRange": "AGE_RANGE_UNDETERMINED", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 }
+  ],
+  "byGender7d": [
+    { "gender": "MALE", "cost": 0, "impressions": 1, "clicks": 0, "conversions": 0 },
+    { "gender": "FEMALE", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "gender": "UNDETERMINED", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 }
+  ],
+  "byHour7d": [
+    { "dayOfWeek": "TUESDAY", "hour": 22, "cost": 0, "impressions": 1, "clicks": 0 }
+  ],
+  "byKeyword7d": [
+    { "text": "killer whales in mexico", "matchType": "PHRASE", "adGroup": "AG1 - ORCA", "cost": 0, "impressions": 1, "clicks": 0, "conversions": 0 },
+    { "text": "swim with whale sharks", "matchType": "EXACT", "adGroup": "AG4 - WS Arbitrage (no mention)", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "snorkel with whale sharks", "matchType": "EXACT", "adGroup": "AG4 - WS Arbitrage (no mention)", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "swim with whale sharks mexico", "matchType": "EXACT", "adGroup": "AG4 - WS Arbitrage (no mention)", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "whale shark tour", "matchType": "PHRASE", "adGroup": "AG4 - WS Arbitrage (no mention)", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "swim with whale sharks la paz", "matchType": "EXACT", "adGroup": "AG4 - WS Arbitrage (no mention)", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "whale shark tour la paz", "matchType": "EXACT", "adGroup": "AG4 - WS Arbitrage (no mention)", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "swim with whale sharks la paz mexico", "matchType": "EXACT", "adGroup": "AG4 - WS Arbitrage (no mention)", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "whale watching tour", "matchType": "PHRASE", "adGroup": "AG5 - Whale Watching Generic", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "whale watching cruise", "matchType": "PHRASE", "adGroup": "AG5 - Whale Watching Generic", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "whale tour", "matchType": "PHRASE", "adGroup": "AG5 - Whale Watching Generic", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "whale watching baja california", "matchType": "EXACT", "adGroup": "AG2 - Sea of Cortez Whale Watching", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "sea of cortez tour", "matchType": "EXACT", "adGroup": "AG2 - Sea of Cortez Whale Watching", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "magdalena bay whale watching", "matchType": "EXACT", "adGroup": "AG2 - Sea of Cortez Whale Watching", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "whale watching baja", "matchType": "EXACT", "adGroup": "AG2 - Sea of Cortez Whale Watching", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "whale watching baja peninsula", "matchType": "EXACT", "adGroup": "AG2 - Sea of Cortez Whale Watching", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "whale watching mexico", "matchType": "EXACT", "adGroup": "AG2 - Sea of Cortez Whale Watching", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "snorkeling sea of cortez", "matchType": "EXACT", "adGroup": "AG2 - Sea of Cortez Whale Watching", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "whale watching sea of cortez", "matchType": "EXACT", "adGroup": "AG2 - Sea of Cortez Whale Watching", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "baja mexico whale watching", "matchType": "EXACT", "adGroup": "AG2 - Sea of Cortez Whale Watching", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "baja whale watching", "matchType": "EXACT", "adGroup": "AG2 - Sea of Cortez Whale Watching", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "swim with dolphins mexico", "matchType": "EXACT", "adGroup": "AG3 - Mobula Manta Dolphin", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "swim with manta rays", "matchType": "EXACT", "adGroup": "AG3 - Mobula Manta Dolphin", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "manta ray mexico", "matchType": "EXACT", "adGroup": "AG3 - Mobula Manta Dolphin", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "swim with mobula", "matchType": "PHRASE", "adGroup": "AG3 - Mobula Manta Dolphin", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "mobula ray sea of cortez", "matchType": "PHRASE", "adGroup": "AG3 - Mobula Manta Dolphin", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "orca watching", "matchType": "EXACT", "adGroup": "AG1 - ORCA", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "killer whale watching", "matchType": "EXACT", "adGroup": "AG1 - ORCA", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "orca whale watching", "matchType": "EXACT", "adGroup": "AG1 - ORCA", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 },
+    { "text": "orca tour", "matchType": "EXACT", "adGroup": "AG1 - ORCA", "cost": 0, "impressions": 0, "clicks": 0, "conversions": 0 }
+  ],
+  "byAd7d": [
+    { "adId": "808955051261", "adGroup": "AG1 - ORCA", "headlines": ["Orca Encounter in Baja Mexico", "Wild Orcas, Not a Tank", "Bajablue Multi-Day Expedition"], "cost": 0, "impressions": 1, "clicks": 0 },
+    { "adId": "808839790515", "adGroup": "AG1 - ORCA", "headlines": ["5 Water Days · 7 Days Total", "Master Seafari $54k MXN", "Sea of Cortez Expedition"], "cost": 0, "impressions": 0, "clicks": 0 },
+    { "adId": "808840763010", "adGroup": "AG4 - WS Arbitrage (no mention)", "headlines": ["Sea of Cortez Snorkel Tour", "Baja Mexico Wildlife Tour", "Bajablue Multi-Day Expedition"], "cost": 0, "impressions": 0, "clicks": 0 },
+    { "adId": "808874670895", "adGroup": "AG3 - Mobula Manta Dolphin", "headlines": ["Swim with Mobula Rays Mexico", "Sea of Cortez Multi-Day", "Mobula Aggregations + Dolphins"], "cost": 0, "impressions": 0, "clicks": 0 },
+    { "adId": "808955046164", "adGroup": "AG2 - Sea of Cortez Whale Watching", "headlines": ["Baja Whale Watching Mexico", "Sea of Cortez Expedition", "3 Water Days · 5 Days Total"], "cost": 0, "impressions": 0, "clicks": 0 },
+    { "adId": "808955055308", "adGroup": "AG5 - Whale Watching Generic", "headlines": ["Mexico Whale Watching Tour", "Sea of Cortez Expedition", "Multi-Day Wildlife Tour Baja"], "cost": 0, "impressions": 0, "clicks": 0 }
+  ],
+  "searchTerms7d": [],
+  "geo7d": [
+    { "cityId": "geoTargetConstants/1015592", "label": "Kealakekua, Hawaii, US", "country": "US", "cost": 0, "impressions": 1, "clicks": 0 }
+  ]
 }
