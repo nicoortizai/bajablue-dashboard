@@ -121,7 +121,11 @@ export default async function DashboardPage() {
         title="30-day trend"
         lede="Spend, clicks, impressions — what shape is the campaign drawing?"
       />
-      <TrendCharts data={snapshot.thirtyDay.dailySeries} pulledAt={pulledAt} />
+      <TrendCharts
+        data={snapshot.thirtyDay.dailySeries}
+        pulledAt={pulledAt}
+        currencyMeta={meta}
+      />
 
       {/* ──────────── 05 · Keywords & ads ──────────── */}
       <SectionHeader

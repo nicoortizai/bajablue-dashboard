@@ -12,7 +12,8 @@ import {
 } from "recharts";
 import { FrostedCard } from "./FrostedCard";
 import { SourceBadge } from "./SourceBadge";
-import { shortDate, formatCurrency, formatNumber } from "@/lib/format";
+import { shortDate, formatNumber } from "@/lib/format";
+import { moneyParts, type CurrencyMeta } from "@/lib/currency";
 import type { DailyPoint } from "@/types/dashboard";
 
 interface TrendChartProps {
@@ -25,6 +26,18 @@ interface TrendChartProps {
   delay?: number;
   /** ISO snapshot timestamp for the source badge. */
   pulledAt: string;
+  /** Currency meta for currency-aware money formatting. */
+  currencyMeta?: CurrencyMeta;
+}
+
+function fmt(value: number, format: "currency" | "number", meta?: CurrencyMeta): string {
+  if (format === "currency") return moneyParts(value, meta).primary;
+  return formatNumber(value);
+}
+
+function fmtUsdShadow(value: number, format: "currency" | "number", meta?: CurrencyMeta): string {
+  if (format !== "currency") return "";
+  return moneyParts(value, meta).shadow;
 }
 
 export function TrendChart({
@@ -36,6 +49,7 @@ export function TrendChart({
   gradientTo = "#0F2832",
   delay = 0,
   pulledAt,
+  currencyMeta,
 }: TrendChartProps) {
   const hasData = data.length > 0;
   const id = React.useId().replace(/[^a-zA-Z0-9_-]/g, "");
@@ -45,8 +59,8 @@ export function TrendChart({
 
   const total =
     data.reduce((acc, d) => acc + (Number(d[dataKey] ?? 0) || 0), 0) || 0;
-  const formatted =
-    format === "currency" ? formatCurrency(total) : formatNumber(total);
+  const formatted = fmt(total, format, currencyMeta);
+  const shadow = fmtUsdShadow(total, format, currencyMeta);
 
   return (
     <FrostedCard delay={delay} className="px-6 py-7 sm:px-8 sm:py-8">
@@ -55,9 +69,14 @@ export function TrendChart({
           <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-[color:var(--fg-faint)]">
             {title}
           </p>
-          <p className="font-display mt-2 text-3xl font-semibold sm:text-4xl">
+          <p className="font-display mt-2 text-3xl font-semibold tabular sm:text-4xl">
             {formatted}
           </p>
+          {shadow ? (
+            <p className="mt-0.5 text-[11px] tabular text-[color:var(--fg-faint)]">
+              {shadow}
+            </p>
+          ) : null}
         </div>
         <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-[color:var(--fg-faint)]">
           Last 30 days
@@ -97,14 +116,20 @@ export function TrendChart({
               <YAxis
                 tickLine={false}
                 axisLine={false}
-                width={40}
+                width={48}
                 tickFormatter={(v) =>
                   format === "currency" ? `$${Math.round(Number(v))}` : String(v)
                 }
               />
               <Tooltip
                 cursor={{ stroke: "var(--border-strong)", strokeDasharray: 3 }}
-                content={<FrostedTooltip format={format} dataKey={dataKey} />}
+                content={
+                  <FrostedTooltip
+                    format={format}
+                    dataKey={dataKey}
+                    currencyMeta={currencyMeta}
+                  />
+                }
               />
               <Area
                 type="monotone"
@@ -132,17 +157,19 @@ function FrostedTooltip({
   label,
   format,
   dataKey,
+  currencyMeta,
 }: {
   active?: boolean;
   payload?: Array<{ value: number }>;
   label?: string;
   format: "currency" | "number";
   dataKey: keyof DailyPoint;
+  currencyMeta?: CurrencyMeta;
 }) {
   if (!active || !payload?.length) return null;
   const value = payload[0]?.value ?? 0;
-  const display =
-    format === "currency" ? formatCurrency(value) : formatNumber(value);
+  const display = fmt(value, format, currencyMeta);
+  const shadow = fmtUsdShadow(value, format, currencyMeta);
   return (
     <div
       className="rounded-xl border border-[color:var(--border)] bg-[color:var(--bg-elevated)]/90 px-3 py-2 text-xs text-[color:var(--fg)] backdrop-blur-xl"
@@ -154,6 +181,11 @@ function FrostedTooltip({
       <p className="mt-0.5 font-display text-base font-semibold tabular">
         {display}
       </p>
+      {shadow ? (
+        <p className="mt-0.5 text-[10px] tabular text-[color:var(--fg-faint)]">
+          {shadow}
+        </p>
+      ) : null}
       <p className="mt-0.5 text-[10px] text-[color:var(--fg-faint)]">
         {String(dataKey)}
       </p>

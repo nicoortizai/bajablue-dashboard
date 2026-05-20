@@ -31,6 +31,7 @@ export function CampaignGrid({ snapshot }: CampaignGridProps) {
           conv7d={totalConv7d}
           trend={trend7d}
           delay={i * 0.06}
+          currencyMeta={snapshot.meta}
         />
       ))}
     </section>

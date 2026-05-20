@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import { Area, AreaChart, ResponsiveContainer } from "recharts";
 import { FrostedCard } from "./FrostedCard";
 import type { Campaign, DailyPoint } from "@/types/dashboard";
-import { formatCurrency, formatNumber, liveSinceLabel } from "@/lib/format";
+import { formatNumber, liveSinceLabel } from "@/lib/format";
+import { moneyParts, type CurrencyMeta } from "@/lib/currency";
 
 interface CampaignCardProps {
   campaign: Campaign;
@@ -14,6 +15,7 @@ interface CampaignCardProps {
   conv7d: number;
   trend?: DailyPoint[];
   delay?: number;
+  currencyMeta?: CurrencyMeta;
 }
 
 export function CampaignCard({
@@ -23,6 +25,7 @@ export function CampaignCard({
   conv7d,
   trend,
   delay = 0,
+  currencyMeta,
 }: CampaignCardProps) {
   const cpa = conv7d > 0 ? spend7d / conv7d : 0;
   const enabled = campaign.status === "ENABLED";
@@ -39,19 +42,21 @@ export function CampaignCard({
             </h3>
             <p className="mt-0.5 text-xs text-[color:var(--fg-faint)]">
               {campaign.channel} · {humanBidding(campaign.biddingStrategy)} · target CPA{" "}
-              {formatCurrency(campaign.targetCpa)}
+              {moneyParts(campaign.targetCpa, currencyMeta).primary}
             </p>
           </div>
           <StatusPill enabled={enabled} />
         </div>
 
         <div className="mt-5 grid grid-cols-4 gap-3 sm:gap-4">
-          <Stat label="Spend 7d" value={formatCurrency(spend7d)} />
+          <MoneyStat label="Spend 7d" amount={spend7d} currencyMeta={currencyMeta} precise />
           <Stat label="Clicks" value={formatNumber(clicks7d)} />
           <Stat label="Conv" value={formatNumber(conv7d)} />
-          <Stat
+          <MoneyStat
             label="CPA"
-            value={cpa > 0 ? formatCurrency(cpa) : "—"}
+            amount={cpa}
+            currencyMeta={currencyMeta}
+            placeholder="—"
             tone={cpa > 0 && cpa > campaign.targetCpa * 1.2 ? "warn" : "default"}
           />
         </div>
@@ -106,6 +111,58 @@ function Stat({
       >
         {value}
       </p>
+    </div>
+  );
+}
+
+function MoneyStat({
+  label,
+  amount,
+  currencyMeta,
+  tone = "default",
+  precise = false,
+  placeholder,
+}: {
+  label: string;
+  amount: number;
+  currencyMeta?: CurrencyMeta;
+  tone?: "default" | "warn";
+  precise?: boolean;
+  placeholder?: string;
+}) {
+  const showPlaceholder = placeholder && amount <= 0;
+  const parts = moneyParts(amount, currencyMeta, { precise });
+  return (
+    <div>
+      <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-[color:var(--fg-faint)]">
+        {label}
+      </p>
+      {showPlaceholder ? (
+        <p
+          className={`font-display mt-1 text-lg font-semibold tabular ${
+            tone === "warn" ? "text-[color:var(--accent-warm)]" : "text-[color:var(--fg)]"
+          }`}
+        >
+          {placeholder}
+        </p>
+      ) : (
+        <>
+          <p
+            className={`font-display mt-1 text-lg font-semibold tabular leading-tight ${
+              tone === "warn"
+                ? "text-[color:var(--accent-warm)]"
+                : "text-[color:var(--fg)]"
+            }`}
+          >
+            {parts.primary}
+          </p>
+          {parts.shadow ? (
+            <p className="mt-0.5 text-[10px] tabular text-[color:var(--fg-faint)]">
+              {parts.shadow}
+            </p>
+          ) : null}
+        </>
+      )}
     </div>
   );
 }
