@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-20T19:53:00.000Z",
+    "pulledAt": "2026-05-20T19:59:00.000Z",
     "today": "2026-05-20",
     "yesterday": "2026-05-19",
     "accountId": "2252665731",
@@ -80,14 +80,16 @@
         "cost": 0,
         "clicks": 0,
         "impressions": 1,
-        "conversions": 0
+        "conversions": 0,
+        "spend": 0
       },
       {
         "date": "2026-05-20",
         "cost": 514.255,
         "clicks": 7,
         "impressions": 283,
-        "conversions": 0
+        "conversions": 0,
+        "spend": 514.255
       }
     ]
   },

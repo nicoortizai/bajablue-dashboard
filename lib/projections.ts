@@ -114,7 +114,12 @@ export function projectMtd(snapshot: Snapshot): MtdProjection {
   const monthStr = snapshot.meta.today.slice(0, 7); // YYYY-MM
 
   const mtdSeries = series.filter((d) => d.date.startsWith(monthStr));
-  const mtdSpend = mtdSeries.reduce((acc, d) => acc + (d.spend ?? 0), 0);
+  // dailySeries field name has historically been `cost` (from NotFair GAQL) but type
+  // declares `spend` — accept either so the snapshot's actual field name doesn't matter.
+  const mtdSpend = mtdSeries.reduce(
+    (acc, d) => acc + ((d as { spend?: number; cost?: number }).spend ?? (d as { spend?: number; cost?: number }).cost ?? 0),
+    0,
+  );
 
   const dom = today.getUTCDate();
   const dim = new Date(
