@@ -4,16 +4,20 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { FrostedCard } from "./FrostedCard";
 import { ActivateEmpty } from "./ActivateEmpty";
+import { SourceBadge } from "./SourceBadge";
 import type { CompetitorBlock, SourceState } from "@/types/dashboard";
 
 interface CompetitorSoVProps {
   competitors?: CompetitorBlock;
   dataforseoSource: SourceState;
+  /** ISO snapshot timestamp for the source badge. */
+  pulledAt: string;
 }
 
 export function CompetitorSoV({
   competitors,
   dataforseoSource,
+  pulledAt,
 }: CompetitorSoVProps) {
   if (!competitors) {
     return (
@@ -111,6 +115,10 @@ export function CompetitorSoV({
           show where the competitive field sits today.
         </p>
       ) : null}
+
+      <div className="mt-6 border-t border-[color:var(--border)] pt-3">
+        <SourceBadge source="DataForSEO SERP" pulledAt={pulledAt} />
+      </div>
     </FrostedCard>
   );
 }

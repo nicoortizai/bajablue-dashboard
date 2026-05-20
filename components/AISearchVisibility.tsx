@@ -3,11 +3,14 @@
 import * as React from "react";
 import { FrostedCard } from "./FrostedCard";
 import { ActivateEmpty } from "./ActivateEmpty";
+import { SourceBadge } from "./SourceBadge";
 import type { AiVisibilityBlock, SourceState } from "@/types/dashboard";
 
 interface AISearchVisibilityProps {
   aiVisibility?: AiVisibilityBlock;
   dataforseoSource: SourceState;
+  /** ISO snapshot timestamp for the source badge. */
+  pulledAt: string;
 }
 
 type Status = "green" | "yellow" | "red" | "pending";
@@ -52,6 +55,7 @@ interface CardData {
 export function AISearchVisibility({
   aiVisibility,
   dataforseoSource,
+  pulledAt,
 }: AISearchVisibilityProps) {
   if (!aiVisibility) {
     return (
@@ -111,6 +115,10 @@ export function AISearchVisibility({
         {cards.map((card) => (
           <EngineCard key={card.engine} card={card} />
         ))}
+      </div>
+
+      <div className="mt-5 border-t border-[color:var(--border)] pt-3">
+        <SourceBadge source="DataForSEO AI Overviews" pulledAt={pulledAt} />
       </div>
 
       {/* Sample of citations — only when AI Overviews has data */}

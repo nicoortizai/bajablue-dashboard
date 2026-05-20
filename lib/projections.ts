@@ -1,17 +1,27 @@
 import type { DailyPoint, Snapshot } from "@/types/dashboard";
 
 // Tomorrow projection: trailing-7d average with a soft day-of-week
-// multiplier. When there is no history (newly-launched campaign),
-// we honor the explicit expectedRange the upstream snapshot carries
-// — that range is set by the data layer based on launch context.
+// multiplier. We REFUSE to fabricate a number when history is thin.
+// The card always renders one of two states: a real projection,
+// or an explicit "insufficient data" surface.
+
+export interface ProjectionInsufficient {
+  insufficient: true;
+  daysAvailable: number;
+  daysNeeded: number;
+  message: string;
+}
 
 export interface ProjectionResult {
+  insufficient: false;
   low: number;
   high: number;
   point: number;
   note: string;
-  hasHistory: boolean;
+  daysAvailable: number;
 }
+
+export type Projection = ProjectionInsufficient | ProjectionResult;
 
 const DOW_MULT: Record<number, number> = {
   // Sun..Sat
@@ -23,6 +33,8 @@ const DOW_MULT: Record<number, number> = {
   5: 1.05,
   6: 0.9,
 };
+
+const MIN_DAYS_FOR_PROJECTION = 7;
 
 function targetDayOfWeek(today: string): number {
   // Today is the YYYY-MM-DD string for "now". Tomorrow = today + 1.
@@ -36,28 +48,31 @@ function trailingSeries(series: DailyPoint[], n: number): DailyPoint[] {
   return series.slice(series.length - n);
 }
 
-export function projectTomorrowConversions(
-  snapshot: Snapshot,
-): ProjectionResult {
-  const { thirtyDay, leads, meta } = snapshot;
+export function projectTomorrowConversions(snapshot: Snapshot): Projection {
+  const { thirtyDay, meta } = snapshot;
   const series = thirtyDay.dailySeries ?? [];
-  const hasHistory = series.length >= 3;
+  const daysAvailable = series.length;
 
-  if (!hasHistory) {
+  if (daysAvailable === 0) {
     return {
-      low: leads.projectedTomorrow.expectedRange.low,
-      high: leads.projectedTomorrow.expectedRange.high,
-      point: Math.round(
-        (leads.projectedTomorrow.expectedRange.low +
-          leads.projectedTomorrow.expectedRange.high) /
-          2,
-      ),
-      note: leads.projectedTomorrow.note,
-      hasHistory: false,
+      insufficient: true,
+      daysAvailable: 0,
+      daysNeeded: MIN_DAYS_FOR_PROJECTION,
+      message: "Projection available after 7 days of conversion history",
     };
   }
 
-  const trailing7 = trailingSeries(series, 7);
+  if (daysAvailable < MIN_DAYS_FOR_PROJECTION) {
+    const remaining = MIN_DAYS_FOR_PROJECTION - daysAvailable;
+    return {
+      insufficient: true,
+      daysAvailable,
+      daysNeeded: MIN_DAYS_FOR_PROJECTION,
+      message: `Need ${remaining} more day${remaining === 1 ? "" : "s"} of data for projection`,
+    };
+  }
+
+  const trailing7 = trailingSeries(series, MIN_DAYS_FOR_PROJECTION);
   const sum = trailing7.reduce((acc, d) => acc + (d.conv ?? 0), 0);
   const avg = sum / trailing7.length;
 
@@ -71,11 +86,12 @@ export function projectTomorrowConversions(
   const point = Math.round(center);
 
   return {
+    insufficient: false,
     low,
     high,
     point,
     note: "Trailing 7d average × day-of-week multiplier",
-    hasHistory: true,
+    daysAvailable,
   };
 }
 

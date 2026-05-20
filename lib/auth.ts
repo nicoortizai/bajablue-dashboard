@@ -28,7 +28,7 @@ async function sha256(input: string): Promise<string> {
 
 export async function tokenForPassword(pw: string): Promise<string> {
   // Salted so the token isn't a bare password hash.
-  return sha256(`bajaswarm.v1.${pw}`);
+  return sha256(`bajablue.v1.${pw}`);
 }
 
 export async function expectedToken(): Promise<string> {

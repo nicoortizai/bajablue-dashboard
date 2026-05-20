@@ -12,7 +12,7 @@ interface ThemeContextValue {
 
 const ThemeContext = React.createContext<ThemeContextValue | null>(null);
 
-const STORAGE_KEY = "bajaswarm.theme";
+const STORAGE_KEY = "bajablue.theme";
 
 function applyMode(mode: Mode) {
   if (typeof document === "undefined") return;

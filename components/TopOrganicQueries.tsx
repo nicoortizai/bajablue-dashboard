@@ -4,17 +4,21 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { FrostedCard } from "./FrostedCard";
 import { ActivateEmpty } from "./ActivateEmpty";
+import { SourceBadge } from "./SourceBadge";
 import { formatNumber, formatPercent } from "@/lib/format";
 import type { OrganicBlock, SourceState } from "@/types/dashboard";
 
 interface TopOrganicQueriesProps {
   organic?: OrganicBlock;
   gscSource: SourceState;
+  /** ISO snapshot timestamp for the source badge. */
+  pulledAt: string;
 }
 
 export function TopOrganicQueries({
   organic,
   gscSource,
+  pulledAt,
 }: TopOrganicQueriesProps) {
   if (!organic) {
     return (
@@ -43,6 +47,9 @@ export function TopOrganicQueries({
           Search Console returned no query rows for the last 30 days. New sites
           typically need 7–14 days of impressions before queries show up here.
         </p>
+        <div className="mt-6 border-t border-[color:var(--border)] pt-3">
+          <SourceBadge source="Google Search Console" pulledAt={pulledAt} />
+        </div>
       </FrostedCard>
     );
   }
@@ -107,6 +114,10 @@ export function TopOrganicQueries({
             })}
           </tbody>
         </table>
+      </div>
+
+      <div className="mt-6 border-t border-[color:var(--border)] pt-3">
+        <SourceBadge source="Google Search Console" pulledAt={pulledAt} />
       </div>
     </FrostedCard>
   );

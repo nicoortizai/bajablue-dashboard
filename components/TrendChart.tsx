@@ -11,6 +11,7 @@ import {
   YAxis,
 } from "recharts";
 import { FrostedCard } from "./FrostedCard";
+import { SourceBadge } from "./SourceBadge";
 import { shortDate, formatCurrency, formatNumber } from "@/lib/format";
 import type { DailyPoint } from "@/types/dashboard";
 
@@ -22,6 +23,8 @@ interface TrendChartProps {
   gradientFrom?: string;
   gradientTo?: string;
   delay?: number;
+  /** ISO snapshot timestamp for the source badge. */
+  pulledAt: string;
 }
 
 export function TrendChart({
@@ -29,9 +32,10 @@ export function TrendChart({
   data,
   dataKey,
   format,
-  gradientFrom = "#0A84FF",
-  gradientTo = "#36859A",
+  gradientFrom = "#36859A",
+  gradientTo = "#0F2832",
   delay = 0,
+  pulledAt,
 }: TrendChartProps) {
   const hasData = data.length > 0;
   const id = React.useId().replace(/[^a-zA-Z0-9_-]/g, "");
@@ -60,7 +64,11 @@ export function TrendChart({
         </p>
       </div>
 
-      <div className="mt-6 h-44 sm:h-52">
+      <div className="mt-3">
+        <SourceBadge source="Google Ads" pulledAt={pulledAt} />
+      </div>
+
+      <div className="mt-4 h-44 sm:h-52">
         {hasData && mounted ? (
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart

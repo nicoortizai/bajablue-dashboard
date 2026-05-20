@@ -3,6 +3,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { FrostedCard } from "./FrostedCard";
+import { SourceBadge } from "./SourceBadge";
 import { formatCurrency, formatNumber } from "@/lib/format";
 import type { AdGroupStats } from "@/types/dashboard";
 
@@ -10,6 +11,8 @@ interface AdGroupBarChartProps {
   rows: AdGroupStats[];
   /** When all costs are zero, render a placeholder ranking by impressions. */
   metric?: "auto" | "cost" | "impressions";
+  /** ISO timestamp of the snapshot pull — used in the source badge footer. */
+  pulledAt: string;
 }
 
 const TIER_COLORS = [
@@ -20,7 +23,11 @@ const TIER_COLORS = [
   "linear-gradient(90deg, #1e434c 0%, #0e3a6e 100%)",
 ];
 
-export function AdGroupBarChart({ rows, metric = "auto" }: AdGroupBarChartProps) {
+export function AdGroupBarChart({
+  rows,
+  metric = "auto",
+  pulledAt,
+}: AdGroupBarChartProps) {
   const useCost =
     metric === "cost" ||
     (metric === "auto" && rows.some((r) => r.cost > 0));
@@ -92,6 +99,10 @@ export function AdGroupBarChart({ rows, metric = "auto" }: AdGroupBarChartProps)
           the auction warms up.
         </p>
       ) : null}
+
+      <div className="mt-6 border-t border-[color:var(--border)] pt-3">
+        <SourceBadge source="Google Ads" pulledAt={pulledAt} />
+      </div>
     </FrostedCard>
   );
 }

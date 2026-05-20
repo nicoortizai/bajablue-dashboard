@@ -3,7 +3,7 @@
 import * as React from "react";
 import { HeroMetricCard } from "./HeroMetricCard";
 import type { Snapshot } from "@/types/dashboard";
-import { liveSinceLabel, shortDate } from "@/lib/format";
+import { shortDate } from "@/lib/format";
 import { projectTomorrowConversions } from "@/lib/projections";
 
 interface HeroBandProps {
@@ -11,10 +11,8 @@ interface HeroBandProps {
 }
 
 export function HeroBand({ snapshot }: HeroBandProps) {
-  const { leads, meta, campaigns } = snapshot;
+  const { leads, meta } = snapshot;
   const tomorrow = projectTomorrowConversions(snapshot);
-  const launch = campaigns[0]?.launchedAt;
-  const liveLabel = launch ? liveSinceLabel(launch) : null;
 
   return (
     <section
@@ -65,25 +63,28 @@ export function HeroBand({ snapshot }: HeroBandProps) {
         tone="accent"
       />
 
-      <HeroMetricCard
-        label="Projected · Tomorrow"
-        primary={tomorrow.low}
-        primaryHigh={tomorrow.high}
-        sublabel={
-          tomorrow.hasHistory ? (
-            <>Expected bookings range</>
-          ) : (
-            <span className="text-[color:var(--fg-soft)]">
-              {liveLabel ?? "Launching"} · learning phase
-            </span>
-          )
-        }
-        footnote={
-          <span className="text-[color:var(--fg-faint)]">{tomorrow.note}</span>
-        }
-        delay={0.14}
-        tone="positive"
-      />
+      {tomorrow.insufficient ? (
+        <HeroMetricCard
+          label="Projected · Tomorrow"
+          insufficient={{
+            headline: "Insufficient data",
+            helper: tomorrow.message,
+          }}
+          delay={0.14}
+        />
+      ) : (
+        <HeroMetricCard
+          label="Projected · Tomorrow"
+          primary={tomorrow.low}
+          primaryHigh={tomorrow.high}
+          sublabel={<>Expected bookings range</>}
+          footnote={
+            <span className="text-[color:var(--fg-faint)]">{tomorrow.note}</span>
+          }
+          delay={0.14}
+          tone="positive"
+        />
+      )}
     </section>
   );
 }

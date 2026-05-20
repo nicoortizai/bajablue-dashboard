@@ -4,6 +4,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { FrostedCard } from "./FrostedCard";
 import { ActivateEmpty } from "./ActivateEmpty";
+import { SourceBadge } from "./SourceBadge";
 import { formatCurrency, formatNumber, formatPercent } from "@/lib/format";
 import type {
   OrganicBlock,
@@ -20,6 +21,8 @@ interface OrganicVsPaidProps {
   /** Source readiness for empty-state. */
   gscSource: SourceState;
   adsSource: SourceState;
+  /** ISO snapshot timestamp for the source badge. */
+  pulledAt: string;
 }
 
 function sumLast7d(series: DailyPoint[]): {
@@ -45,6 +48,7 @@ export function OrganicVsPaid({
   thirtyDay,
   gscSource,
   adsSource,
+  pulledAt,
 }: OrganicVsPaidProps) {
   // If GSC isn't wired, this whole section is an empty-state CTA.
   if (!organic) {
@@ -146,6 +150,10 @@ export function OrganicVsPaid({
           Bar shape previews how organic and paid will split once traffic accrues.
         </p>
       ) : null}
+
+      <div className="mt-6 border-t border-[color:var(--border)] pt-3">
+        <SourceBadge source="Search Console + Google Ads" pulledAt={pulledAt} />
+      </div>
     </FrostedCard>
   );
 }

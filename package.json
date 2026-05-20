@@ -1,7 +1,8 @@
 {
-  "name": "bajaswarm-ad-dashboard",
+  "name": "bajablue-dashboard",
   "version": "0.1.0",
   "private": true,
+  "description": "Bajablue Performance — single-tenant Google Ads dashboard.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

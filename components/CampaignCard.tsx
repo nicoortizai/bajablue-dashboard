@@ -120,14 +120,14 @@ function Sparkline({ data }: { data: DailyPoint[] }) {
       <AreaChart data={series} margin={{ top: 6, right: 6, left: 6, bottom: 6 }}>
         <defs>
           <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#0A84FF" stopOpacity={0.55} />
-            <stop offset="100%" stopColor="#0A84FF" stopOpacity={0} />
+            <stop offset="0%" stopColor="#36859A" stopOpacity={0.55} />
+            <stop offset="100%" stopColor="#36859A" stopOpacity={0} />
           </linearGradient>
         </defs>
         <Area
           type="monotone"
           dataKey="spend"
-          stroke="#0A84FF"
+          stroke="#36859A"
           strokeWidth={1.5}
           fill="url(#sparkFill)"
           isAnimationActive

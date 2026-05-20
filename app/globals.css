@@ -3,57 +3,67 @@
 /* Class-based dark mode (we toggle html.dark from ThemeProvider) */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* ---------- Theme tokens ---------- */
-/*
-   Aurora palette: ocean teal (#36859A) + electric blue (#0A84FF)
-   on rich near-black for dark, soft neutral for light.
-   Both modes are first-class — light is not a stripped-down dark.
+/* ---------- Bajablue brand palette ----------
+   Ocean deep   #0A1C24
+   Ocean        #0F2832  (primary surface for dark)
+   Teal accent  #36859A  (primary accent — links, highlights, charts)
+   Sunset       #E4A853  (warm accent — secondary CTAs, MTD)
+   Sand         #F4EFE7  (warm off-white — light-mode atmosphere)
+
+   Both modes are first-class. Light is the day-on-the-water surface;
+   dark is the dive-tank surface. Neither is a stripped-down sibling.
 */
 
 :root {
-  --bg: #f4f5f7;
+  --bg: #f4efe7;
   --bg-elevated: #ffffff;
-  --bg-soft: rgba(255, 255, 255, 0.6);
-  --border: rgba(15, 23, 42, 0.08);
-  --border-strong: rgba(15, 23, 42, 0.14);
-  --fg: #0b1220;
-  --fg-soft: #4b5563;
-  --fg-mute: #6b7280;
-  --fg-faint: #9ca3af;
+  --bg-soft: rgba(255, 255, 255, 0.62);
+  --border: rgba(10, 28, 36, 0.10);
+  --border-strong: rgba(10, 28, 36, 0.18);
+  --fg: #0a1c24;
+  --fg-soft: #2c3f48;
+  --fg-mute: #4d6470;
+  --fg-faint: #7d8c95;
 
-  --accent: #0a84ff;
-  --accent-2: #36859a;
-  --accent-warm: #ff9f0a;
-  --positive: #30d158;
-  --negative: #ff453a;
+  --accent: #36859a;        /* teal — primary brand accent */
+  --accent-2: #2a6c80;      /* teal deeper, for gradients */
+  --accent-warm: #e4a853;   /* sunset */
+  --positive: #2f9e6b;
+  --negative: #c0463a;
 
-  --card-bg: rgba(255, 255, 255, 0.7);
-  --card-border: rgba(15, 23, 42, 0.08);
-  --card-shadow: 0 30px 60px -30px rgba(15, 23, 42, 0.12),
-    0 8px 24px -16px rgba(15, 23, 42, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.72);
+  --card-border: rgba(10, 28, 36, 0.09);
+  --card-shadow: 0 30px 60px -30px rgba(10, 28, 36, 0.14),
+    0 8px 24px -16px rgba(10, 28, 36, 0.08);
 
-  --grid-line: rgba(15, 23, 42, 0.06);
+  --grid-line: rgba(10, 28, 36, 0.06);
 
   color-scheme: light;
 }
 
 html.dark {
-  --bg: #06090f;
-  --bg-elevated: #0c1118;
-  --bg-soft: rgba(20, 24, 33, 0.55);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.14);
-  --fg: #f5f7fa;
-  --fg-soft: #c7ccd4;
-  --fg-mute: #8a90a0;
-  --fg-faint: #5b6275;
+  --bg: #0a1c24;
+  --bg-elevated: #0f2832;
+  --bg-soft: rgba(15, 40, 50, 0.55);
+  --border: rgba(244, 239, 231, 0.08);
+  --border-strong: rgba(244, 239, 231, 0.14);
+  --fg: #f4efe7;
+  --fg-soft: #c9d4d8;
+  --fg-mute: #8aa0a8;
+  --fg-faint: #5b727c;
 
-  --card-bg: rgba(20, 24, 33, 0.55);
-  --card-border: rgba(255, 255, 255, 0.08);
+  --accent: #4ea3b9;        /* teal lifted for dark contrast */
+  --accent-2: #36859a;
+  --accent-warm: #f0bb6d;
+  --positive: #4cc28c;
+  --negative: #e36a5e;
+
+  --card-bg: rgba(15, 40, 50, 0.58);
+  --card-border: rgba(244, 239, 231, 0.08);
   --card-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.6),
     0 10px 24px -18px rgba(0, 0, 0, 0.5);
 
-  --grid-line: rgba(255, 255, 255, 0.06);
+  --grid-line: rgba(244, 239, 231, 0.06);
 
   color-scheme: dark;
 }
@@ -92,10 +102,10 @@ body {
 }
 
 .font-display {
-  font-family: var(--font-display, "Inter"), -apple-system, BlinkMacSystemFont,
-    "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-  font-feature-settings: "ss01", "ss03", "cv11";
-  letter-spacing: -0.02em;
+  font-family: var(--font-display, "Fraunces"), "Fraunces", Georgia, ui-serif,
+    "Iowan Old Style", "Apple Garamond", serif;
+  font-feature-settings: "ss01";
+  letter-spacing: -0.015em;
 }
 
 .tabular {
@@ -117,16 +127,16 @@ body {
   pointer-events: none;
   background:
     radial-gradient(50% 40% at 18% 12%, rgba(54, 133, 154, 0.22) 0%, transparent 60%),
-    radial-gradient(45% 38% at 82% 22%, rgba(10, 132, 255, 0.18) 0%, transparent 60%),
-    radial-gradient(55% 50% at 60% 90%, rgba(255, 159, 10, 0.08) 0%, transparent 60%);
+    radial-gradient(45% 38% at 82% 22%, rgba(228, 168, 83, 0.16) 0%, transparent 60%),
+    radial-gradient(55% 50% at 60% 90%, rgba(10, 28, 36, 0.06) 0%, transparent 60%);
   filter: blur(20px);
 }
 
 html.dark .bg-atmosphere::before {
   background:
-    radial-gradient(50% 40% at 18% 12%, rgba(54, 133, 154, 0.35) 0%, transparent 60%),
-    radial-gradient(45% 38% at 82% 22%, rgba(10, 132, 255, 0.28) 0%, transparent 60%),
-    radial-gradient(55% 50% at 60% 92%, rgba(48, 209, 88, 0.12) 0%, transparent 60%);
+    radial-gradient(50% 40% at 18% 12%, rgba(54, 133, 154, 0.40) 0%, transparent 60%),
+    radial-gradient(45% 38% at 82% 22%, rgba(228, 168, 83, 0.18) 0%, transparent 60%),
+    radial-gradient(55% 50% at 60% 92%, rgba(47, 158, 107, 0.10) 0%, transparent 60%);
 }
 
 .bg-atmosphere::after {
@@ -135,12 +145,12 @@ html.dark .bg-atmosphere::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-image: radial-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(10, 28, 36, 0.04) 1px, transparent 1px);
   background-size: 3px 3px;
   opacity: 0.6;
 }
 html.dark .bg-atmosphere::after {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(244, 239, 231, 0.04) 1px, transparent 1px);
 }
 
 /* ---------- Frosted card surface ---------- */
@@ -178,9 +188,9 @@ html.dark .bg-atmosphere::after {
 html.dark .frosted::before {
   background: linear-gradient(
     160deg,
-    rgba(255, 255, 255, 0.18),
-    rgba(255, 255, 255, 0) 40%,
-    rgba(10, 132, 255, 0.18) 90%
+    rgba(244, 239, 231, 0.18),
+    rgba(244, 239, 231, 0) 40%,
+    rgba(54, 133, 154, 0.22) 90%
   );
 }
 
@@ -195,8 +205,8 @@ html.dark .frosted::before {
 /* ---------- Live status pulse ---------- */
 
 @keyframes pulse-soft {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(48, 209, 88, 0.55), 0 0 0 0 rgba(48, 209, 88, 0.4); }
-  50% { box-shadow: 0 0 0 6px rgba(48, 209, 88, 0), 0 0 0 12px rgba(48, 209, 88, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(47, 158, 107, 0.55), 0 0 0 0 rgba(47, 158, 107, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(47, 158, 107, 0), 0 0 0 12px rgba(47, 158, 107, 0); }
 }
 .live-dot {
   width: 8px;
@@ -243,7 +253,7 @@ html.dark .frosted::before {
 }
 
 ::selection {
-  background: rgba(10, 132, 255, 0.35);
+  background: rgba(54, 133, 154, 0.35);
   color: white;
 }
 

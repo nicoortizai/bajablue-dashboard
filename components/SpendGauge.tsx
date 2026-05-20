@@ -4,6 +4,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { FrostedCard } from "./FrostedCard";
 import { AnimatedNumber } from "./AnimatedNumber";
+import { SourceBadge } from "./SourceBadge";
 import { projectMtd } from "@/lib/projections";
 import { formatCurrency } from "@/lib/format";
 import type { Snapshot } from "@/types/dashboard";
@@ -67,9 +68,12 @@ export function SpendGauge({ snapshot }: SpendGaugeProps) {
         <PaceMarker dayOfMonth={mtd.dayOfMonth} daysInMonth={mtd.daysInMonth} />
       </div>
 
-      <p className="mt-3 text-xs text-[color:var(--fg-faint)]">
-        Vertical tick shows on-pace position for today
-      </p>
+      <div className="mt-3 flex items-center justify-between gap-3">
+        <p className="text-xs text-[color:var(--fg-faint)]">
+          Vertical tick shows on-pace position for today
+        </p>
+        <SourceBadge source="Google Ads" pulledAt={snapshot.meta.pulledAt} />
+      </div>
     </FrostedCard>
   );
 }

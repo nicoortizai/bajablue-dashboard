@@ -3,10 +3,13 @@
 import * as React from "react";
 import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts";
 import { FrostedCard } from "./FrostedCard";
+import { SourceBadge } from "./SourceBadge";
 import type { ConversionAction } from "@/types/dashboard";
 
 interface ConversionDonutProps {
   actions: ConversionAction[];
+  /** ISO timestamp of the snapshot pull — used in the source badge footer. */
+  pulledAt: string;
 }
 
 const PALETTE = [
@@ -18,7 +21,7 @@ const PALETTE = [
   "#64D2FF",
 ];
 
-export function ConversionDonut({ actions }: ConversionDonutProps) {
+export function ConversionDonut({ actions, pulledAt }: ConversionDonutProps) {
   const [mounted, setMounted] = React.useState(false);
   React.useEffect(() => setMounted(true), []);
   const data = actions
@@ -118,6 +121,10 @@ export function ConversionDonut({ actions }: ConversionDonutProps) {
           previews how it will read at scale.
         </p>
       ) : null}
+
+      <div className="mt-6 border-t border-[color:var(--border)] pt-3">
+        <SourceBadge source="Google Ads" pulledAt={pulledAt} />
+      </div>
     </FrostedCard>
   );
 }
