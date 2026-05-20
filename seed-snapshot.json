@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-20T19:59:00.000Z",
+    "pulledAt": "2026-05-20T20:12:30.000Z",
     "today": "2026-05-20",
     "yesterday": "2026-05-19",
     "accountId": "2252665731",
@@ -51,10 +51,10 @@
     "today": {
       "inquiries": 0,
       "bookings": 0,
-      "asOfHour": 19,
-      "spend": 514.255,
-      "clicks": 7,
-      "impressions": 283
+      "asOfHour": 20,
+      "spend": 596.465,
+      "clicks": 8,
+      "impressions": 302
     },
     "yesterday": {
       "inquiries": 0,
@@ -70,26 +70,26 @@
     }
   },
   "thirtyDay": {
-    "totalSpend": 514.255,
-    "totalClicks": 7,
-    "totalImpressions": 284,
+    "totalSpend": 596.465,
+    "totalClicks": 8,
+    "totalImpressions": 303,
     "totalConversions": 0,
     "dailySeries": [
       {
         "date": "2026-05-19",
         "cost": 0,
+        "spend": 0,
         "clicks": 0,
         "impressions": 1,
-        "conversions": 0,
-        "spend": 0
+        "conversions": 0
       },
       {
         "date": "2026-05-20",
-        "cost": 514.255,
-        "clicks": 7,
-        "impressions": 283,
-        "conversions": 0,
-        "spend": 514.255
+        "cost": 596.465,
+        "spend": 596.465,
+        "clicks": 8,
+        "impressions": 302,
+        "conversions": 0
       }
     ]
   },
@@ -97,10 +97,10 @@
     {
       "id": "194313453577",
       "name": "AG5 - Whale Watching Generic",
-      "clicks": 5,
-      "impressions": 180,
+      "clicks": 6,
+      "impressions": 198,
       "conv": 0,
-      "cost": 440.148891
+      "cost": 522.358891
     },
     {
       "id": "198161209124",
@@ -114,7 +114,7 @@
       "id": "194313453497",
       "name": "AG4 - WS Arbitrage (no mention)",
       "clicks": 1,
-      "impressions": 58,
+      "impressions": 60,
       "conv": 0,
       "cost": 9.936109
     },
@@ -122,7 +122,7 @@
       "id": "198065523042",
       "name": "AG2 - Sea of Cortez Whale Watching",
       "clicks": 0,
-      "impressions": 36,
+      "impressions": 35,
       "conv": 0,
       "cost": 0
     },
