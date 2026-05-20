@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-20T18:13:00.000Z",
+    "pulledAt": "2026-05-20T19:12:30.000Z",
     "today": "2026-05-20",
     "yesterday": "2026-05-19",
     "accountId": "2252665731",
@@ -51,10 +51,10 @@
     "today": {
       "inquiries": 0,
       "bookings": 0,
-      "asOfHour": 18,
+      "asOfHour": 19,
       "spend": 514.255,
       "clicks": 7,
-      "impressions": 246
+      "impressions": 283
     },
     "yesterday": {
       "inquiries": 0,
@@ -72,7 +72,7 @@
   "thirtyDay": {
     "totalSpend": 514.255,
     "totalClicks": 7,
-    "totalImpressions": 247,
+    "totalImpressions": 284,
     "totalConversions": 0,
     "dailySeries": [
       {
@@ -86,7 +86,7 @@
         "date": "2026-05-20",
         "cost": 514.255,
         "clicks": 7,
-        "impressions": 246,
+        "impressions": 283,
         "conversions": 0
       }
     ]
@@ -96,7 +96,7 @@
       "id": "194313453577",
       "name": "AG5 - Whale Watching Generic",
       "clicks": 5,
-      "impressions": 150,
+      "impressions": 180,
       "conv": 0,
       "cost": 440.148891
     },
@@ -112,7 +112,7 @@
       "id": "194313453497",
       "name": "AG4 - WS Arbitrage (no mention)",
       "clicks": 1,
-      "impressions": 54,
+      "impressions": 58,
       "conv": 0,
       "cost": 9.936109
     },
@@ -120,7 +120,7 @@
       "id": "198065523042",
       "name": "AG2 - Sea of Cortez Whale Watching",
       "clicks": 0,
-      "impressions": 33,
+      "impressions": 36,
       "conv": 0,
       "cost": 0
     },
@@ -175,13 +175,13 @@
     {
       "device": "MOBILE",
       "cost": 264.875,
-      "impressions": 176,
+      "impressions": 195,
       "clicks": 5
     },
     {
       "device": "DESKTOP",
       "cost": 249.38,
-      "impressions": 63,
+      "impressions": 81,
       "clicks": 2
     },
     {
@@ -195,13 +195,13 @@
     {
       "device": "MOBILE",
       "cost": 264.875,
-      "impressions": 176,
+      "impressions": 195,
       "clicks": 5
     },
     {
       "device": "DESKTOP",
       "cost": 249.38,
-      "impressions": 63,
+      "impressions": 81,
       "clicks": 2
     },
     {
@@ -332,21 +332,21 @@
       "dayOfWeek": "WEDNESDAY",
       "hour": 10,
       "cost": 38.64,
-      "impressions": 19,
+      "impressions": 18,
       "clicks": 1
     },
     {
       "dayOfWeek": "WEDNESDAY",
       "hour": 11,
       "cost": 459.17,
-      "impressions": 115,
+      "impressions": 95,
       "clicks": 4
     },
     {
       "dayOfWeek": "WEDNESDAY",
       "hour": 12,
       "cost": 0,
-      "impressions": 11,
+      "impressions": 67,
       "clicks": 0
     }
   ],
@@ -356,7 +356,7 @@
       "matchType": "PHRASE",
       "adGroup": "AG5 - Whale Watching Generic",
       "cost": 288.02,
-      "impressions": 97,
+      "impressions": 122,
       "clicks": 3,
       "conversions": 0
     },
@@ -365,7 +365,7 @@
       "matchType": "PHRASE",
       "adGroup": "AG5 - Whale Watching Generic",
       "cost": 145.62,
-      "impressions": 15,
+      "impressions": 19,
       "clicks": 1,
       "conversions": 0
     },
@@ -374,7 +374,7 @@
       "matchType": "PHRASE",
       "adGroup": "AG5 - Whale Watching Generic",
       "cost": 0,
-      "impressions": 9,
+      "impressions": 10,
       "clicks": 0,
       "conversions": 0
     },
@@ -383,7 +383,7 @@
       "matchType": "EXACT",
       "adGroup": "AG4 - WS Arbitrage (no mention)",
       "cost": 0,
-      "impressions": 7,
+      "impressions": 9,
       "clicks": 0,
       "conversions": 0
     },
@@ -392,7 +392,7 @@
       "matchType": "EXACT",
       "adGroup": "AG4 - WS Arbitrage (no mention)",
       "cost": 0,
-      "impressions": 2,
+      "impressions": 3,
       "clicks": 0,
       "conversions": 0
     },
@@ -400,6 +400,15 @@
       "text": "swim with whale sharks la paz",
       "matchType": "EXACT",
       "adGroup": "AG4 - WS Arbitrage (no mention)",
+      "cost": 0,
+      "impressions": 3,
+      "clicks": 0,
+      "conversions": 0
+    },
+    {
+      "text": "snorkeling sea of cortez",
+      "matchType": "EXACT",
+      "adGroup": "AG2 - Sea of Cortez Whale Watching",
       "cost": 0,
       "impressions": 2,
       "clicks": 0,
@@ -469,6 +478,15 @@
       "conversions": 0
     },
     {
+      "text": "baja whale watching",
+      "matchType": "EXACT",
+      "adGroup": "AG2 - Sea of Cortez Whale Watching",
+      "cost": 0,
+      "impressions": 1,
+      "clicks": 0,
+      "conversions": 0
+    },
+    {
       "text": "killer whale expedition",
       "matchType": "PHRASE",
       "adGroup": "AG1 - ORCA",
@@ -488,7 +506,7 @@
         "Multi-Day Wildlife Tour Baja"
       ],
       "cost": 440.148891,
-      "impressions": 150,
+      "impressions": 180,
       "clicks": 5
     },
     {
@@ -500,7 +518,7 @@
         "Bajablue Multi-Day Expedition"
       ],
       "cost": 9.936109,
-      "impressions": 54,
+      "impressions": 58,
       "clicks": 1
     },
     {
@@ -512,7 +530,7 @@
         "3 Water Days \u00b7 5 Days Total"
       ],
       "cost": 0,
-      "impressions": 33,
+      "impressions": 36,
       "clicks": 0
     },
     {
