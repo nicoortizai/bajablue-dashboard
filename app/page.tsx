@@ -1,4 +1,4 @@
-import { loadSnapshot } from "@/lib/data";
+import { loadLiveSnapshot } from "@/lib/data";
 import { TopBar } from "@/components/TopBar";
 import { HeroBand } from "@/components/HeroBand";
 import { SpendGauge } from "@/components/SpendGauge";
@@ -7,10 +7,19 @@ import { AdGroupBarChart } from "@/components/AdGroupBarChart";
 import { ConversionDonut } from "@/components/ConversionDonut";
 import { Footer } from "@/components/Footer";
 import { TrendCharts } from "@/components/TrendCharts";
+import { OrganicVsPaid } from "@/components/OrganicVsPaid";
+import { TopOrganicQueries } from "@/components/TopOrganicQueries";
+import { CompetitorSoV } from "@/components/CompetitorSoV";
+import { AISearchVisibility } from "@/components/AISearchVisibility";
 import { liveSinceLabel } from "@/lib/format";
 
-export default function DashboardPage() {
-  const snapshot = loadSnapshot();
+// Server-rendered. Each live data source is independent — if its env vars
+// aren't set, the corresponding section renders an "Activate" empty-state.
+// We never crash a render because of a missing credential.
+export const revalidate = 0;
+
+export default async function DashboardPage() {
+  const snapshot = await loadLiveSnapshot();
   const commit = process.env.VERCEL_GIT_COMMIT_SHA ?? process.env.COMMIT_SHA;
   const launchedAt = snapshot.campaigns[0]?.launchedAt;
   const liveLabel = launchedAt ? liveSinceLabel(launchedAt) : null;
@@ -57,6 +66,39 @@ export default function DashboardPage() {
         30-day trend
       </h2>
       <TrendCharts data={snapshot.thirtyDay.dailySeries} />
+
+      <div className="mt-12 flex items-baseline justify-between">
+        <h2 className="font-display text-xl font-semibold tracking-tight sm:text-2xl">
+          Search & AI visibility
+        </h2>
+        <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-[color:var(--fg-faint)]">
+          Organic · Competitive · Generative
+        </p>
+      </div>
+
+      <div className="mt-5 grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-2">
+        <OrganicVsPaid
+          organic={snapshot.organic}
+          thirtyDay={snapshot.thirtyDay}
+          gscSource={snapshot.sources.gsc}
+          adsSource={snapshot.sources.ads}
+        />
+        <TopOrganicQueries
+          organic={snapshot.organic}
+          gscSource={snapshot.sources.gsc}
+        />
+      </div>
+
+      <div className="mt-5 grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-2">
+        <CompetitorSoV
+          competitors={snapshot.competitors}
+          dataforseoSource={snapshot.sources.dataforseo}
+        />
+        <AISearchVisibility
+          aiVisibility={snapshot.aiVisibility}
+          dataforseoSource={snapshot.sources.dataforseo}
+        />
+      </div>
 
       <Footer pulledAt={snapshot.meta.pulledAt} commit={commit} />
     </div>

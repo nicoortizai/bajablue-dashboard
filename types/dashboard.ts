@@ -76,6 +76,77 @@ export interface NegKeywordList {
   linked: boolean;
 }
 
+// ---------- Organic / SEO ----------
+
+export interface OrganicQuery {
+  query: string;
+  clicks: number;
+  impressions: number;
+  ctr: number; // 0..1
+  position: number;
+}
+
+export interface OrganicTotals {
+  clicks: number;
+  impressions: number;
+  ctr: number;
+  position: number;
+}
+
+export interface OrganicBlock {
+  siteUrl: string;
+  topQueries: OrganicQuery[];
+  last7d: OrganicTotals;
+  last30d: OrganicTotals;
+}
+
+// ---------- Competitor Share-of-Voice ----------
+
+export interface CompetitorSoVRow {
+  domain: string;
+  score: number;
+  appearances: number;
+  topRank: number;
+}
+
+export interface CompetitorBlock {
+  yourDomain: string;
+  keywords: string[];
+  rows: CompetitorSoVRow[];
+  totals: { keywordCount: number; yourScore: number; topScore: number };
+}
+
+// ---------- AI Overview citations ----------
+
+export interface AiCitation {
+  keyword: string;
+  cited: boolean;
+  sources: string[];
+}
+
+export interface AiVisibilityBlock {
+  yourDomain: string;
+  totalKeywords: number;
+  cited: number;
+  citations: AiCitation[];
+}
+
+// ---------- Section status (drives empty-state CTAs) ----------
+
+export interface SourceState {
+  ready: boolean;
+  missing: string[];
+  label: string;
+  /** Set when an attempted live pull failed at runtime. */
+  error?: string;
+}
+
+export interface SourcesBlock {
+  ads: SourceState;
+  gsc: SourceState;
+  dataforseo: SourceState;
+}
+
 export interface Snapshot {
   meta: {
     pulledAt: string;
@@ -84,6 +155,8 @@ export interface Snapshot {
     accountId: string;
     accountName: string;
     note?: string;
+    /** True when at least one campaign value came from the live Ads API. */
+    liveAds?: boolean;
   };
   campaigns: Campaign[];
   leads: {
@@ -95,4 +168,12 @@ export interface Snapshot {
   byAdGroup7d: AdGroupStats[];
   conversionActions: ConversionAction[];
   negKeywordList: NegKeywordList;
+  /** Optional — present when GSC env is wired. */
+  organic?: OrganicBlock;
+  /** Optional — present when DataForSEO env is wired. */
+  competitors?: CompetitorBlock;
+  /** Optional — present when DataForSEO env is wired. */
+  aiVisibility?: AiVisibilityBlock;
+  /** Per-source readiness — UI uses this to render "Activate" empty-states. */
+  sources: SourcesBlock;
 }
