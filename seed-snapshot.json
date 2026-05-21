@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-21T16:12:30.000Z",
+    "pulledAt": "2026-05-21T17:12:30.000Z",
     "today": "2026-05-20",
     "yesterday": "2026-05-19",
     "accountId": "2252665731",
@@ -51,10 +51,10 @@
     "today": {
       "inquiries": 0,
       "bookings": 0,
-      "asOfHour": 10,
-      "spend": 339.58,
-      "clicks": 8,
-      "impressions": 815
+      "asOfHour": 11,
+      "spend": 391.82,
+      "clicks": 9,
+      "impressions": 884
     },
     "yesterday": {
       "inquiries": 0,
@@ -70,9 +70,9 @@
     }
   },
   "thirtyDay": {
-    "totalSpend": 936.045,
-    "totalClicks": 16,
-    "totalImpressions": 1113,
+    "totalSpend": 988.285,
+    "totalClicks": 17,
+    "totalImpressions": 1182,
     "totalConversions": 0,
     "dailySeries": [
       {
@@ -93,10 +93,10 @@
       },
       {
         "date": "2026-05-21",
-        "cost": 339.58,
-        "spend": 339.58,
-        "clicks": 8,
-        "impressions": 815,
+        "cost": 391.82,
+        "spend": 391.82,
+        "clicks": 9,
+        "impressions": 884,
         "conversions": 0
       }
     ]
