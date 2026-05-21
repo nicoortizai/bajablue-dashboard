@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-21T06:12:30.000Z",
+    "pulledAt": "2026-05-21T07:12:30.000Z",
     "today": "2026-05-20",
     "yesterday": "2026-05-19",
     "accountId": "2252665731",
@@ -51,17 +51,17 @@
     "today": {
       "inquiries": 0,
       "bookings": 0,
-      "asOfHour": 0,
-      "spend": 596.465,
-      "clicks": 8,
-      "impressions": 297
+      "asOfHour": 1,
+      "spend": 285.0,
+      "clicks": 5,
+      "impressions": 767
     },
     "yesterday": {
       "inquiries": 0,
       "bookings": 0,
-      "spend": 0,
-      "clicks": 0,
-      "impressions": 1
+      "spend": 596.465,
+      "clicks": 8,
+      "impressions": 297
     },
     "projectedTomorrow": {
       "method": "trailing-7d-avg",
@@ -70,9 +70,9 @@
     }
   },
   "thirtyDay": {
-    "totalSpend": 596.465,
-    "totalClicks": 8,
-    "totalImpressions": 298,
+    "totalSpend": 881.465,
+    "totalClicks": 13,
+    "totalImpressions": 1065,
     "totalConversions": 0,
     "dailySeries": [
       {
@@ -90,39 +90,39 @@
         "clicks": 8,
         "impressions": 297,
         "conversions": 0
+      },
+      {
+        "date": "2026-05-21",
+        "cost": 285.0,
+        "spend": 285.0,
+        "clicks": 5,
+        "impressions": 767,
+        "conversions": 0
       }
     ]
   },
   "byAdGroup7d": [
     {
-      "id": "194313453577",
-      "name": "AG5 - Whale Watching Generic",
-      "clicks": 6,
-      "impressions": 193,
-      "conv": 0,
-      "cost": 522.358891
-    },
-    {
-      "id": "198161209124",
-      "name": "AG1 - ORCA",
-      "clicks": 1,
-      "impressions": 9,
-      "conv": 0,
-      "cost": 64.17
-    },
-    {
       "id": "194313453497",
       "name": "AG4 - WS Arbitrage (no mention)",
-      "clicks": 1,
-      "impressions": 60,
+      "clicks": 4,
+      "impressions": 298,
       "conv": 0,
-      "cost": 9.936109
+      "cost": 190.125072
+    },
+    {
+      "id": "194313453577",
+      "name": "AG5 - Whale Watching Generic",
+      "clicks": 1,
+      "impressions": 380,
+      "conv": 0,
+      "cost": 94.874928
     },
     {
       "id": "198065523042",
       "name": "AG2 - Sea of Cortez Whale Watching",
       "clicks": 0,
-      "impressions": 35,
+      "impressions": 52,
       "conv": 0,
       "cost": 0
     },
@@ -130,7 +130,15 @@
       "id": "198065523322",
       "name": "AG3 - Mobula Manta Dolphin",
       "clicks": 0,
-      "impressions": 0,
+      "impressions": 35,
+      "conv": 0,
+      "cost": 0
+    },
+    {
+      "id": "198161209124",
+      "name": "AG1 - ORCA",
+      "clicks": 0,
+      "impressions": 2,
       "conv": 0,
       "cost": 0
     }
