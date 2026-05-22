@@ -1,8 +1,8 @@
 {
   "meta": {
-    "pulledAt": "2026-05-22T05:12:30.000Z",
-    "today": "2026-05-20",
-    "yesterday": "2026-05-19",
+    "pulledAt": "2026-05-22T07:09:00.000Z",
+    "today": "2026-05-22",
+    "yesterday": "2026-05-21",
     "accountId": "2252665731",
     "accountName": "BajaBlue",
     "source": "live-via-NotFair-MCP-from-rick-agent-cron",
@@ -49,19 +49,11 @@
   ],
   "leads": {
     "today": {
-      "inquiries": 0,
-      "bookings": 0,
-      "asOfHour": 23,
-      "spend": 607.88,
-      "clicks": 13,
-      "impressions": 1025
+      "spend": 238.32,
+      "asOfHour": 0
     },
     "yesterday": {
-      "inquiries": 0,
-      "bookings": 0,
-      "spend": 596.465,
-      "clicks": 8,
-      "impressions": 297
+      "spend": 607.88
     },
     "projectedTomorrow": {
       "method": "trailing-7d-avg",
