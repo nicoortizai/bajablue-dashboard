@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-22T02:12:30.000Z",
+    "pulledAt": "2026-05-22T03:12:30.000Z",
     "today": "2026-05-20",
     "yesterday": "2026-05-19",
     "accountId": "2252665731",
@@ -51,7 +51,7 @@
     "today": {
       "inquiries": 0,
       "bookings": 0,
-      "asOfHour": 20,
+      "asOfHour": 21,
       "spend": 607.88,
       "clicks": 13,
       "impressions": 1025
