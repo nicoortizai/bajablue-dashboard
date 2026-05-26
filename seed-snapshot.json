@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-26T15:13:39.000Z",
+    "pulledAt": "2026-05-26T16:12:59.000Z",
     "today": "2026-05-26",
     "yesterday": "2026-05-25",
     "accountId": "2252665731",
@@ -50,7 +50,7 @@
   "leads": {
     "today": {
       "spend": 285,
-      "asOfHour": 8
+      "asOfHour": 9
     },
     "yesterday": {
       "spend": 502.46
