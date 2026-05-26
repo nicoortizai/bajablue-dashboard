@@ -1,6 +1,6 @@
 {
   "meta": {
-    "pulledAt": "2026-05-26T19:13:12.000Z",
+    "pulledAt": "2026-05-26T20:16:05Z",
     "today": "2026-05-26",
     "yesterday": "2026-05-25",
     "accountId": "2252665731",
@@ -13,7 +13,7 @@
   "campaigns": [
     {
       "id": "23854123828",
-      "name": "BajaBlue Search — Multi-day Expeditions v1",
+      "name": "BajaBlue Search \u2014 Multi-day Expeditions v1",
       "status": "ENABLED",
       "channel": "SEARCH",
       "biddingStrategy": "MAXIMIZE_CONVERSIONS",
@@ -189,12 +189,12 @@
       "primary": false
     },
     {
-      "name": "WhatsApp Click — Multi-day Interest",
+      "name": "WhatsApp Click \u2014 Multi-day Interest",
       "type": "CONTACT",
       "primary": false
     },
     {
-      "name": "Quiénes somos",
+      "name": "Qui\u00e9nes somos",
       "type": "PAGE_VIEW",
       "primary": true,
       "tag": "read-only"
@@ -1008,9 +1008,9 @@
         "Sea of Cortez Expedition",
         "Multi-Day Wildlife Tour Baja",
         "Blue, Grey, Humpback Whales",
-        "Bajablue Tours · Baja Mexico",
+        "Bajablue Tours \u00b7 Baja Mexico",
         "Whale Watching Mexico",
-        "Small Group · Max 12 Guests",
+        "Small Group \u00b7 Max 12 Guests",
         "3 to 5 Water Days on Boat",
         "From $35,000 MXN",
         "All Meals + Lodging Included"
@@ -1026,13 +1026,13 @@
         "Orca Encounter in Baja Mexico",
         "Wild Orcas, Not a Tank",
         "Bajablue Multi-Day Expedition",
-        "5 Water Days · 7 Days Total",
+        "5 Water Days \u00b7 7 Days Total",
         "April-June Orca Window",
-        "Sea of Cortez · Mexico",
+        "Sea of Cortez \u00b7 Mexico",
         "Max 12 Guests, Private Boat",
         "Bajablue Master Seafari",
         "Airport Transfers Included",
-        "Orca Mexico · Wild Pod"
+        "Orca Mexico \u00b7 Wild Pod"
       ],
       "cost": 919.38,
       "impressions": 447,
@@ -1045,11 +1045,11 @@
         "Sea of Cortez Snorkel Tour",
         "Baja Mexico Wildlife Tour",
         "Bajablue Multi-Day Expedition",
-        "3-5 Water Days · Small Group",
+        "3-5 Water Days \u00b7 Small Group",
         "Orcas, Mobulas, Dolphins",
         "La Ventana, Baja Mexico",
         "Mexican Marine Wildlife",
-        "Private Room · All Meals",
+        "Private Room \u00b7 All Meals",
         "Max 12 Guests",
         "Airport Transfers Included"
       ],
@@ -1063,12 +1063,12 @@
       "headlines": [
         "Baja Whale Watching Mexico",
         "Sea of Cortez Expedition",
-        "3 Water Days · 5 Days Total",
+        "3 Water Days \u00b7 5 Days Total",
         "Blue Whales, Greys, Humpbacks",
         "Bajablue Blue Expedition",
         "All Meals + Lodging Included",
         "La Ventana, Baja Mexico",
-        "Max 12 Guests · Small Boat",
+        "Max 12 Guests \u00b7 Small Boat",
         "Bajablue Multi-Day Tour",
         "Sea of Cortez Wildlife"
       ],
@@ -1080,16 +1080,16 @@
       "adId": "808839790515",
       "adGroup": "AG1 - ORCA",
       "headlines": [
-        "5 Water Days · 7 Days Total",
+        "5 Water Days \u00b7 7 Days Total",
         "Master Seafari $54k MXN",
         "Sea of Cortez Expedition",
-        "Private Room · All Meals",
+        "Private Room \u00b7 All Meals",
         "Max 12 Guests",
         "April-June Peak Wildlife",
         "Airport Transfers Included",
         "La Ventana, Baja Mexico",
         "Bajablue Multi-Day Expedition",
-        "Whales · Orcas · Mobulas"
+        "Whales \u00b7 Orcas \u00b7 Mobulas"
       ],
       "cost": 30.4,
       "impressions": 206,
