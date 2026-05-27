@@ -1,6 +1,6 @@
 {
  "meta": {
-  "pulledAt": "2026-05-27T04:22:05Z",
+  "pulledAt": "2026-05-27T05:15:33Z",
   "today": "2026-05-26",
   "yesterday": "2026-05-25",
   "accountId": "2252665731",
@@ -50,7 +50,7 @@
  "leads": {
   "today": {
    "spend": 285,
-   "asOfHour": 22
+   "asOfHour": 23
   },
   "yesterday": {
    "spend": 502.46
@@ -209,13 +209,13 @@
   {
    "device": "MOBILE",
    "cost": 283.22,
-   "impressions": 684,
+   "impressions": 687,
    "clicks": 12
   },
   {
    "device": "DESKTOP",
    "cost": 1.78,
-   "impressions": 117,
+   "impressions": 118,
    "clicks": 1
   },
   {
@@ -248,16 +248,16 @@
  "byAge7d": [
   {
    "ageRange": "AGE_RANGE_UNDETERMINED",
-   "cost": 917.88,
-   "impressions": 653,
-   "clicks": 12,
+   "cost": 1379.45,
+   "impressions": 813,
+   "clicks": 14,
    "conversions": 0
   },
   {
    "ageRange": "AGE_RANGE_35_44",
-   "cost": 630.31,
-   "impressions": 531,
-   "clicks": 9,
+   "cost": 645.11,
+   "impressions": 639,
+   "clicks": 10,
    "conversions": 0
   },
   {
@@ -268,24 +268,24 @@
    "conversions": 0
   },
   {
-   "ageRange": "AGE_RANGE_65_UP",
-   "cost": 249.96,
-   "impressions": 408,
-   "clicks": 3,
+   "ageRange": "AGE_RANGE_55_64",
+   "cost": 363.98,
+   "impressions": 377,
+   "clicks": 6,
    "conversions": 0
   },
   {
-   "ageRange": "AGE_RANGE_55_64",
-   "cost": 158.42,
-   "impressions": 315,
-   "clicks": 4,
+   "ageRange": "AGE_RANGE_65_UP",
+   "cost": 302.02,
+   "impressions": 510,
+   "clicks": 5,
    "conversions": 0
   },
   {
    "ageRange": "AGE_RANGE_45_54",
-   "cost": 146.45,
-   "impressions": 329,
-   "clicks": 5,
+   "cost": 210.62,
+   "impressions": 390,
+   "clicks": 6,
    "conversions": 0
   },
   {
@@ -531,24 +531,24 @@
    "clicks": 0
   },
   {
+   "dayOfWeek": "SUNDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 7,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SUNDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 4,
+   "clicks": 0
+  },
+  {
    "dayOfWeek": "MONDAY",
    "hour": 1,
    "cost": 0,
    "impressions": 57,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 1,
-   "cost": 0,
-   "impressions": 1,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 1,
-   "cost": 0,
-   "impressions": 1,
    "clicks": 0
   },
   {
@@ -559,83 +559,6 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 2,
-   "cost": 0,
-   "impressions": 1,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 2,
-   "cost": 0,
-   "impressions": 9,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 2,
-   "cost": 0,
-   "impressions": 1,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SUNDAY",
-   "hour": 3,
-   "cost": 0,
-   "impressions": 7,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 3,
-   "cost": 0,
-   "impressions": 4,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 3,
-   "cost": 0,
-   "impressions": 3,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 3,
-   "cost": 0,
-   "impressions": 2,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SUNDAY",
-   "hour": 4,
-   "cost": 0,
-   "impressions": 4,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 4,
-   "cost": 0,
-   "impressions": 15,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 4,
-   "cost": 0,
-   "impressions": 13,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 4,
-   "cost": 0,
-   "impressions": 1,
-   "clicks": 0
-  },
-  {
    "dayOfWeek": "MONDAY",
    "hour": 5,
    "cost": 0,
@@ -643,59 +566,10 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 5,
-   "cost": 0,
-   "impressions": 76,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 5,
-   "cost": 0,
-   "impressions": 2,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 5,
-   "cost": 0,
-   "impressions": 18,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 5,
-   "cost": 0,
-   "impressions": 1,
-   "clicks": 0
-  },
-  {
    "dayOfWeek": "MONDAY",
    "hour": 6,
    "cost": 0,
    "impressions": 1,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 6,
-   "cost": 0,
-   "impressions": 5,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 7,
-   "cost": 0,
-   "impressions": 3,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 7,
-   "cost": 0,
-   "impressions": 9,
    "clicks": 0
   },
   {
@@ -713,17 +587,80 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "FRIDAY",
-   "hour": 9,
-   "cost": 0,
-   "impressions": 44,
-   "clicks": 0
-  },
-  {
    "dayOfWeek": "MONDAY",
    "hour": 10,
    "cost": 0,
    "impressions": 11,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 22,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 1,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 2,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 4,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 15,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 76,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 12,
+   "cost": 0,
+   "impressions": 61,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 1,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 7,
+   "cost": 0,
+   "impressions": 3,
    "clicks": 0
   },
   {
@@ -734,17 +671,87 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "SATURDAY",
-   "hour": 10,
+   "dayOfWeek": "FRIDAY",
+   "hour": 2,
    "cost": 0,
    "impressions": 9,
    "clicks": 0
   },
   {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 12,
+   "dayOfWeek": "FRIDAY",
+   "hour": 3,
    "cost": 0,
-   "impressions": 61,
+   "impressions": 3,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 13,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 18,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 9,
+   "cost": 0,
+   "impressions": 44,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 2,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 6,
+   "cost": 0,
+   "impressions": 5,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 7,
+   "cost": 0,
+   "impressions": 9,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 10,
+   "cost": 0,
+   "impressions": 9,
    "clicks": 0
   },
   {
@@ -780,13 +787,6 @@
    "hour": 18,
    "cost": 0,
    "impressions": 48,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "TUESDAY",
-   "hour": 22,
-   "cost": 0,
-   "impressions": 1,
    "clicks": 0
   }
  ],
@@ -1368,6 +1368,24 @@
    "cost": 175.16,
    "impressions": 66,
    "clicks": 5,
+   "conversions": 0
+  },
+  {
+   "cityId": "geoTargetConstants/9198475",
+   "label": "Halifax,Nova Scotia,Canada",
+   "country": "2124",
+   "cost": 145.62,
+   "impressions": 5,
+   "clicks": 1,
+   "conversions": 0
+  },
+  {
+   "cityId": "geoTargetConstants/9242283",
+   "label": "St. Andrews,New Brunswick,Canada",
+   "country": "2124",
+   "cost": 88.09,
+   "impressions": 2,
+   "clicks": 1,
    "conversions": 0
   },
   {
