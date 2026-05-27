@@ -1,6 +1,6 @@
 {
  "meta": {
-  "pulledAt": "2026-05-27T12:13:35Z",
+  "pulledAt": "2026-05-27T13:13:36Z",
   "today": "2026-05-27",
   "yesterday": "2026-05-26",
   "accountId": "2252665731",
@@ -50,7 +50,7 @@
  "leads": {
   "today": {
    "spend": 545.08,
-   "asOfHour": 6
+   "asOfHour": 7
   },
   "yesterday": {
    "spend": 285
@@ -229,7 +229,7 @@
   {
    "device": "DESKTOP",
    "cost": 0,
-   "impressions": 75,
+   "impressions": 74,
    "clicks": 0
   }
  ],
@@ -1438,6 +1438,12 @@
  ],
  "searchTerms7d": [
   {
+   "term": "swimming with wild orcas",
+   "cost": 319.37,
+   "impressions": 2,
+   "clicks": 1
+  },
+  {
    "term": "st andrews whale watching tours",
    "cost": 88.09,
    "impressions": 2,
@@ -1450,8 +1456,14 @@
    "clicks": 1
   },
   {
-   "term": "whale shark tours la paz mexico",
-   "cost": 67.62,
+   "term": "swim with orcas",
+   "cost": 64.17,
+   "impressions": 3,
+   "clicks": 1
+  },
+  {
+   "term": "baja california whale watching",
+   "cost": 52.24,
    "impressions": 1,
    "clicks": 1
   },
@@ -1497,24 +1509,6 @@
    "cost": 175.16,
    "impressions": 74,
    "clicks": 5,
-   "conversions": 0
-  },
-  {
-   "cityId": "geoTargetConstants/9198475",
-   "label": "Halifax,Nova Scotia,Canada",
-   "country": "2124",
-   "cost": 145.62,
-   "impressions": 5,
-   "clicks": 1,
-   "conversions": 0
-  },
-  {
-   "cityId": "geoTargetConstants/9242283",
-   "label": "St. Andrews,New Brunswick,Canada",
-   "country": "2124",
-   "cost": 88.09,
-   "impressions": 2,
-   "clicks": 1,
    "conversions": 0
   },
   {
