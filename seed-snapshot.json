@@ -1,6 +1,6 @@
 {
  "meta": {
-  "pulledAt": "2026-05-27T03:14:06Z",
+  "pulledAt": "2026-05-27T04:22:05Z",
   "today": "2026-05-26",
   "yesterday": "2026-05-25",
   "accountId": "2252665731",
@@ -50,7 +50,7 @@
  "leads": {
   "today": {
    "spend": 285,
-   "asOfHour": 20
+   "asOfHour": 22
   },
   "yesterday": {
    "spend": 502.46
@@ -248,16 +248,16 @@
  "byAge7d": [
   {
    "ageRange": "AGE_RANGE_UNDETERMINED",
-   "cost": 1379.45,
-   "impressions": 813,
-   "clicks": 14,
+   "cost": 917.88,
+   "impressions": 653,
+   "clicks": 12,
    "conversions": 0
   },
   {
    "ageRange": "AGE_RANGE_35_44",
-   "cost": 645.11,
-   "impressions": 639,
-   "clicks": 10,
+   "cost": 630.31,
+   "impressions": 531,
+   "clicks": 9,
    "conversions": 0
   },
   {
@@ -268,24 +268,24 @@
    "conversions": 0
   },
   {
-   "ageRange": "AGE_RANGE_55_64",
-   "cost": 363.98,
-   "impressions": 377,
-   "clicks": 6,
+   "ageRange": "AGE_RANGE_65_UP",
+   "cost": 249.96,
+   "impressions": 408,
+   "clicks": 3,
    "conversions": 0
   },
   {
-   "ageRange": "AGE_RANGE_65_UP",
-   "cost": 302.02,
-   "impressions": 510,
-   "clicks": 5,
+   "ageRange": "AGE_RANGE_55_64",
+   "cost": 158.42,
+   "impressions": 315,
+   "clicks": 4,
    "conversions": 0
   },
   {
    "ageRange": "AGE_RANGE_45_54",
-   "cost": 210.62,
-   "impressions": 390,
-   "clicks": 6,
+   "cost": 146.45,
+   "impressions": 329,
+   "clicks": 5,
    "conversions": 0
   },
   {
@@ -321,11 +321,46 @@
  ],
  "byHour7d": [
   {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 11,
+   "cost": 459.17,
+   "impressions": 95,
+   "clicks": 4
+  },
+  {
+   "dayOfWeek": "SUNDAY",
+   "hour": 5,
+   "cost": 319.37,
+   "impressions": 7,
+   "clicks": 1
+  },
+  {
    "dayOfWeek": "SUNDAY",
    "hour": 0,
    "cost": 285,
    "impressions": 519,
    "clicks": 4
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 0,
+   "cost": 285,
+   "impressions": 762,
+   "clicks": 5
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 0,
+   "cost": 241.08,
+   "impressions": 520,
+   "clicks": 4
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 11,
+   "cost": 217.95,
+   "impressions": 5,
+   "clicks": 1
   },
   {
    "dayOfWeek": "MONDAY",
@@ -336,10 +371,136 @@
   },
   {
    "dayOfWeek": "THURSDAY",
-   "hour": 0,
-   "cost": 285,
-   "impressions": 762,
-   "clicks": 5
+   "hour": 12,
+   "cost": 176.54,
+   "impressions": 59,
+   "clicks": 2
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 11,
+   "cost": 174.19,
+   "impressions": 9,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 19,
+   "cost": 163.49,
+   "impressions": 25,
+   "clicks": 3
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 6,
+   "cost": 132.48,
+   "impressions": 23,
+   "clicks": 2
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 3,
+   "cost": 103.62,
+   "impressions": 51,
+   "clicks": 2
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 9,
+   "cost": 88.09,
+   "impressions": 17,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 13,
+   "cost": 82.21,
+   "impressions": 20,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 10,
+   "cost": 76.48,
+   "impressions": 30,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 7,
+   "cost": 72.14,
+   "impressions": 26,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 9,
+   "cost": 52.24,
+   "impressions": 26,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 1,
+   "cost": 46.68,
+   "impressions": 20,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 1,
+   "cost": 43.92,
+   "impressions": 136,
+   "clicks": 2
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 11,
+   "cost": 39.52,
+   "impressions": 108,
+   "clicks": 2
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 10,
+   "cost": 38.64,
+   "impressions": 18,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 8,
+   "cost": 36.44,
+   "impressions": 21,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 7,
+   "cost": 32.97,
+   "impressions": 3,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 8,
+   "cost": 23.97,
+   "impressions": 18,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 8,
+   "cost": 23.19,
+   "impressions": 5,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 6,
+   "cost": 21.11,
+   "impressions": 2,
+   "clicks": 1
   },
   {
    "dayOfWeek": "FRIDAY",
@@ -349,11 +510,18 @@
    "clicks": 1
   },
   {
-   "dayOfWeek": "SATURDAY",
-   "hour": 0,
-   "cost": 241.08,
-   "impressions": 520,
-   "clicks": 4
+   "dayOfWeek": "THURSDAY",
+   "hour": 3,
+   "cost": 10.28,
+   "impressions": 2,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 6,
+   "cost": 6.51,
+   "impressions": 1,
+   "clicks": 1
   },
   {
    "dayOfWeek": "SUNDAY",
@@ -382,20 +550,6 @@
    "cost": 0,
    "impressions": 1,
    "clicks": 0
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 1,
-   "cost": 46.68,
-   "impressions": 20,
-   "clicks": 1
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 1,
-   "cost": 43.92,
-   "impressions": 136,
-   "clicks": 2
   },
   {
    "dayOfWeek": "MONDAY",
@@ -433,25 +587,11 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "MONDAY",
-   "hour": 3,
-   "cost": 103.62,
-   "impressions": 51,
-   "clicks": 2
-  },
-  {
    "dayOfWeek": "WEDNESDAY",
    "hour": 3,
    "cost": 0,
    "impressions": 4,
    "clicks": 0
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 3,
-   "cost": 10.28,
-   "impressions": 2,
-   "clicks": 1
   },
   {
    "dayOfWeek": "FRIDAY",
@@ -496,13 +636,6 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "SUNDAY",
-   "hour": 5,
-   "cost": 319.37,
-   "impressions": 7,
-   "clicks": 1
-  },
-  {
    "dayOfWeek": "MONDAY",
    "hour": 5,
    "cost": 0,
@@ -545,27 +678,6 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 6,
-   "cost": 6.51,
-   "impressions": 1,
-   "clicks": 1
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 6,
-   "cost": 21.11,
-   "impressions": 2,
-   "clicks": 1
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 6,
-   "cost": 132.48,
-   "impressions": 23,
-   "clicks": 2
-  },
-  {
    "dayOfWeek": "SATURDAY",
    "hour": 6,
    "cost": 0,
@@ -573,25 +685,11 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "MONDAY",
-   "hour": 7,
-   "cost": 32.97,
-   "impressions": 3,
-   "clicks": 1
-  },
-  {
    "dayOfWeek": "THURSDAY",
    "hour": 7,
    "cost": 0,
    "impressions": 3,
    "clicks": 0
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 7,
-   "cost": 72.14,
-   "impressions": 26,
-   "clicks": 1
   },
   {
    "dayOfWeek": "SATURDAY",
@@ -608,39 +706,11 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "THURSDAY",
-   "hour": 8,
-   "cost": 23.19,
-   "impressions": 5,
-   "clicks": 1
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 8,
-   "cost": 36.44,
-   "impressions": 21,
-   "clicks": 1
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 8,
-   "cost": 23.97,
-   "impressions": 18,
-   "clicks": 1
-  },
-  {
    "dayOfWeek": "MONDAY",
    "hour": 9,
    "cost": 0,
    "impressions": 5,
    "clicks": 0
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 9,
-   "cost": 52.24,
-   "impressions": 26,
-   "clicks": 1
   },
   {
    "dayOfWeek": "FRIDAY",
@@ -650,25 +720,11 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "SATURDAY",
-   "hour": 9,
-   "cost": 88.09,
-   "impressions": 17,
-   "clicks": 1
-  },
-  {
    "dayOfWeek": "MONDAY",
    "hour": 10,
    "cost": 0,
    "impressions": 11,
    "clicks": 0
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 10,
-   "cost": 38.64,
-   "impressions": 18,
-   "clicks": 1
   },
   {
    "dayOfWeek": "THURSDAY",
@@ -678,46 +734,11 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "FRIDAY",
-   "hour": 10,
-   "cost": 76.48,
-   "impressions": 30,
-   "clicks": 1
-  },
-  {
    "dayOfWeek": "SATURDAY",
    "hour": 10,
    "cost": 0,
    "impressions": 9,
    "clicks": 0
-  },
-  {
-   "dayOfWeek": "MONDAY",
-   "hour": 11,
-   "cost": 174.19,
-   "impressions": 9,
-   "clicks": 1
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 11,
-   "cost": 459.17,
-   "impressions": 95,
-   "clicks": 4
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 11,
-   "cost": 39.52,
-   "impressions": 108,
-   "clicks": 2
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 11,
-   "cost": 217.95,
-   "impressions": 5,
-   "clicks": 1
   },
   {
    "dayOfWeek": "WEDNESDAY",
@@ -725,20 +746,6 @@
    "cost": 0,
    "impressions": 61,
    "clicks": 0
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 12,
-   "cost": 176.54,
-   "impressions": 59,
-   "clicks": 2
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 13,
-   "cost": 82.21,
-   "impressions": 20,
-   "clicks": 1
   },
   {
    "dayOfWeek": "SATURDAY",
@@ -774,13 +781,6 @@
    "cost": 0,
    "impressions": 48,
    "clicks": 0
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 19,
-   "cost": 163.49,
-   "impressions": 25,
-   "clicks": 3
   },
   {
    "dayOfWeek": "TUESDAY",
@@ -1303,12 +1303,6 @@
    "clicks": 1
   },
   {
-   "term": "whale watching washington state",
-   "cost": 115.87,
-   "impressions": 2,
-   "clicks": 1
-  },
-  {
    "term": "st andrews whale watching tours",
    "cost": 88.09,
    "impressions": 2,
@@ -1321,36 +1315,6 @@
    "clicks": 1
   },
   {
-   "term": "whale watching cruise",
-   "cost": 80.26,
-   "impressions": 5,
-   "clicks": 1
-  },
-  {
-   "term": "whale watching vancouver",
-   "cost": 79.17,
-   "impressions": 5,
-   "clicks": 1
-  },
-  {
-   "term": "whale shark tours playa del carmen",
-   "cost": 76.48,
-   "impressions": 1,
-   "clicks": 1
-  },
-  {
-   "term": "whale watching baja california",
-   "cost": 75.23,
-   "impressions": 2,
-   "clicks": 1
-  },
-  {
-   "term": "whale shark tours la paz mexico",
-   "cost": 67.62,
-   "impressions": 1,
-   "clicks": 1
-  },
-  {
    "term": "swim with orcas",
    "cost": 64.17,
    "impressions": 3,
@@ -1359,12 +1323,6 @@
   {
    "term": "baja california whale watching",
    "cost": 52.24,
-   "impressions": 1,
-   "clicks": 1
-  },
-  {
-   "term": "where can you see whales in the us",
-   "cost": 52.22,
    "impressions": 1,
    "clicks": 1
   },
@@ -1391,78 +1349,71 @@
    "cost": 23.97,
    "impressions": 1,
    "clicks": 1
-  },
-  {
-   "term": "whale watching maui",
-   "cost": 10.28,
-   "impressions": 2,
-   "clicks": 1
   }
  ],
  "geo7d": [
   {
    "cityId": "geoTargetConstants/1001975",
-   "label": "West Vancouver, British Columbia, Canada",
+   "label": "West Vancouver,British Columbia,Canada",
    "country": "2124",
    "cost": 217.95,
    "impressions": 1,
-   "clicks": 1
+   "clicks": 1,
+   "conversions": 0
   },
   {
    "cityId": "geoTargetConstants/1001970",
-   "label": "Vancouver, British Columbia, Canada",
+   "label": "Vancouver,British Columbia,Canada",
    "country": "2124",
-   "cost": 117.81,
-   "impressions": 23,
-   "clicks": 2
+   "cost": 175.16,
+   "impressions": 66,
+   "clicks": 5,
+   "conversions": 0
   },
   {
    "cityId": "geoTargetConstants/1001808",
-   "label": "Edmonton, Alberta, Canada",
+   "label": "Edmonton,Alberta,Canada",
    "country": "2124",
    "cost": 76.48,
    "impressions": 10,
-   "clicks": 1
-  },
-  {
-   "cityId": "geoTargetConstants/1001970",
-   "label": "Vancouver, British Columbia, Canada",
-   "country": "2124",
-   "cost": 57.35,
-   "impressions": 43,
-   "clicks": 3
+   "clicks": 1,
+   "conversions": 0
   },
   {
    "cityId": "geoTargetConstants/1001857",
-   "label": "geoTargetConstants/1001857",
+   "label": "Wetaskiwin,Alberta,Canada",
    "country": "2124",
    "cost": 24.38,
    "impressions": 1,
-   "clicks": 1
+   "clicks": 1,
+   "conversions": 0
   },
   {
    "cityId": "geoTargetConstants/1001801",
-   "label": "Calgary, Alberta, Canada",
+   "label": "Calgary,Alberta,Canada",
    "country": "2124",
    "cost": 23.97,
    "impressions": 20,
-   "clicks": 1
+   "clicks": 1,
+   "conversions": 0
   },
   {
    "cityId": "geoTargetConstants/1002057",
-   "label": "geoTargetConstants/1002057",
+   "label": "Fredericton,New Brunswick,Canada",
    "country": "2124",
    "cost": 23.19,
    "impressions": 1,
-   "clicks": 1
+   "clicks": 1,
+   "conversions": 0
   },
   {
    "cityId": "geoTargetConstants/1001851",
-   "label": "geoTargetConstants/1001851",
+   "label": "Three Hills,Alberta,Canada",
    "country": "2124",
    "cost": 20.64,
    "impressions": 1,
-   "clicks": 1
+   "clicks": 1,
+   "conversions": 0
   }
  ]
 }
