@@ -1,1232 +1,1452 @@
 {
-  "meta": {
-    "pulledAt": "2026-05-27T00:13:14Z",
-    "today": "2026-05-26",
-    "yesterday": "2026-05-25",
-    "accountId": "2252665731",
-    "accountName": "BajaBlue",
-    "source": "live-via-NotFair-MCP-from-rick-agent-cron",
-    "currency": "MXN",
-    "fxRate": 17.3,
-    "fxRateAsOf": "2026-05-20T16:35Z"
+ "meta": {
+  "pulledAt": "2026-05-27T01:20:27Z",
+  "today": "2026-05-26",
+  "yesterday": "2026-05-25",
+  "accountId": "2252665731",
+  "accountName": "BajaBlue",
+  "source": "live-via-NotFair-MCP-from-rick-agent-cron",
+  "currency": "MXN",
+  "fxRate": 17.3,
+  "fxRateAsOf": "2026-05-20T16:35Z"
+ },
+ "campaigns": [
+  {
+   "id": "23854123828",
+   "name": "BajaBlue Search — Multi-day Expeditions v1",
+   "status": "ENABLED",
+   "channel": "SEARCH",
+   "biddingStrategy": "MAXIMIZE_CONVERSIONS",
+   "targetCpa": 1300,
+   "dailyBudget": 570,
+   "monthlyBudgetTarget": 17300,
+   "monthlyBudgetTargetUsd": 1000,
+   "launchedAt": "2026-05-20T02:48:00Z",
+   "currencyCorrectedAt": "2026-05-20T17:00:00Z",
+   "adGroups": [
+    {
+     "id": "198161209124",
+     "name": "AG1 - ORCA"
+    },
+    {
+     "id": "198065523042",
+     "name": "AG2 - Sea of Cortez Whale Watching"
+    },
+    {
+     "id": "198065523322",
+     "name": "AG3 - Mobula Manta Dolphin"
+    },
+    {
+     "id": "194313453497",
+     "name": "AG4 - WS Arbitrage (no mention)"
+    },
+    {
+     "id": "194313453577",
+     "name": "AG5 - Whale Watching Generic"
+    }
+   ]
+  }
+ ],
+ "leads": {
+  "today": {
+   "spend": 285,
+   "asOfHour": 18
   },
-  "campaigns": [
-    {
-      "id": "23854123828",
-      "name": "BajaBlue Search \u2014 Multi-day Expeditions v1",
-      "status": "ENABLED",
-      "channel": "SEARCH",
-      "biddingStrategy": "MAXIMIZE_CONVERSIONS",
-      "targetCpa": 1300,
-      "dailyBudget": 570,
-      "monthlyBudgetTarget": 17300,
-      "monthlyBudgetTargetUsd": 1000,
-      "launchedAt": "2026-05-20T02:48:00Z",
-      "currencyCorrectedAt": "2026-05-20T17:00:00Z",
-      "adGroups": [
-        {
-          "id": "198161209124",
-          "name": "AG1 - ORCA"
-        },
-        {
-          "id": "198065523042",
-          "name": "AG2 - Sea of Cortez Whale Watching"
-        },
-        {
-          "id": "198065523322",
-          "name": "AG3 - Mobula Manta Dolphin"
-        },
-        {
-          "id": "194313453497",
-          "name": "AG4 - WS Arbitrage (no mention)"
-        },
-        {
-          "id": "194313453577",
-          "name": "AG5 - Whale Watching Generic"
-        }
-      ]
-    }
-  ],
-  "leads": {
-    "today": {
-      "spend": 285,
-      "asOfHour": 12
-    },
-    "yesterday": {
-      "spend": 502.46
-    },
-    "projectedTomorrow": {
-      "method": "trailing-7d-avg",
-      "insufficient": true,
-      "message": "Projection available after 7 days of conversion history"
-    }
+  "yesterday": {
+   "spend": 502.46
   },
-  "thirtyDay": {
-    "totalSpend": 3459.98,
-    "totalClicks": 51,
-    "totalImpressions": 3577,
-    "totalConversions": 0,
-    "dailySeries": [
-      {
-        "date": "2026-05-19",
-        "cost": 0,
-        "spend": 0,
-        "clicks": 0,
-        "impressions": 1,
-        "conversions": 0
-      },
-      {
-        "date": "2026-05-20",
-        "cost": 586.53,
-        "spend": 586.53,
-        "clicks": 7,
-        "impressions": 292,
-        "conversions": 0
-      },
-      {
-        "date": "2026-05-21",
-        "cost": 607.88,
-        "spend": 607.88,
-        "clicks": 13,
-        "impressions": 1018,
-        "conversions": 0
-      },
-      {
-        "date": "2026-05-22",
-        "cost": 380.24,
-        "spend": 380.24,
-        "clicks": 7,
-        "impressions": 532,
-        "conversions": 0
-      },
-      {
-        "date": "2026-05-23",
-        "cost": 778.5,
-        "spend": 778.5,
-        "clicks": 12,
-        "impressions": 822,
-        "conversions": 0
-      },
-      {
-        "date": "2026-05-24",
-        "cost": 604.37,
-        "spend": 604.37,
-        "clicks": 5,
-        "impressions": 538,
-        "conversions": 0
-      },
-      {
-        "date": "2026-05-25",
-        "cost": 502.46,
-        "spend": 502.46,
-        "clicks": 7,
-        "impressions": 374,
-        "conversions": 0
-      }
-    ]
-  },
-  "byAdGroup7d": [
-    {
-      "id": "194313453577",
-      "name": "AG5 - Whale Watching Generic",
-      "clicks": 29,
-      "impressions": 1571,
-      "conv": 0,
-      "cost": 2013.32
-    },
-    {
-      "id": "198161209124",
-      "name": "AG1 - ORCA",
-      "clicks": 10,
-      "impressions": 653,
-      "conv": 0,
-      "cost": 949.79
-    },
-    {
-      "id": "194313453497",
-      "name": "AG4 - WS Arbitrage (no mention)",
-      "clicks": 10,
-      "impressions": 1177,
-      "conv": 0,
-      "cost": 369.4
-    },
-    {
-      "id": "198065523042",
-      "name": "AG2 - Sea of Cortez Whale Watching",
-      "clicks": 2,
-      "impressions": 116,
-      "conv": 0,
-      "cost": 127.47
-    },
-    {
-      "id": "198065523322",
-      "name": "AG3 - Mobula Manta Dolphin",
-      "clicks": 0,
-      "impressions": 60,
-      "conv": 0,
-      "cost": 0
-    }
-  ],
-  "conversionActions": [
-    {
-      "name": "Bokun Blue Expedition Booking (Offline)",
-      "type": "PURCHASE",
-      "primary": true
-    },
-    {
-      "name": "Bokun Master Seafari Booking (Offline)",
-      "type": "PURCHASE",
-      "primary": true
-    },
-    {
-      "name": "Bokun Ocean Safari Booking (Offline, Secondary)",
-      "type": "PURCHASE",
-      "primary": false
-    },
-    {
-      "name": "Contact Form Submit",
-      "type": "SUBMIT_LEAD_FORM",
-      "primary": false
-    },
-    {
-      "name": "WhatsApp Click \u2014 Multi-day Interest",
-      "type": "CONTACT",
-      "primary": false
-    },
-    {
-      "name": "Qui\u00e9nes somos",
-      "type": "PAGE_VIEW",
-      "primary": true,
-      "tag": "read-only"
-    }
-  ],
-  "negKeywordList": {
-    "name": "NEG-MULTIDAY-CORE",
-    "count": 18,
-    "linked": true
-  },
-  "byDeviceToday": [
-    {
-      "device": "MOBILE",
-      "cost": 283.22,
-      "impressions": 659,
-      "clicks": 12
-    },
-    {
-      "device": "DESKTOP",
-      "cost": 1.78,
-      "impressions": 105,
-      "clicks": 1
-    },
-    {
-      "device": "TABLET",
-      "cost": 0,
-      "impressions": 26,
-      "clicks": 0
-    }
-  ],
-  "byDevice7d": [
-    {
-      "device": "MOBILE",
-      "cost": 2566.63,
-      "impressions": 2836,
-      "clicks": 40
-    },
-    {
-      "device": "DESKTOP",
-      "cost": 893.35,
-      "impressions": 619,
-      "clicks": 11
-    },
-    {
-      "device": "TABLET",
-      "cost": 0,
-      "impressions": 122,
-      "clicks": 0
-    }
-  ],
-  "byAge7d": [
-    {
-      "ageRange": "AGE_RANGE_18_24",
-      "cost": 145.96,
-      "impressions": 323,
-      "clicks": 2,
-      "conversions": 0
-    },
-    {
-      "ageRange": "AGE_RANGE_25_34",
-      "cost": 412.82,
-      "impressions": 525,
-      "clicks": 8,
-      "conversions": 0
-    },
-    {
-      "ageRange": "AGE_RANGE_35_44",
-      "cost": 645.11,
-      "impressions": 639,
-      "clicks": 10,
-      "conversions": 0
-    },
-    {
-      "ageRange": "AGE_RANGE_45_54",
-      "cost": 210.62,
-      "impressions": 390,
-      "clicks": 6,
-      "conversions": 0
-    },
-    {
-      "ageRange": "AGE_RANGE_55_64",
-      "cost": 363.98,
-      "impressions": 377,
-      "clicks": 6,
-      "conversions": 0
-    },
-    {
-      "ageRange": "AGE_RANGE_65_UP",
-      "cost": 302.02,
-      "impressions": 510,
-      "clicks": 5,
-      "conversions": 0
-    },
-    {
-      "ageRange": "AGE_RANGE_UNDETERMINED",
-      "cost": 1379.46,
-      "impressions": 813,
-      "clicks": 14,
-      "conversions": 0
-    }
-  ],
-  "byGender7d": [
-    {
-      "gender": "MALE",
-      "cost": 1023.71,
-      "impressions": 1353,
-      "clicks": 17,
-      "conversions": 0
-    },
-    {
-      "gender": "FEMALE",
-      "cost": 1482.16,
-      "impressions": 1790,
-      "clicks": 27,
-      "conversions": 0
-    },
-    {
-      "gender": "UNDETERMINED",
-      "cost": 954.1,
-      "impressions": 434,
-      "clicks": 7,
-      "conversions": 0
-    }
-  ],
-  "byHour7d": [
-    {
-      "dayOfWeek": "SUNDAY",
-      "hour": 0,
-      "cost": 285,
-      "impressions": 519,
-      "clicks": 4
-    },
-    {
-      "dayOfWeek": "SUNDAY",
-      "hour": 1,
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SUNDAY",
-      "hour": 3,
-      "cost": 0,
-      "impressions": 7,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SUNDAY",
-      "hour": 4,
-      "cost": 0,
-      "impressions": 4,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SUNDAY",
-      "hour": 5,
-      "cost": 319.37,
-      "impressions": 7,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "MONDAY",
-      "hour": 0,
-      "cost": 191.68,
-      "impressions": 162,
-      "clicks": 3
-    },
-    {
-      "dayOfWeek": "MONDAY",
-      "hour": 1,
-      "cost": 0,
-      "impressions": 57,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "MONDAY",
-      "hour": 2,
-      "cost": 0,
-      "impressions": 70,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "MONDAY",
-      "hour": 3,
-      "cost": 103.62,
-      "impressions": 51,
-      "clicks": 2
-    },
-    {
-      "dayOfWeek": "MONDAY",
-      "hour": 5,
-      "cost": 0,
-      "impressions": 3,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "MONDAY",
-      "hour": 6,
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "MONDAY",
-      "hour": 7,
-      "cost": 32.97,
-      "impressions": 3,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "MONDAY",
-      "hour": 8,
-      "cost": 0,
-      "impressions": 2,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "MONDAY",
-      "hour": 9,
-      "cost": 0,
-      "impressions": 5,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "MONDAY",
-      "hour": 10,
-      "cost": 0,
-      "impressions": 11,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "MONDAY",
-      "hour": 11,
-      "cost": 174.19,
-      "impressions": 9,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "TUESDAY",
-      "hour": 22,
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "WEDNESDAY",
-      "hour": 1,
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "WEDNESDAY",
-      "hour": 2,
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "WEDNESDAY",
-      "hour": 3,
-      "cost": 0,
-      "impressions": 4,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "WEDNESDAY",
-      "hour": 4,
-      "cost": 0,
-      "impressions": 15,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "WEDNESDAY",
-      "hour": 5,
-      "cost": 0,
-      "impressions": 76,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "WEDNESDAY",
-      "hour": 6,
-      "cost": 6.51,
-      "impressions": 1,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "WEDNESDAY",
-      "hour": 10,
-      "cost": 38.64,
-      "impressions": 18,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "WEDNESDAY",
-      "hour": 11,
-      "cost": 459.17,
-      "impressions": 95,
-      "clicks": 4
-    },
-    {
-      "dayOfWeek": "WEDNESDAY",
-      "hour": 12,
-      "cost": 0,
-      "impressions": 61,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "WEDNESDAY",
-      "hour": 13,
-      "cost": 82.21,
-      "impressions": 20,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "THURSDAY",
-      "hour": 0,
-      "cost": 285,
-      "impressions": 762,
-      "clicks": 5
-    },
-    {
-      "dayOfWeek": "THURSDAY",
-      "hour": 1,
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "THURSDAY",
-      "hour": 3,
-      "cost": 10.28,
-      "impressions": 2,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "THURSDAY",
-      "hour": 5,
-      "cost": 0,
-      "impressions": 2,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "THURSDAY",
-      "hour": 6,
-      "cost": 21.11,
-      "impressions": 2,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "THURSDAY",
-      "hour": 7,
-      "cost": 0,
-      "impressions": 3,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "THURSDAY",
-      "hour": 8,
-      "cost": 23.19,
-      "impressions": 5,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "THURSDAY",
-      "hour": 9,
-      "cost": 52.24,
-      "impressions": 26,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "THURSDAY",
-      "hour": 10,
-      "cost": 0,
-      "impressions": 48,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "THURSDAY",
-      "hour": 11,
-      "cost": 39.52,
-      "impressions": 108,
-      "clicks": 2
-    },
-    {
-      "dayOfWeek": "THURSDAY",
-      "hour": 12,
-      "cost": 176.54,
-      "impressions": 59,
-      "clicks": 2
-    },
-    {
-      "dayOfWeek": "FRIDAY",
-      "hour": 0,
-      "cost": 16.02,
-      "impressions": 325,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "FRIDAY",
-      "hour": 1,
-      "cost": 46.68,
-      "impressions": 20,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "FRIDAY",
-      "hour": 2,
-      "cost": 0,
-      "impressions": 9,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "FRIDAY",
-      "hour": 3,
-      "cost": 0,
-      "impressions": 3,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "FRIDAY",
-      "hour": 4,
-      "cost": 0,
-      "impressions": 13,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "FRIDAY",
-      "hour": 5,
-      "cost": 0,
-      "impressions": 18,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "FRIDAY",
-      "hour": 6,
-      "cost": 132.48,
-      "impressions": 23,
-      "clicks": 2
-    },
-    {
-      "dayOfWeek": "FRIDAY",
-      "hour": 7,
-      "cost": 72.14,
-      "impressions": 26,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "FRIDAY",
-      "hour": 8,
-      "cost": 36.44,
-      "impressions": 21,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "FRIDAY",
-      "hour": 9,
-      "cost": 0,
-      "impressions": 44,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "FRIDAY",
-      "hour": 10,
-      "cost": 76.48,
-      "impressions": 30,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 0,
-      "cost": 241.08,
-      "impressions": 520,
-      "clicks": 4
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 1,
-      "cost": 43.92,
-      "impressions": 136,
-      "clicks": 2
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 2,
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 3,
-      "cost": 0,
-      "impressions": 2,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 4,
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 5,
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 6,
-      "cost": 0,
-      "impressions": 5,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 7,
-      "cost": 0,
-      "impressions": 9,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 8,
-      "cost": 23.97,
-      "impressions": 18,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 9,
-      "cost": 88.09,
-      "impressions": 17,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 10,
-      "cost": 0,
-      "impressions": 9,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 11,
-      "cost": 217.95,
-      "impressions": 5,
-      "clicks": 1
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 14,
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 15,
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 16,
-      "cost": 0,
-      "impressions": 3,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 17,
-      "cost": 0,
-      "impressions": 20,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 18,
-      "cost": 0,
-      "impressions": 48,
-      "clicks": 0
-    },
-    {
-      "dayOfWeek": "SATURDAY",
-      "hour": 19,
-      "cost": 163.49,
-      "impressions": 25,
-      "clicks": 3
-    }
-  ],
-  "byKeyword7d": [
-    {
-      "text": "whale watching tour",
-      "matchType": "PHRASE",
-      "adGroup": "AG5 - Whale Watching Generic",
-      "cost": 1168.25,
-      "impressions": 530,
-      "clicks": 17,
-      "conversions": 0
-    },
-    {
-      "text": "whale watching cruise",
-      "matchType": "PHRASE",
-      "adGroup": "AG5 - Whale Watching Generic",
-      "cost": 393.14,
-      "impressions": 123,
-      "clicks": 4,
-      "conversions": 0
-    },
-    {
-      "text": "swim with orcas",
-      "matchType": "EXACT",
-      "adGroup": "AG1 - ORCA",
-      "cost": 383.54,
-      "impressions": 13,
-      "clicks": 2,
-      "conversions": 0
-    },
-    {
-      "text": "whale tour",
-      "matchType": "PHRASE",
-      "adGroup": "AG5 - Whale Watching Generic",
-      "cost": 76.48,
-      "impressions": 75,
-      "clicks": 1,
-      "conversions": 0
-    },
-    {
-      "text": "whale watching baja california",
-      "matchType": "EXACT",
-      "adGroup": "AG2 - Sea of Cortez Whale Watching",
-      "cost": 75.23,
-      "impressions": 2,
-      "clicks": 1,
-      "conversions": 0
-    },
-    {
-      "text": "swim with whale sharks la paz",
-      "matchType": "EXACT",
-      "adGroup": "AG4 - WS Arbitrage (no mention)",
-      "cost": 67.62,
-      "impressions": 6,
-      "clicks": 1,
-      "conversions": 0
-    },
-    {
-      "text": "whale watching baja",
-      "matchType": "EXACT",
-      "adGroup": "AG2 - Sea of Cortez Whale Watching",
-      "cost": 52.24,
-      "impressions": 14,
-      "clicks": 1,
-      "conversions": 0
-    },
-    {
-      "text": "swim with whale sharks mexico",
-      "matchType": "EXACT",
-      "adGroup": "AG4 - WS Arbitrage (no mention)",
-      "cost": 23.97,
-      "impressions": 13,
-      "clicks": 1,
-      "conversions": 0
-    },
-    {
-      "text": "swim with whale sharks",
-      "matchType": "EXACT",
-      "adGroup": "AG4 - WS Arbitrage (no mention)",
-      "cost": 0,
-      "impressions": 46,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "snorkel with whale sharks",
-      "matchType": "EXACT",
-      "adGroup": "AG4 - WS Arbitrage (no mention)",
-      "cost": 0,
-      "impressions": 4,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "whale shark tour",
-      "matchType": "PHRASE",
-      "adGroup": "AG4 - WS Arbitrage (no mention)",
-      "cost": 0,
-      "impressions": 4,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "killer whale expedition",
-      "matchType": "PHRASE",
-      "adGroup": "AG1 - ORCA",
-      "cost": 0,
-      "impressions": 20,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "orca baja california",
-      "matchType": "PHRASE",
-      "adGroup": "AG1 - ORCA",
-      "cost": 0,
-      "impressions": 13,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "mobula ray sea of cortez",
-      "matchType": "PHRASE",
-      "adGroup": "AG3 - Mobula Manta Dolphin",
-      "cost": 0,
-      "impressions": 5,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "orcas mexico",
-      "matchType": "PHRASE",
-      "adGroup": "AG1 - ORCA",
-      "cost": 0,
-      "impressions": 5,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "orca whale watching",
-      "matchType": "EXACT",
-      "adGroup": "AG1 - ORCA",
-      "cost": 0,
-      "impressions": 3,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "baja whale watching",
-      "matchType": "EXACT",
-      "adGroup": "AG2 - Sea of Cortez Whale Watching",
-      "cost": 0,
-      "impressions": 3,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "sea of cortez tour",
-      "matchType": "EXACT",
-      "adGroup": "AG2 - Sea of Cortez Whale Watching",
-      "cost": 0,
-      "impressions": 3,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "whale watching sea of cortez",
-      "matchType": "EXACT",
-      "adGroup": "AG2 - Sea of Cortez Whale Watching",
-      "cost": 0,
-      "impressions": 2,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "swim with dolphins mexico",
-      "matchType": "EXACT",
-      "adGroup": "AG3 - Mobula Manta Dolphin",
-      "cost": 0,
-      "impressions": 2,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "orca tour",
-      "matchType": "EXACT",
-      "adGroup": "AG1 - ORCA",
-      "cost": 0,
-      "impressions": 2,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "orca encounter",
-      "matchType": "EXACT",
-      "adGroup": "AG1 - ORCA",
-      "cost": 0,
-      "impressions": 2,
-      "clicks": 0,
-      "conversions": 0
-    },
-    {
-      "text": "killer whale watching",
-      "matchType": "EXACT",
-      "adGroup": "AG1 - ORCA",
-      "cost": 0,
-      "impressions": 2,
-      "clicks": 0,
-      "conversions": 0
-    }
-  ],
-  "byAd7d": [
-    {
-      "adId": "808955055308",
-      "adGroup": "AG5 - Whale Watching Generic",
-      "headlines": [
-        "Mexico Whale Watching Tour",
-        "Sea of Cortez Expedition",
-        "Multi-Day Wildlife Tour Baja",
-        "Blue, Grey, Humpback Whales",
-        "Bajablue Tours \u00b7 Baja Mexico",
-        "Whale Watching Mexico",
-        "Small Group \u00b7 Max 12 Guests",
-        "3 to 5 Water Days on Boat",
-        "From $35,000 MXN",
-        "All Meals + Lodging Included"
-      ],
-      "cost": 2013.32,
-      "impressions": 1571,
-      "clicks": 29
-    },
-    {
-      "adId": "808955051261",
-      "adGroup": "AG1 - ORCA",
-      "headlines": [
-        "Orca Encounter in Baja Mexico",
-        "Wild Orcas, Not a Tank",
-        "Bajablue Multi-Day Expedition",
-        "5 Water Days \u00b7 7 Days Total",
-        "April-June Orca Window",
-        "Sea of Cortez \u00b7 Mexico",
-        "Max 12 Guests, Private Boat",
-        "Bajablue Master Seafari",
-        "Airport Transfers Included",
-        "Orca Mexico \u00b7 Wild Pod"
-      ],
-      "cost": 919.38,
-      "impressions": 447,
-      "clicks": 8
-    },
-    {
-      "adId": "808840763010",
-      "adGroup": "AG4 - WS Arbitrage (no mention)",
-      "headlines": [
-        "Sea of Cortez Snorkel Tour",
-        "Baja Mexico Wildlife Tour",
-        "Bajablue Multi-Day Expedition",
-        "3-5 Water Days \u00b7 Small Group",
-        "Orcas, Mobulas, Dolphins",
-        "La Ventana, Baja Mexico",
-        "Mexican Marine Wildlife",
-        "Private Room \u00b7 All Meals",
-        "Max 12 Guests",
-        "Airport Transfers Included"
-      ],
-      "cost": 369.4,
-      "impressions": 1177,
-      "clicks": 10
-    },
-    {
-      "adId": "808955046164",
-      "adGroup": "AG2 - Sea of Cortez Whale Watching",
-      "headlines": [
-        "Baja Whale Watching Mexico",
-        "Sea of Cortez Expedition",
-        "3 Water Days \u00b7 5 Days Total",
-        "Blue Whales, Greys, Humpbacks",
-        "Bajablue Blue Expedition",
-        "All Meals + Lodging Included",
-        "La Ventana, Baja Mexico",
-        "Max 12 Guests \u00b7 Small Boat",
-        "Bajablue Multi-Day Tour",
-        "Sea of Cortez Wildlife"
-      ],
-      "cost": 127.47,
-      "impressions": 116,
-      "clicks": 2
-    },
-    {
-      "adId": "808839790515",
-      "adGroup": "AG1 - ORCA",
-      "headlines": [
-        "5 Water Days \u00b7 7 Days Total",
-        "Master Seafari $54k MXN",
-        "Sea of Cortez Expedition",
-        "Private Room \u00b7 All Meals",
-        "Max 12 Guests",
-        "April-June Peak Wildlife",
-        "Airport Transfers Included",
-        "La Ventana, Baja Mexico",
-        "Bajablue Multi-Day Expedition",
-        "Whales \u00b7 Orcas \u00b7 Mobulas"
-      ],
-      "cost": 30.4,
-      "impressions": 206,
-      "clicks": 2
-    },
-    {
-      "adId": "808874670895",
-      "adGroup": "AG3 - Mobula Manta Dolphin",
-      "headlines": [
-        "Swim with Mobula Rays Mexico",
-        "Sea of Cortez Multi-Day",
-        "Mobula Aggregations + Dolphins",
-        "5 Days on the Water",
-        "Bajablue Master Seafari",
-        "Spring Mobula Season",
-        "Max 12 Guests, Private Boat",
-        "Mexican Marine Wildlife Tour",
-        "La Ventana, Baja Mexico",
-        "April-June Wildlife Window"
-      ],
-      "cost": 0,
-      "impressions": 60,
-      "clicks": 0
-    }
-  ],
-  "searchTerms7d": [
-    {
-      "term": "st andrews whale watching tours",
-      "cost": 88.09,
-      "impressions": 2,
-      "clicks": 1
-    },
-    {
-      "term": "telegraph cove whale watching",
-      "cost": 82.21,
-      "impressions": 2,
-      "clicks": 1
-    },
-    {
-      "term": "whale shark tours playa del carmen",
-      "cost": 76.48,
-      "impressions": 1,
-      "clicks": 1
-    },
-    {
-      "term": "whale shark tours la paz mexico",
-      "cost": 67.62,
-      "impressions": 1,
-      "clicks": 1
-    },
-    {
-      "term": "best place for whale watching",
-      "cost": 39.52,
-      "impressions": 1,
-      "clicks": 2
-    },
-    {
-      "term": "best time to go whale watching in vancouver",
-      "cost": 38.64,
-      "impressions": 1,
-      "clicks": 1
-    },
-    {
-      "term": "blue whale watching",
-      "cost": 32.97,
-      "impressions": 6,
-      "clicks": 1
-    },
-    {
-      "term": "swim with whale sharks mexico",
-      "cost": 23.97,
-      "impressions": 1,
-      "clicks": 1
-    },
-    {
-      "term": "swim with whale sharks",
-      "cost": 0,
-      "impressions": 5,
-      "clicks": 0
-    },
-    {
-      "term": "swimming with whale sharks",
-      "cost": 0,
-      "impressions": 5,
-      "clicks": 0
-    },
-    {
-      "term": "swim with whales",
-      "cost": 0,
-      "impressions": 4,
-      "clicks": 0
-    },
-    {
-      "term": "avila beach ocean safaris",
-      "cost": 0,
-      "impressions": 3,
-      "clicks": 0
-    },
-    {
-      "term": "swimming with blue whales",
-      "cost": 0,
-      "impressions": 3,
-      "clicks": 0
-    },
-    {
-      "term": "tofino whale watching",
-      "cost": 0,
-      "impressions": 3,
-      "clicks": 0
-    },
-    {
-      "term": "whale shark cancun",
-      "cost": 0,
-      "impressions": 3,
-      "clicks": 0
-    },
-    {
-      "term": "monterey bay whale watching",
-      "cost": 0,
-      "impressions": 2,
-      "clicks": 0
-    },
-    {
-      "term": "san ignacio lagoon whale watching",
-      "cost": 0,
-      "impressions": 2,
-      "clicks": 0
-    }
-  ],
-  "geo7d": [
-    {
-      "cityId": "geoTargetConstants/1015592",
-      "label": "Kealakekua, Hawaii, US",
-      "country": "US",
-      "cost": 0,
-      "impressions": 1,
-      "clicks": 0
-    }
+  "projectedTomorrow": {
+   "method": "trailing-7d-avg",
+   "insufficient": true,
+   "message": "Projection available after 7 days of conversion history"
+  }
+ },
+ "thirtyDay": {
+  "totalSpend": 3459.98,
+  "totalClicks": 51,
+  "totalImpressions": 3577,
+  "totalConversions": 0,
+  "dailySeries": [
+   {
+    "date": "2026-05-19",
+    "cost": 0,
+    "spend": 0,
+    "clicks": 0,
+    "impressions": 1,
+    "conversions": 0
+   },
+   {
+    "date": "2026-05-20",
+    "cost": 586.53,
+    "spend": 586.53,
+    "clicks": 7,
+    "impressions": 292,
+    "conversions": 0
+   },
+   {
+    "date": "2026-05-21",
+    "cost": 607.88,
+    "spend": 607.88,
+    "clicks": 13,
+    "impressions": 1018,
+    "conversions": 0
+   },
+   {
+    "date": "2026-05-22",
+    "cost": 380.24,
+    "spend": 380.24,
+    "clicks": 7,
+    "impressions": 532,
+    "conversions": 0
+   },
+   {
+    "date": "2026-05-23",
+    "cost": 778.5,
+    "spend": 778.5,
+    "clicks": 12,
+    "impressions": 822,
+    "conversions": 0
+   },
+   {
+    "date": "2026-05-24",
+    "cost": 604.37,
+    "spend": 604.37,
+    "clicks": 5,
+    "impressions": 538,
+    "conversions": 0
+   },
+   {
+    "date": "2026-05-25",
+    "cost": 502.46,
+    "spend": 502.46,
+    "clicks": 7,
+    "impressions": 374,
+    "conversions": 0
+   }
   ]
+ },
+ "byAdGroup7d": [
+  {
+   "id": "194313453577",
+   "name": "AG5 - Whale Watching Generic",
+   "clicks": 29,
+   "impressions": 1571,
+   "conv": 0,
+   "cost": 2013.32
+  },
+  {
+   "id": "198161209124",
+   "name": "AG1 - ORCA",
+   "clicks": 10,
+   "impressions": 653,
+   "conv": 0,
+   "cost": 949.79
+  },
+  {
+   "id": "194313453497",
+   "name": "AG4 - WS Arbitrage (no mention)",
+   "clicks": 10,
+   "impressions": 1177,
+   "conv": 0,
+   "cost": 369.4
+  },
+  {
+   "id": "198065523042",
+   "name": "AG2 - Sea of Cortez Whale Watching",
+   "clicks": 2,
+   "impressions": 116,
+   "conv": 0,
+   "cost": 127.47
+  },
+  {
+   "id": "198065523322",
+   "name": "AG3 - Mobula Manta Dolphin",
+   "clicks": 0,
+   "impressions": 60,
+   "conv": 0,
+   "cost": 0
+  }
+ ],
+ "conversionActions": [
+  {
+   "name": "Bokun Blue Expedition Booking (Offline)",
+   "type": "PURCHASE",
+   "primary": true
+  },
+  {
+   "name": "Bokun Master Seafari Booking (Offline)",
+   "type": "PURCHASE",
+   "primary": true
+  },
+  {
+   "name": "Bokun Ocean Safari Booking (Offline, Secondary)",
+   "type": "PURCHASE",
+   "primary": false
+  },
+  {
+   "name": "Contact Form Submit",
+   "type": "SUBMIT_LEAD_FORM",
+   "primary": false
+  },
+  {
+   "name": "WhatsApp Click — Multi-day Interest",
+   "type": "CONTACT",
+   "primary": false
+  },
+  {
+   "name": "Quiénes somos",
+   "type": "PAGE_VIEW",
+   "primary": true,
+   "tag": "read-only"
+  }
+ ],
+ "negKeywordList": {
+  "name": "NEG-MULTIDAY-CORE",
+  "count": 18,
+  "linked": true
+ },
+ "byDeviceToday": [
+  {
+   "device": "MOBILE",
+   "cost": 283.22,
+   "impressions": 678,
+   "clicks": 12
+  },
+  {
+   "device": "DESKTOP",
+   "cost": 1.78,
+   "impressions": 115,
+   "clicks": 1
+  },
+  {
+   "device": "TABLET",
+   "cost": 0,
+   "impressions": 28,
+   "clicks": 0
+  }
+ ],
+ "byDevice7d": [
+  {
+   "device": "MOBILE",
+   "cost": 2566.63,
+   "impressions": 2836,
+   "clicks": 40
+  },
+  {
+   "device": "DESKTOP",
+   "cost": 893.35,
+   "impressions": 619,
+   "clicks": 11
+  },
+  {
+   "device": "TABLET",
+   "cost": 0,
+   "impressions": 122,
+   "clicks": 0
+  }
+ ],
+ "byAge7d": [
+  {
+   "ageRange": "AGE_RANGE_UNDETERMINED",
+   "cost": 1379.45,
+   "impressions": 813,
+   "clicks": 14,
+   "conversions": 0
+  },
+  {
+   "ageRange": "AGE_RANGE_35_44",
+   "cost": 645.11,
+   "impressions": 639,
+   "clicks": 10,
+   "conversions": 0
+  },
+  {
+   "ageRange": "AGE_RANGE_25_34",
+   "cost": 412.83,
+   "impressions": 525,
+   "clicks": 8,
+   "conversions": 0
+  },
+  {
+   "ageRange": "AGE_RANGE_55_64",
+   "cost": 363.98,
+   "impressions": 377,
+   "clicks": 6,
+   "conversions": 0
+  },
+  {
+   "ageRange": "AGE_RANGE_65_UP",
+   "cost": 302.02,
+   "impressions": 510,
+   "clicks": 5,
+   "conversions": 0
+  },
+  {
+   "ageRange": "AGE_RANGE_45_54",
+   "cost": 210.62,
+   "impressions": 390,
+   "clicks": 6,
+   "conversions": 0
+  },
+  {
+   "ageRange": "AGE_RANGE_18_24",
+   "cost": 145.96,
+   "impressions": 323,
+   "clicks": 2,
+   "conversions": 0
+  }
+ ],
+ "byGender7d": [
+  {
+   "gender": "FEMALE",
+   "cost": 1482.17,
+   "impressions": 1790,
+   "clicks": 27,
+   "conversions": 0
+  },
+  {
+   "gender": "MALE",
+   "cost": 1023.72,
+   "impressions": 1353,
+   "clicks": 17,
+   "conversions": 0
+  },
+  {
+   "gender": "UNDETERMINED",
+   "cost": 954.1,
+   "impressions": 434,
+   "clicks": 7,
+   "conversions": 0
+  }
+ ],
+ "byHour7d": [
+  {
+   "dayOfWeek": "SUNDAY",
+   "hour": 0,
+   "cost": 285,
+   "impressions": 519,
+   "clicks": 4
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 0,
+   "cost": 191.68,
+   "impressions": 162,
+   "clicks": 3
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 0,
+   "cost": 285,
+   "impressions": 762,
+   "clicks": 5
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 0,
+   "cost": 16.02,
+   "impressions": 325,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 0,
+   "cost": 241.08,
+   "impressions": 520,
+   "clicks": 4
+  },
+  {
+   "dayOfWeek": "SUNDAY",
+   "hour": 1,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 1,
+   "cost": 0,
+   "impressions": 57,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 1,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 1,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 1,
+   "cost": 46.68,
+   "impressions": 20,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 1,
+   "cost": 43.92,
+   "impressions": 136,
+   "clicks": 2
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 2,
+   "cost": 0,
+   "impressions": 70,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 2,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 2,
+   "cost": 0,
+   "impressions": 9,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 2,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SUNDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 7,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 3,
+   "cost": 103.62,
+   "impressions": 51,
+   "clicks": 2
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 4,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 3,
+   "cost": 10.28,
+   "impressions": 2,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 3,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SUNDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 4,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 15,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 13,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SUNDAY",
+   "hour": 5,
+   "cost": 319.37,
+   "impressions": 7,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 3,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 76,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 18,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 6,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 6,
+   "cost": 6.51,
+   "impressions": 1,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 6,
+   "cost": 21.11,
+   "impressions": 2,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 6,
+   "cost": 132.48,
+   "impressions": 23,
+   "clicks": 2
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 6,
+   "cost": 0,
+   "impressions": 5,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 7,
+   "cost": 32.97,
+   "impressions": 3,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 7,
+   "cost": 0,
+   "impressions": 3,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 7,
+   "cost": 72.14,
+   "impressions": 26,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 7,
+   "cost": 0,
+   "impressions": 9,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 8,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 8,
+   "cost": 23.19,
+   "impressions": 5,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 8,
+   "cost": 36.44,
+   "impressions": 21,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 8,
+   "cost": 23.97,
+   "impressions": 18,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 9,
+   "cost": 0,
+   "impressions": 5,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 9,
+   "cost": 52.24,
+   "impressions": 26,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 9,
+   "cost": 0,
+   "impressions": 44,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 9,
+   "cost": 88.09,
+   "impressions": 17,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 10,
+   "cost": 0,
+   "impressions": 11,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 10,
+   "cost": 38.64,
+   "impressions": 18,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 10,
+   "cost": 0,
+   "impressions": 48,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 10,
+   "cost": 76.48,
+   "impressions": 30,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 10,
+   "cost": 0,
+   "impressions": 9,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "MONDAY",
+   "hour": 11,
+   "cost": 174.19,
+   "impressions": 9,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 11,
+   "cost": 459.17,
+   "impressions": 95,
+   "clicks": 4
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 11,
+   "cost": 39.52,
+   "impressions": 108,
+   "clicks": 2
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 11,
+   "cost": 217.95,
+   "impressions": 5,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 12,
+   "cost": 0,
+   "impressions": 61,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 12,
+   "cost": 176.54,
+   "impressions": 59,
+   "clicks": 2
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 13,
+   "cost": 82.21,
+   "impressions": 20,
+   "clicks": 1
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 14,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 15,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 16,
+   "cost": 0,
+   "impressions": 3,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 17,
+   "cost": 0,
+   "impressions": 20,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 18,
+   "cost": 0,
+   "impressions": 48,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 19,
+   "cost": 163.49,
+   "impressions": 25,
+   "clicks": 3
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 22,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  }
+ ],
+ "byKeyword7d": [
+  {
+   "text": "whale watching tour",
+   "matchType": "PHRASE",
+   "adGroup": "AG5 - Whale Watching Generic",
+   "cost": 1168.25,
+   "impressions": 530,
+   "clicks": 17,
+   "conversions": 0
+  },
+  {
+   "text": "whale watching cruise",
+   "matchType": "PHRASE",
+   "adGroup": "AG5 - Whale Watching Generic",
+   "cost": 393.14,
+   "impressions": 123,
+   "clicks": 4,
+   "conversions": 0
+  },
+  {
+   "text": "swim with orcas",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 383.54,
+   "impressions": 13,
+   "clicks": 2,
+   "conversions": 0
+  },
+  {
+   "text": "whale tour",
+   "matchType": "PHRASE",
+   "adGroup": "AG5 - Whale Watching Generic",
+   "cost": 76.48,
+   "impressions": 75,
+   "clicks": 1,
+   "conversions": 0
+  },
+  {
+   "text": "whale watching baja california",
+   "matchType": "EXACT",
+   "adGroup": "AG2 - Sea of Cortez Whale Watching",
+   "cost": 75.23,
+   "impressions": 2,
+   "clicks": 1,
+   "conversions": 0
+  },
+  {
+   "text": "swim with whale sharks la paz",
+   "matchType": "EXACT",
+   "adGroup": "AG4 - WS Arbitrage (no mention)",
+   "cost": 67.62,
+   "impressions": 6,
+   "clicks": 1,
+   "conversions": 0
+  },
+  {
+   "text": "whale watching baja",
+   "matchType": "EXACT",
+   "adGroup": "AG2 - Sea of Cortez Whale Watching",
+   "cost": 52.24,
+   "impressions": 14,
+   "clicks": 1,
+   "conversions": 0
+  },
+  {
+   "text": "swim with whale sharks mexico",
+   "matchType": "EXACT",
+   "adGroup": "AG4 - WS Arbitrage (no mention)",
+   "cost": 23.97,
+   "impressions": 13,
+   "clicks": 1,
+   "conversions": 0
+  },
+  {
+   "text": "swim with whale sharks",
+   "matchType": "EXACT",
+   "adGroup": "AG4 - WS Arbitrage (no mention)",
+   "cost": 0,
+   "impressions": 46,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "snorkel with whale sharks",
+   "matchType": "EXACT",
+   "adGroup": "AG4 - WS Arbitrage (no mention)",
+   "cost": 0,
+   "impressions": 4,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "whale shark tour",
+   "matchType": "PHRASE",
+   "adGroup": "AG4 - WS Arbitrage (no mention)",
+   "cost": 0,
+   "impressions": 4,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "whale shark tour la paz",
+   "matchType": "EXACT",
+   "adGroup": "AG4 - WS Arbitrage (no mention)",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "swim with whale sharks la paz mexico",
+   "matchType": "EXACT",
+   "adGroup": "AG4 - WS Arbitrage (no mention)",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "sea of cortez tour",
+   "matchType": "EXACT",
+   "adGroup": "AG2 - Sea of Cortez Whale Watching",
+   "cost": 0,
+   "impressions": 3,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "magdalena bay whale watching",
+   "matchType": "EXACT",
+   "adGroup": "AG2 - Sea of Cortez Whale Watching",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "whale watching baja peninsula",
+   "matchType": "EXACT",
+   "adGroup": "AG2 - Sea of Cortez Whale Watching",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "whale watching mexico",
+   "matchType": "EXACT",
+   "adGroup": "AG2 - Sea of Cortez Whale Watching",
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "snorkeling sea of cortez",
+   "matchType": "EXACT",
+   "adGroup": "AG2 - Sea of Cortez Whale Watching",
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "whale watching sea of cortez",
+   "matchType": "EXACT",
+   "adGroup": "AG2 - Sea of Cortez Whale Watching",
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "baja mexico whale watching",
+   "matchType": "EXACT",
+   "adGroup": "AG2 - Sea of Cortez Whale Watching",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "baja whale watching",
+   "matchType": "EXACT",
+   "adGroup": "AG2 - Sea of Cortez Whale Watching",
+   "cost": 0,
+   "impressions": 3,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "swim with dolphins mexico",
+   "matchType": "EXACT",
+   "adGroup": "AG3 - Mobula Manta Dolphin",
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "swim with manta rays",
+   "matchType": "EXACT",
+   "adGroup": "AG3 - Mobula Manta Dolphin",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "manta ray mexico",
+   "matchType": "EXACT",
+   "adGroup": "AG3 - Mobula Manta Dolphin",
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "swim with mobula",
+   "matchType": "PHRASE",
+   "adGroup": "AG3 - Mobula Manta Dolphin",
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "mobula ray sea of cortez",
+   "matchType": "PHRASE",
+   "adGroup": "AG3 - Mobula Manta Dolphin",
+   "cost": 0,
+   "impressions": 5,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "orca watching",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "killer whale watching",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "orca whale watching",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 3,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "orca tour",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "killer whale watching tours",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "orca encounter",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "killer whale expedition",
+   "matchType": "PHRASE",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 20,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "killer whale tour",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "swim with killer whales",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "luxury whale watching tour",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "sea of cortez expedition",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "orcas mexico",
+   "matchType": "PHRASE",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 5,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "killer whales in mexico",
+   "matchType": "PHRASE",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "multi day baja tour",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "master seafari",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "bajablue master seafari",
+   "matchType": "EXACT",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 0,
+   "clicks": 0,
+   "conversions": 0
+  },
+  {
+   "text": "orca baja california",
+   "matchType": "PHRASE",
+   "adGroup": "AG1 - ORCA",
+   "cost": 0,
+   "impressions": 13,
+   "clicks": 0,
+   "conversions": 0
+  }
+ ],
+ "byAd7d": [
+  {
+   "adId": "808955055308",
+   "adGroup": "AG5 - Whale Watching Generic",
+   "headlines": [
+    "Mexico Whale Watching Tour",
+    "Sea of Cortez Expedition",
+    "Multi-Day Wildlife Tour Baja",
+    "Blue, Grey, Humpback Whales",
+    "Bajablue Tours · Baja Mexico",
+    "Whale Watching Mexico",
+    "Small Group · Max 12 Guests",
+    "3 to 5 Water Days on Boat",
+    "From $35,000 MXN",
+    "All Meals + Lodging Included"
+   ],
+   "cost": 2013.32,
+   "impressions": 1571,
+   "clicks": 29
+  },
+  {
+   "adId": "808955051261",
+   "adGroup": "AG1 - ORCA",
+   "headlines": [
+    "Orca Encounter in Baja Mexico",
+    "Wild Orcas, Not a Tank",
+    "Bajablue Multi-Day Expedition",
+    "5 Water Days · 7 Days Total",
+    "April-June Orca Window",
+    "Sea of Cortez · Mexico",
+    "Max 12 Guests, Private Boat",
+    "Bajablue Master Seafari",
+    "Airport Transfers Included",
+    "Orca Mexico · Wild Pod"
+   ],
+   "cost": 919.38,
+   "impressions": 447,
+   "clicks": 8
+  },
+  {
+   "adId": "808840763010",
+   "adGroup": "AG4 - WS Arbitrage (no mention)",
+   "headlines": [
+    "Sea of Cortez Snorkel Tour",
+    "Baja Mexico Wildlife Tour",
+    "Bajablue Multi-Day Expedition",
+    "3-5 Water Days · Small Group",
+    "Orcas, Mobulas, Dolphins",
+    "La Ventana, Baja Mexico",
+    "Mexican Marine Wildlife",
+    "Private Room · All Meals",
+    "Max 12 Guests",
+    "Airport Transfers Included"
+   ],
+   "cost": 369.4,
+   "impressions": 1177,
+   "clicks": 10
+  },
+  {
+   "adId": "808955046164",
+   "adGroup": "AG2 - Sea of Cortez Whale Watching",
+   "headlines": [
+    "Baja Whale Watching Mexico",
+    "Sea of Cortez Expedition",
+    "3 Water Days · 5 Days Total",
+    "Blue Whales, Greys, Humpbacks",
+    "Bajablue Blue Expedition",
+    "All Meals + Lodging Included",
+    "La Ventana, Baja Mexico",
+    "Max 12 Guests · Small Boat",
+    "Bajablue Multi-Day Tour",
+    "Sea of Cortez Wildlife"
+   ],
+   "cost": 127.47,
+   "impressions": 116,
+   "clicks": 2
+  },
+  {
+   "adId": "808839790515",
+   "adGroup": "AG1 - ORCA",
+   "headlines": [
+    "5 Water Days · 7 Days Total",
+    "Master Seafari $54k MXN",
+    "Sea of Cortez Expedition",
+    "Private Room · All Meals",
+    "Max 12 Guests",
+    "April-June Peak Wildlife",
+    "Airport Transfers Included",
+    "La Ventana, Baja Mexico",
+    "Bajablue Multi-Day Expedition",
+    "Whales · Orcas · Mobulas"
+   ],
+   "cost": 30.4,
+   "impressions": 206,
+   "clicks": 2
+  },
+  {
+   "adId": "808874670895",
+   "adGroup": "AG3 - Mobula Manta Dolphin",
+   "headlines": [
+    "Swim with Mobula Rays Mexico",
+    "Sea of Cortez Multi-Day",
+    "Mobula Aggregations + Dolphins",
+    "5 Days on the Water",
+    "Bajablue Master Seafari",
+    "Spring Mobula Season",
+    "Max 12 Guests, Private Boat",
+    "Mexican Marine Wildlife Tour",
+    "La Ventana, Baja Mexico",
+    "April-June Wildlife Window"
+   ],
+   "cost": 0,
+   "impressions": 60,
+   "clicks": 0
+  }
+ ],
+ "searchTerms7d": [
+  {
+   "term": "swimming with wild orcas",
+   "cost": 319.37,
+   "impressions": 2,
+   "clicks": 1
+  },
+  {
+   "term": "whale watching washington state",
+   "cost": 115.87,
+   "impressions": 2,
+   "clicks": 1
+  },
+  {
+   "term": "st andrews whale watching tours",
+   "cost": 88.09,
+   "impressions": 2,
+   "clicks": 1
+  },
+  {
+   "term": "telegraph cove whale watching",
+   "cost": 82.21,
+   "impressions": 2,
+   "clicks": 1
+  },
+  {
+   "term": "whale watching cruise",
+   "cost": 80.26,
+   "impressions": 5,
+   "clicks": 1
+  },
+  {
+   "term": "whale watching vancouver",
+   "cost": 79.17,
+   "impressions": 5,
+   "clicks": 1
+  },
+  {
+   "term": "whale shark tours playa del carmen",
+   "cost": 76.48,
+   "impressions": 1,
+   "clicks": 1
+  },
+  {
+   "term": "whale watching baja california",
+   "cost": 75.23,
+   "impressions": 2,
+   "clicks": 1
+  },
+  {
+   "term": "whale shark tours la paz mexico",
+   "cost": 67.62,
+   "impressions": 1,
+   "clicks": 1
+  },
+  {
+   "term": "swim with orcas",
+   "cost": 64.17,
+   "impressions": 3,
+   "clicks": 1
+  },
+  {
+   "term": "baja california whale watching",
+   "cost": 52.24,
+   "impressions": 1,
+   "clicks": 1
+  },
+  {
+   "term": "where can you see whales in the us",
+   "cost": 52.22,
+   "impressions": 1,
+   "clicks": 1
+  },
+  {
+   "term": "best place for whale watching",
+   "cost": 39.52,
+   "impressions": 1,
+   "clicks": 2
+  },
+  {
+   "term": "best time to go whale watching in vancouver",
+   "cost": 38.64,
+   "impressions": 1,
+   "clicks": 1
+  },
+  {
+   "term": "blue whale watching",
+   "cost": 32.97,
+   "impressions": 6,
+   "clicks": 1
+  },
+  {
+   "term": "swim with whale sharks mexico",
+   "cost": 23.97,
+   "impressions": 1,
+   "clicks": 1
+  },
+  {
+   "term": "whale watching maui",
+   "cost": 10.28,
+   "impressions": 2,
+   "clicks": 1
+  }
+ ],
+ "geo7d": [
+  {
+   "cityId": "geoTargetConstants/1001975",
+   "label": "West Vancouver, British Columbia, Canada",
+   "country": "CA",
+   "cost": 217.95,
+   "impressions": 1,
+   "clicks": 1
+  },
+  {
+   "cityId": "geoTargetConstants/9198475",
+   "label": "Halifax, Nova Scotia, Canada",
+   "country": "CA",
+   "cost": 145.62,
+   "impressions": 5,
+   "clicks": 1
+  },
+  {
+   "cityId": "geoTargetConstants/1001970",
+   "label": "Vancouver, British Columbia, Canada",
+   "country": "CA",
+   "cost": 117.81,
+   "impressions": 23,
+   "clicks": 2
+  },
+  {
+   "cityId": "geoTargetConstants/9242283",
+   "label": "St. Andrews, New Brunswick, Canada",
+   "country": "CA",
+   "cost": 88.09,
+   "impressions": 2,
+   "clicks": 1
+  },
+  {
+   "cityId": "geoTargetConstants/1001808",
+   "label": "Edmonton, Alberta, Canada",
+   "country": "CA",
+   "cost": 76.48,
+   "impressions": 10,
+   "clicks": 1
+  },
+  {
+   "cityId": "geoTargetConstants/1001801",
+   "label": "Calgary, Alberta, Canada",
+   "country": "CA",
+   "cost": 23.97,
+   "impressions": 20,
+   "clicks": 1
+  }
+ ]
 }
