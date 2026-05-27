@@ -1,8 +1,8 @@
 {
  "meta": {
-  "pulledAt": "2026-05-27T05:15:33Z",
-  "today": "2026-05-26",
-  "yesterday": "2026-05-25",
+  "pulledAt": "2026-05-27T06:18:30Z",
+  "today": null,
+  "yesterday": "2026-05-26",
   "accountId": "2252665731",
   "accountName": "BajaBlue",
   "source": "live-via-NotFair-MCP-from-rick-agent-cron",
@@ -49,11 +49,11 @@
  ],
  "leads": {
   "today": {
-   "spend": 285,
-   "asOfHour": 23
+   "spend": 0,
+   "asOfHour": 0
   },
   "yesterday": {
-   "spend": 502.46
+   "spend": 285
   },
   "projectedTomorrow": {
    "method": "trailing-7d-avg",
@@ -62,9 +62,9 @@
   }
  },
  "thirtyDay": {
-  "totalSpend": 3459.98,
-  "totalClicks": 51,
-  "totalImpressions": 3577,
+  "totalSpend": 3744.98,
+  "totalClicks": 64,
+  "totalImpressions": 4409,
   "totalConversions": 0,
   "dailySeries": [
    {
@@ -122,6 +122,14 @@
     "clicks": 7,
     "impressions": 374,
     "conversions": 0
+   },
+   {
+    "date": "2026-05-26",
+    "cost": 285,
+    "spend": 285,
+    "clicks": 13,
+    "impressions": 832,
+    "conversions": 0
    }
   ]
  },
@@ -130,23 +138,23 @@
    "id": "194313453577",
    "name": "AG5 - Whale Watching Generic",
    "clicks": 29,
-   "impressions": 1571,
+   "impressions": 1676,
    "conv": 0,
    "cost": 2013.32
   },
   {
    "id": "198161209124",
    "name": "AG1 - ORCA",
-   "clicks": 10,
-   "impressions": 653,
+   "clicks": 23,
+   "impressions": 1341,
    "conv": 0,
-   "cost": 949.79
+   "cost": 1234.79
   },
   {
    "id": "194313453497",
    "name": "AG4 - WS Arbitrage (no mention)",
    "clicks": 10,
-   "impressions": 1177,
+   "impressions": 1196,
    "conv": 0,
    "cost": 369.4
   },
@@ -154,7 +162,7 @@
    "id": "198065523042",
    "name": "AG2 - Sea of Cortez Whale Watching",
    "clicks": 2,
-   "impressions": 116,
+   "impressions": 131,
    "conv": 0,
    "cost": 127.47
   },
@@ -162,7 +170,7 @@
    "id": "198065523322",
    "name": "AG3 - Mobula Manta Dolphin",
    "clicks": 0,
-   "impressions": 60,
+   "impressions": 64,
    "conv": 0,
    "cost": 0
   }
@@ -205,116 +213,97 @@
   "count": 18,
   "linked": true
  },
- "byDeviceToday": [
-  {
-   "device": "MOBILE",
-   "cost": 283.22,
-   "impressions": 687,
-   "clicks": 12
-  },
-  {
-   "device": "DESKTOP",
-   "cost": 1.78,
-   "impressions": 118,
-   "clicks": 1
-  },
-  {
-   "device": "TABLET",
-   "cost": 0,
-   "impressions": 28,
-   "clicks": 0
-  }
- ],
+ "byDeviceToday": [],
  "byDevice7d": [
   {
    "device": "MOBILE",
-   "cost": 2566.63,
-   "impressions": 2836,
-   "clicks": 40
+   "cost": 2849.85,
+   "impressions": 3522,
+   "clicks": 52
   },
   {
    "device": "DESKTOP",
-   "cost": 893.35,
-   "impressions": 619,
-   "clicks": 11
+   "cost": 895.12,
+   "impressions": 736,
+   "clicks": 12
   },
   {
    "device": "TABLET",
    "cost": 0,
-   "impressions": 122,
+   "impressions": 150,
    "clicks": 0
   }
  ],
  "byAge7d": [
   {
    "ageRange": "AGE_RANGE_UNDETERMINED",
-   "cost": 1379.45,
-   "impressions": 813,
-   "clicks": 14,
+   "cost": 1402.42,
+   "impressions": 942,
+   "clicks": 15,
    "conversions": 0
   },
   {
    "ageRange": "AGE_RANGE_35_44",
-   "cost": 645.11,
-   "impressions": 639,
-   "clicks": 10,
+   "cost": 701.86,
+   "impressions": 787,
+   "clicks": 13,
    "conversions": 0
   },
   {
    "ageRange": "AGE_RANGE_25_34",
-   "cost": 412.83,
-   "impressions": 525,
-   "clicks": 8,
+   "cost": 535.58,
+   "impressions": 646,
+   "clicks": 13,
+   "conversions": 0
+  },
+  {
+   "ageRange": "AGE_RANGE_65_UP",
+   "cost": 366.09,
+   "impressions": 676,
+   "clicks": 7,
    "conversions": 0
   },
   {
    "ageRange": "AGE_RANGE_55_64",
    "cost": 363.98,
-   "impressions": 377,
+   "impressions": 429,
    "clicks": 6,
-   "conversions": 0
-  },
-  {
-   "ageRange": "AGE_RANGE_65_UP",
-   "cost": 302.02,
-   "impressions": 510,
-   "clicks": 5,
    "conversions": 0
   },
   {
    "ageRange": "AGE_RANGE_45_54",
-   "cost": 210.62,
-   "impressions": 390,
-   "clicks": 6,
+   "cost": 227.3,
+   "impressions": 496,
+   "clicks": 7,
    "conversions": 0
   },
   {
    "ageRange": "AGE_RANGE_18_24",
-   "cost": 145.96,
-   "impressions": 323,
-   "clicks": 2,
+   "cost": 147.74,
+   "impressions": 432,
+   "clicks": 3,
    "conversions": 0
   }
  ],
  "byGender7d": [
   {
    "gender": "FEMALE",
-   "cost": 1482.17,
-   "impressions": 1790,
-   "clicks": 27,
+   "cost": 1598.19,
+   "impressions": 2195,
+   "clicks": 33,
    "conversions": 0
   },
   {
    "gender": "MALE",
-   "cost": 1023.72,
-   "impressions": 1353,
-   "clicks": 17,
+   "cost": 1192.7,
+   "impressions": 1758,
+   "clicks": 24,
    "conversions": 0
   },
   {
    "gender": "UNDETERMINED",
    "cost": 954.1,
-   "impressions": 434,
+   "impressions": 455,
    "clicks": 7,
    "conversions": 0
   }
@@ -391,11 +380,25 @@
    "clicks": 3
   },
   {
+   "dayOfWeek": "TUESDAY",
+   "hour": 0,
+   "cost": 135.52,
+   "impressions": 359,
+   "clicks": 5
+  },
+  {
    "dayOfWeek": "FRIDAY",
    "hour": 6,
    "cost": 132.48,
    "impressions": 23,
    "clicks": 2
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 1,
+   "cost": 130.16,
+   "impressions": 369,
+   "clicks": 5
   },
   {
    "dayOfWeek": "MONDAY",
@@ -503,6 +506,13 @@
    "clicks": 1
   },
   {
+   "dayOfWeek": "TUESDAY",
+   "hour": 2,
+   "cost": 19.32,
+   "impressions": 59,
+   "clicks": 3
+  },
+  {
    "dayOfWeek": "FRIDAY",
    "hour": 0,
    "cost": 16.02,
@@ -531,24 +541,24 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "SUNDAY",
-   "hour": 3,
-   "cost": 0,
-   "impressions": 7,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SUNDAY",
-   "hour": 4,
-   "cost": 0,
-   "impressions": 4,
-   "clicks": 0
-  },
-  {
    "dayOfWeek": "MONDAY",
    "hour": 1,
    "cost": 0,
    "impressions": 57,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 1,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 1,
+   "cost": 0,
+   "impressions": 1,
    "clicks": 0
   },
   {
@@ -559,10 +569,129 @@
    "clicks": 0
   },
   {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 2,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 2,
+   "cost": 0,
+   "impressions": 9,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 2,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SUNDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 7,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 4,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 3,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 3,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SUNDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 4,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 15,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 13,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 4,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
    "dayOfWeek": "MONDAY",
    "hour": 5,
    "cost": 0,
    "impressions": 3,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 76,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "FRIDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 18,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 5,
+   "cost": 0,
+   "impressions": 1,
    "clicks": 0
   },
   {
@@ -573,7 +702,42 @@
    "clicks": 0
   },
   {
+   "dayOfWeek": "SATURDAY",
+   "hour": 6,
+   "cost": 0,
+   "impressions": 5,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 7,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "THURSDAY",
+   "hour": 7,
+   "cost": 0,
+   "impressions": 3,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "SATURDAY",
+   "hour": 7,
+   "cost": 0,
+   "impressions": 9,
+   "clicks": 0
+  },
+  {
    "dayOfWeek": "MONDAY",
+   "hour": 8,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
    "hour": 8,
    "cost": 0,
    "impressions": 2,
@@ -587,115 +751,10 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "MONDAY",
-   "hour": 10,
-   "cost": 0,
-   "impressions": 11,
-   "clicks": 0
-  },
-  {
    "dayOfWeek": "TUESDAY",
-   "hour": 22,
-   "cost": 0,
-   "impressions": 1,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 1,
-   "cost": 0,
-   "impressions": 1,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 2,
-   "cost": 0,
-   "impressions": 1,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 3,
-   "cost": 0,
-   "impressions": 4,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 4,
-   "cost": 0,
-   "impressions": 15,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 5,
-   "cost": 0,
-   "impressions": 76,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "WEDNESDAY",
-   "hour": 12,
-   "cost": 0,
-   "impressions": 61,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 1,
-   "cost": 0,
-   "impressions": 1,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 5,
+   "hour": 9,
    "cost": 0,
    "impressions": 2,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 7,
-   "cost": 0,
-   "impressions": 3,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "THURSDAY",
-   "hour": 10,
-   "cost": 0,
-   "impressions": 48,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 2,
-   "cost": 0,
-   "impressions": 9,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 3,
-   "cost": 0,
-   "impressions": 3,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 4,
-   "cost": 0,
-   "impressions": 13,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "FRIDAY",
-   "hour": 5,
-   "cost": 0,
-   "impressions": 18,
    "clicks": 0
   },
   {
@@ -706,45 +765,24 @@
    "clicks": 0
   },
   {
-   "dayOfWeek": "SATURDAY",
-   "hour": 2,
+   "dayOfWeek": "MONDAY",
+   "hour": 10,
    "cost": 0,
-   "impressions": 1,
+   "impressions": 11,
    "clicks": 0
   },
   {
-   "dayOfWeek": "SATURDAY",
-   "hour": 3,
+   "dayOfWeek": "TUESDAY",
+   "hour": 10,
    "cost": 0,
    "impressions": 2,
    "clicks": 0
   },
   {
-   "dayOfWeek": "SATURDAY",
-   "hour": 4,
+   "dayOfWeek": "THURSDAY",
+   "hour": 10,
    "cost": 0,
-   "impressions": 1,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 5,
-   "cost": 0,
-   "impressions": 1,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 6,
-   "cost": 0,
-   "impressions": 5,
-   "clicks": 0
-  },
-  {
-   "dayOfWeek": "SATURDAY",
-   "hour": 7,
-   "cost": 0,
-   "impressions": 9,
+   "impressions": 48,
    "clicks": 0
   },
   {
@@ -755,10 +793,38 @@
    "clicks": 0
   },
   {
+   "dayOfWeek": "TUESDAY",
+   "hour": 12,
+   "cost": 0,
+   "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "WEDNESDAY",
+   "hour": 12,
+   "cost": 0,
+   "impressions": 61,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 13,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
    "dayOfWeek": "SATURDAY",
    "hour": 14,
    "cost": 0,
    "impressions": 1,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 15,
+   "cost": 0,
+   "impressions": 2,
    "clicks": 0
   },
   {
@@ -769,10 +835,24 @@
    "clicks": 0
   },
   {
+   "dayOfWeek": "TUESDAY",
+   "hour": 16,
+   "cost": 0,
+   "impressions": 5,
+   "clicks": 0
+  },
+  {
    "dayOfWeek": "SATURDAY",
    "hour": 16,
    "cost": 0,
    "impressions": 3,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 17,
+   "cost": 0,
+   "impressions": 9,
    "clicks": 0
   },
   {
@@ -783,10 +863,52 @@
    "clicks": 0
   },
   {
+   "dayOfWeek": "TUESDAY",
+   "hour": 18,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
    "dayOfWeek": "SATURDAY",
    "hour": 18,
    "cost": 0,
    "impressions": 48,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 19,
+   "cost": 0,
+   "impressions": 5,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 20,
+   "cost": 0,
+   "impressions": 2,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 21,
+   "cost": 0,
+   "impressions": 3,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 22,
+   "cost": 0,
+   "impressions": 3,
+   "clicks": 0
+  },
+  {
+   "dayOfWeek": "TUESDAY",
+   "hour": 23,
+   "cost": 0,
+   "impressions": 1,
    "clicks": 0
   }
  ],
@@ -796,7 +918,7 @@
    "matchType": "PHRASE",
    "adGroup": "AG5 - Whale Watching Generic",
    "cost": 1168.25,
-   "impressions": 530,
+   "impressions": 554,
    "clicks": 17,
    "conversions": 0
   },
@@ -814,7 +936,7 @@
    "matchType": "EXACT",
    "adGroup": "AG1 - ORCA",
    "cost": 383.54,
-   "impressions": 13,
+   "impressions": 14,
    "clicks": 2,
    "conversions": 0
   },
@@ -823,7 +945,7 @@
    "matchType": "PHRASE",
    "adGroup": "AG5 - Whale Watching Generic",
    "cost": 76.48,
-   "impressions": 75,
+   "impressions": 80,
    "clicks": 1,
    "conversions": 0
   },
@@ -850,7 +972,7 @@
    "matchType": "EXACT",
    "adGroup": "AG2 - Sea of Cortez Whale Watching",
    "cost": 52.24,
-   "impressions": 14,
+   "impressions": 15,
    "clicks": 1,
    "conversions": 0
   },
@@ -868,7 +990,7 @@
    "matchType": "EXACT",
    "adGroup": "AG4 - WS Arbitrage (no mention)",
    "cost": 0,
-   "impressions": 46,
+   "impressions": 47,
    "clicks": 0,
    "conversions": 0
   },
@@ -949,7 +1071,7 @@
    "matchType": "EXACT",
    "adGroup": "AG2 - Sea of Cortez Whale Watching",
    "cost": 0,
-   "impressions": 1,
+   "impressions": 2,
    "clicks": 0,
    "conversions": 0
   },
@@ -1012,7 +1134,7 @@
    "matchType": "PHRASE",
    "adGroup": "AG3 - Mobula Manta Dolphin",
    "cost": 0,
-   "impressions": 1,
+   "impressions": 2,
    "clicks": 0,
    "conversions": 0
   },
@@ -1021,7 +1143,7 @@
    "matchType": "PHRASE",
    "adGroup": "AG3 - Mobula Manta Dolphin",
    "cost": 0,
-   "impressions": 5,
+   "impressions": 8,
    "clicks": 0,
    "conversions": 0
   },
@@ -1075,7 +1197,7 @@
    "matchType": "EXACT",
    "adGroup": "AG1 - ORCA",
    "cost": 0,
-   "impressions": 2,
+   "impressions": 3,
    "clicks": 0,
    "conversions": 0
   },
@@ -1084,7 +1206,7 @@
    "matchType": "PHRASE",
    "adGroup": "AG1 - ORCA",
    "cost": 0,
-   "impressions": 20,
+   "impressions": 26,
    "clicks": 0,
    "conversions": 0
   },
@@ -1138,7 +1260,7 @@
    "matchType": "PHRASE",
    "adGroup": "AG1 - ORCA",
    "cost": 0,
-   "impressions": 1,
+   "impressions": 0,
    "clicks": 0,
    "conversions": 0
   },
@@ -1174,7 +1296,7 @@
    "matchType": "PHRASE",
    "adGroup": "AG1 - ORCA",
    "cost": 0,
-   "impressions": 13,
+   "impressions": 14,
    "clicks": 0,
    "conversions": 0
   }
@@ -1196,7 +1318,7 @@
     "All Meals + Lodging Included"
    ],
    "cost": 2013.32,
-   "impressions": 1571,
+   "impressions": 1676,
    "clicks": 29
   },
   {
@@ -1214,9 +1336,9 @@
     "Airport Transfers Included",
     "Orca Mexico · Wild Pod"
    ],
-   "cost": 919.38,
-   "impressions": 447,
-   "clicks": 8
+   "cost": 1129.96,
+   "impressions": 882,
+   "clicks": 19
   },
   {
    "adId": "808840763010",
@@ -1234,7 +1356,7 @@
     "Airport Transfers Included"
    ],
    "cost": 369.4,
-   "impressions": 1177,
+   "impressions": 1196,
    "clicks": 10
   },
   {
@@ -1253,7 +1375,7 @@
     "Sea of Cortez Wildlife"
    ],
    "cost": 127.47,
-   "impressions": 116,
+   "impressions": 131,
    "clicks": 2
   },
   {
@@ -1271,9 +1393,9 @@
     "Bajablue Multi-Day Expedition",
     "Whales · Orcas · Mobulas"
    ],
-   "cost": 30.4,
-   "impressions": 206,
-   "clicks": 2
+   "cost": 104.83,
+   "impressions": 459,
+   "clicks": 4
   },
   {
    "adId": "808874670895",
@@ -1291,17 +1413,11 @@
     "April-June Wildlife Window"
    ],
    "cost": 0,
-   "impressions": 60,
+   "impressions": 64,
    "clicks": 0
   }
  ],
  "searchTerms7d": [
-  {
-   "term": "swimming with wild orcas",
-   "cost": 319.37,
-   "impressions": 2,
-   "clicks": 1
-  },
   {
    "term": "st andrews whale watching tours",
    "cost": 88.09,
@@ -1315,14 +1431,8 @@
    "clicks": 1
   },
   {
-   "term": "swim with orcas",
-   "cost": 64.17,
-   "impressions": 3,
-   "clicks": 1
-  },
-  {
-   "term": "baja california whale watching",
-   "cost": 52.24,
+   "term": "whale shark tours la paz mexico",
+   "cost": 67.62,
    "impressions": 1,
    "clicks": 1
   },
@@ -1366,26 +1476,8 @@
    "label": "Vancouver,British Columbia,Canada",
    "country": "2124",
    "cost": 175.16,
-   "impressions": 66,
+   "impressions": 74,
    "clicks": 5,
-   "conversions": 0
-  },
-  {
-   "cityId": "geoTargetConstants/9198475",
-   "label": "Halifax,Nova Scotia,Canada",
-   "country": "2124",
-   "cost": 145.62,
-   "impressions": 5,
-   "clicks": 1,
-   "conversions": 0
-  },
-  {
-   "cityId": "geoTargetConstants/9242283",
-   "label": "St. Andrews,New Brunswick,Canada",
-   "country": "2124",
-   "cost": 88.09,
-   "impressions": 2,
-   "clicks": 1,
    "conversions": 0
   },
   {
@@ -1411,7 +1503,7 @@
    "label": "Calgary,Alberta,Canada",
    "country": "2124",
    "cost": 23.97,
-   "impressions": 20,
+   "impressions": 22,
    "clicks": 1,
    "conversions": 0
   },
