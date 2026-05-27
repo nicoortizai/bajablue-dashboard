@@ -1,6 +1,6 @@
 {
  "meta": {
-  "pulledAt": "2026-05-27T02:15:59Z",
+  "pulledAt": "2026-05-27T03:14:06Z",
   "today": "2026-05-26",
   "yesterday": "2026-05-25",
   "accountId": "2252665731",
@@ -50,7 +50,7 @@
  "leads": {
   "today": {
    "spend": 285,
-   "asOfHour": 19
+   "asOfHour": 20
   },
   "yesterday": {
    "spend": 502.46
@@ -209,13 +209,13 @@
   {
    "device": "MOBILE",
    "cost": 283.22,
-   "impressions": 682,
+   "impressions": 684,
    "clicks": 12
   },
   {
    "device": "DESKTOP",
    "cost": 1.78,
-   "impressions": 120,
+   "impressions": 117,
    "clicks": 1
   },
   {
@@ -1409,28 +1409,12 @@
    "clicks": 1
   },
   {
-   "cityId": "geoTargetConstants/9198475",
-   "label": "Halifax, Nova Scotia, Canada",
-   "country": "2124",
-   "cost": 145.62,
-   "impressions": 5,
-   "clicks": 1
-  },
-  {
    "cityId": "geoTargetConstants/1001970",
    "label": "Vancouver, British Columbia, Canada",
    "country": "2124",
    "cost": 117.81,
    "impressions": 23,
    "clicks": 2
-  },
-  {
-   "cityId": "geoTargetConstants/9242283",
-   "label": "St. Andrews, New Brunswick, Canada",
-   "country": "2124",
-   "cost": 88.09,
-   "impressions": 2,
-   "clicks": 1
   },
   {
    "cityId": "geoTargetConstants/1001808",
