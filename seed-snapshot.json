@@ -1,6 +1,6 @@
 {
  "meta": {
-  "pulledAt": "2026-05-27T01:20:27Z",
+  "pulledAt": "2026-05-27T02:15:59Z",
   "today": "2026-05-26",
   "yesterday": "2026-05-25",
   "accountId": "2252665731",
@@ -50,7 +50,7 @@
  "leads": {
   "today": {
    "spend": 285,
-   "asOfHour": 18
+   "asOfHour": 19
   },
   "yesterday": {
    "spend": 502.46
@@ -209,13 +209,13 @@
   {
    "device": "MOBILE",
    "cost": 283.22,
-   "impressions": 678,
+   "impressions": 682,
    "clicks": 12
   },
   {
    "device": "DESKTOP",
    "cost": 1.78,
-   "impressions": 115,
+   "impressions": 120,
    "clicks": 1
   },
   {
@@ -1403,7 +1403,7 @@
   {
    "cityId": "geoTargetConstants/1001975",
    "label": "West Vancouver, British Columbia, Canada",
-   "country": "CA",
+   "country": "2124",
    "cost": 217.95,
    "impressions": 1,
    "clicks": 1
@@ -1411,7 +1411,7 @@
   {
    "cityId": "geoTargetConstants/9198475",
    "label": "Halifax, Nova Scotia, Canada",
-   "country": "CA",
+   "country": "2124",
    "cost": 145.62,
    "impressions": 5,
    "clicks": 1
@@ -1419,7 +1419,7 @@
   {
    "cityId": "geoTargetConstants/1001970",
    "label": "Vancouver, British Columbia, Canada",
-   "country": "CA",
+   "country": "2124",
    "cost": 117.81,
    "impressions": 23,
    "clicks": 2
@@ -1427,7 +1427,7 @@
   {
    "cityId": "geoTargetConstants/9242283",
    "label": "St. Andrews, New Brunswick, Canada",
-   "country": "CA",
+   "country": "2124",
    "cost": 88.09,
    "impressions": 2,
    "clicks": 1
@@ -1435,17 +1435,49 @@
   {
    "cityId": "geoTargetConstants/1001808",
    "label": "Edmonton, Alberta, Canada",
-   "country": "CA",
+   "country": "2124",
    "cost": 76.48,
    "impressions": 10,
    "clicks": 1
   },
   {
+   "cityId": "geoTargetConstants/1001970",
+   "label": "Vancouver, British Columbia, Canada",
+   "country": "2124",
+   "cost": 57.35,
+   "impressions": 43,
+   "clicks": 3
+  },
+  {
+   "cityId": "geoTargetConstants/1001857",
+   "label": "geoTargetConstants/1001857",
+   "country": "2124",
+   "cost": 24.38,
+   "impressions": 1,
+   "clicks": 1
+  },
+  {
    "cityId": "geoTargetConstants/1001801",
    "label": "Calgary, Alberta, Canada",
-   "country": "CA",
+   "country": "2124",
    "cost": 23.97,
    "impressions": 20,
+   "clicks": 1
+  },
+  {
+   "cityId": "geoTargetConstants/1002057",
+   "label": "geoTargetConstants/1002057",
+   "country": "2124",
+   "cost": 23.19,
+   "impressions": 1,
+   "clicks": 1
+  },
+  {
+   "cityId": "geoTargetConstants/1001851",
+   "label": "geoTargetConstants/1001851",
+   "country": "2124",
+   "cost": 20.64,
+   "impressions": 1,
    "clicks": 1
   }
  ]
