@@ -1,7 +1,7 @@
 {
  "meta": {
-  "pulledAt": "2026-05-27T06:18:30Z",
-  "today": null,
+  "pulledAt": "2026-05-27T07:13:36Z",
+  "today": "2026-05-27",
   "yesterday": "2026-05-26",
   "accountId": "2252665731",
   "accountName": "BajaBlue",
@@ -49,8 +49,8 @@
  ],
  "leads": {
   "today": {
-   "spend": 0,
-   "asOfHour": 0
+   "spend": 406.67,
+   "asOfHour": 1
   },
   "yesterday": {
    "spend": 285
@@ -64,7 +64,7 @@
  "thirtyDay": {
   "totalSpend": 3744.98,
   "totalClicks": 64,
-  "totalImpressions": 4409,
+  "totalImpressions": 4411,
   "totalConversions": 0,
   "dailySeries": [
    {
@@ -128,7 +128,7 @@
     "cost": 285,
     "spend": 285,
     "clicks": 13,
-    "impressions": 832,
+    "impressions": 834,
     "conversions": 0
    }
   ]
@@ -138,7 +138,7 @@
    "id": "194313453577",
    "name": "AG5 - Whale Watching Generic",
    "clicks": 29,
-   "impressions": 1676,
+   "impressions": 1678,
    "conv": 0,
    "cost": 2013.32
   },
@@ -213,18 +213,37 @@
   "count": 18,
   "linked": true
  },
- "byDeviceToday": [],
+ "byDeviceToday": [
+  {
+   "device": "MOBILE",
+   "cost": 406.67,
+   "impressions": 288,
+   "clicks": 3
+  },
+  {
+   "device": "DESKTOP",
+   "cost": 0,
+   "impressions": 46,
+   "clicks": 0
+  },
+  {
+   "device": "TABLET",
+   "cost": 0,
+   "impressions": 67,
+   "clicks": 0
+  }
+ ],
  "byDevice7d": [
   {
    "device": "MOBILE",
    "cost": 2849.85,
-   "impressions": 3522,
+   "impressions": 3525,
    "clicks": 52
   },
   {
    "device": "DESKTOP",
    "cost": 895.12,
-   "impressions": 736,
+   "impressions": 735,
    "clicks": 12
   },
   {
@@ -238,14 +257,14 @@
   {
    "ageRange": "AGE_RANGE_UNDETERMINED",
    "cost": 1402.42,
-   "impressions": 942,
+   "impressions": 941,
    "clicks": 15,
    "conversions": 0
   },
   {
    "ageRange": "AGE_RANGE_35_44",
    "cost": 701.86,
-   "impressions": 787,
+   "impressions": 790,
    "clicks": 13,
    "conversions": 0
   },
@@ -296,14 +315,14 @@
   {
    "gender": "MALE",
    "cost": 1192.7,
-   "impressions": 1758,
+   "impressions": 1761,
    "clicks": 24,
    "conversions": 0
   },
   {
    "gender": "UNDETERMINED",
    "cost": 954.1,
-   "impressions": 455,
+   "impressions": 454,
    "clicks": 7,
    "conversions": 0
   }
@@ -908,7 +927,7 @@
    "dayOfWeek": "TUESDAY",
    "hour": 23,
    "cost": 0,
-   "impressions": 1,
+   "impressions": 3,
    "clicks": 0
   }
  ],
@@ -918,7 +937,7 @@
    "matchType": "PHRASE",
    "adGroup": "AG5 - Whale Watching Generic",
    "cost": 1168.25,
-   "impressions": 554,
+   "impressions": 556,
    "clicks": 17,
    "conversions": 0
   },
@@ -1318,7 +1337,7 @@
     "All Meals + Lodging Included"
    ],
    "cost": 2013.32,
-   "impressions": 1676,
+   "impressions": 1678,
    "clicks": 29
   },
   {
